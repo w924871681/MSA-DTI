@@ -9,6 +9,8 @@ Code, data protocols and manuscript for the budget-constrained initialization of
 | Frozen inputs and results | [Cohorts and task manifests](code/protocol) · [Paper data](code/data) · [Weights and per-window forecasts](https://github.com/w924871681/MSA-DTI/releases/tag/review-v1) |
 | Report generation | [Figure and table scripts](code/plotting) · [Verification scripts](code/verification) |
 
+The manuscript links above open the current typeset files. The [review-v1 release](https://github.com/w924871681/MSA-DTI/releases/tag/review-v1) preserves the experimental snapshot used for the reported results.
+
 ## Reproduce the tables and figures
 
 Start in the repository root. Use Python 3.11. For Linux or macOS the commands below create a virtual environment. On Windows use `.venv\Scripts\activate` after creating it.

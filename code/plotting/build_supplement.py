@@ -10,7 +10,7 @@ def obj(name):return json.loads((s.DATA/name).read_bytes())
 def read(name):return pd.read_csv(D/name,float_precision="round_trip")
 def tex(file,text):(T/(file+".tex")).write_text(text+"\n",encoding="utf8")
 def tab(file,title,head,rows,align,group_header=None):
-    lines=[r"\begin{center}\begin{minipage}{\linewidth}\centering",r"\captionof{table}{"+title+"}",r"\small\setlength{\tabcolsep}{4.2pt}",
+    lines=[r"\begin{center}\begin{minipage}{\linewidth}\centering",r"\captionof{table}{"+title+r"}\label{tab:"+file+"}",r"\supptablefont\setlength{\tabcolsep}{4.2pt}",
            r"\begin{tabular}{"+align+"}",r"\toprule"]
     if group_header:
         lines.append(group_header)
@@ -131,7 +131,7 @@ def stats():
 def hardware():
     a=read("latency.csv");system=json.loads((D/"hardware.json").read_bytes());assert len(a)==76
     device_name=lambda x:str(x).replace("_",r"\_").replace("&",r"\&").replace("@","at")
-    tex("sup_hardware_text",f"Latency was measured on an {device_name(system['cpu'])} CPU with one thread and a {device_name(system['gpu'])} GPU using PyTorch {device_name(system['torch'])}. A single zero-valued input has shape $1\\times96\\times25$. Each checkpoint receives 100 warmup calls followed by five blocks of 1,000 forward passes. We synchronize the GPU before and after each timed call. The input and model are already on the measurement device. GRUs use the native backend used during adaptation.")
+    tex("sup_hardware_text",f"Latency in Figure~\\ref{{fig:figS3}} was measured on an {device_name(system['cpu'])} CPU with one thread and a {device_name(system['gpu'])} GPU using PyTorch {device_name(system['torch'])}. A single zero-valued input has shape $1\\times96\\times25$. Each checkpoint receives 100 warmup calls followed by five blocks of 1,000 forward passes. We synchronize the GPU before and after each timed call. The input and model are already on the measurement device. GRUs use the native backend used during adaptation.")
     fig=s.canvas(302);axes=[s.axis(fig,x,49,161,224) for x in (50,278)]
     ids=sorted(a.arch.unique())
     for ax,kind in zip(axes,["cpu","cuda"]):
@@ -155,7 +155,7 @@ def hardware():
                     x=ti[(ti.H==h)&(ti.K==k)&(ti.budget==tier)&(ti.method==method)].iloc[0]
                     line.append(f"{x.mean_seconds:.3f}")
             rows.append(line)
-    tex("sup_time_intro",f"We used VM {vm}, the lowest numbered VM in group D. For each task and budget, we ran one warmup and five timed selections on an otherwise idle GPU. Timing starts with resource filtering and checkpoint loading, with task features already constructed. It includes adaptation, validation, and the final choice. Fixed PT-FT adapts A39 at every budget. At the tight budget its time describes execution of a model that exceeds the operation limit.")
+    tex("sup_time_intro",f"The timings in Table~\\ref{{tab:sup_time}} use VM {vm}, the lowest numbered VM in group D. For each task and budget, we ran one warmup and five timed selections on an otherwise idle GPU. Timing starts with resource filtering and checkpoint loading, with task features already constructed. It includes adaptation, validation, and the final choice. Fixed PT-FT adapts A39 at every budget. At the tight budget its time describes execution of a model that exceeds the operation limit.")
     tab("sup_time","Mean target selection time in seconds over five repetitions.",
         ["$H$","$K$","MSA-DTI","PT-FT","MSA-DTI","PT-FT","MSA-DTI","PT-FT"],rows,"rrrrrrrr",
         group_header=r" & & \multicolumn{2}{c}{Tight} & \multicolumn{2}{c}{Medium} & \multicolumn{2}{c}{Loose}\\\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}")
