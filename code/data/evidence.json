@@ -1,0 +1,32 @@
+{
+  "scope": "Original paired task records with new medium-budget Azure search runs and a Bitbrains preselection ablation. Shared source training is reused.",
+  "bitbrains_roles_disjoint": true,
+  "bitbrains_eval_VMs": 30,
+  "bitbrains_eval_tasks_per_budget": 120,
+  "azure_matched_prefix_and_future_hashes": 120,
+  "azure_matched_subscriptions": 30,
+  "screening_reference": 55,
+  "bank_size": 19,
+  "deployment_reference": 57,
+  "margin": 0.2,
+  "source_sha256": {
+    "task_results.csv": "825154e29a2d09f90e8caa88ffee1167e4697c72a49171bc63b6f40eb12cf29d",
+    "timing.csv": "4c2bd967f4d0b8bec24c3cb5e8706a9e82cca4173051a71874a133ebc7cd5423",
+    "部署逐任务.csv": "6a5eb2ee790ec6fa59a04481f41f23d5a09669fc65e87d5cf6e2a7e073d36c67",
+    "Bitbrains_完整原始结果.tar": "ff83fc426b4f08264a537f1979a698dd6039b7a16dd3db221bee019c2673a938",
+    "verified_task_metrics.csv": "a5605261dd6acd15239f4de53c115a9628b746e143930e1f13be6a77d8a52216",
+    "task_metrics.csv": "8e2bb8df36e2eadaaf2f2014b27b739de8ef3c2b85e9fd9a91f225bdd089872b",
+    "E_逐任务独立复核.csv": "5923a249fdf602f070c9b30ecc12d96e516cd4d715290794fbded7506cf18cd2"
+  },
+  "medium_budget_revision": {
+    "azure_search_archive_sha256": "7e8764e1596e06b5fe268203bdb0acb8756075721b99120fa1b2314b5f488728",
+    "azure_medium_tasks": 360,
+    "preselection_archive_sha256": "d7fc8b56e2c6112374cafb51a38a8a3dfa7475096634eae4832cb997a201f1df",
+    "preselection_tasks": 120,
+    "medium_feasible_before_adaptation": {
+      "full": 17,
+      "without_preselection": 48
+    },
+    "all_errors_include_infeasible_predictions_for_unfiltered_control": true
+  }
+}

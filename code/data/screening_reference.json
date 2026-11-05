@@ -1,0 +1,67 @@
+{
+  "stage": "A",
+  "selection_role": "screening comparator for Stage B",
+  "source_initialization_token": "S50_A55",
+  "architecture_index": 55,
+  "architecture_spec": {
+    "arch_id": 55,
+    "arch_key": "GRU_L1_H16_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 16,
+      "dropout": 0.1
+    }
+  },
+  "balanced_validation_mse": 0.004527144027141302,
+  "vm_count": 20,
+  "task_count": 80,
+  "scores": 5280,
+  "ranking_by_scope": {
+    "all": {
+      "eligible_architectures": 66,
+      "best": "S50_A55",
+      "mse": 0.004527144027141302
+    },
+    "tight": {
+      "eligible_architectures": 26,
+      "best": "S50_A55",
+      "mse": 0.004527144027141302
+    },
+    "medium": {
+      "eligible_architectures": 48,
+      "best": "S50_A55",
+      "mse": 0.004527144027141302
+    },
+    "loose": {
+      "eligible_architectures": 66,
+      "best": "S50_A55",
+      "mse": 0.004527144027141302
+    },
+    "joint": {
+      "eligible_architectures": 26,
+      "best": "S50_A55",
+      "mse": 0.004527144027141302
+    }
+  },
+  "source_checkpoints": {
+    "H1": {
+      "parameters": 2081,
+      "operations": 377888,
+      "path": "native_replay/inputs/checkpoints/H1/A55.pt",
+      "sha256": "a6f59cb25ed3219c5bb00834ecda2c114da7ee906db313535ae310ec87d3ecef"
+    },
+    "H4": {
+      "parameters": 2132,
+      "operations": 377984,
+      "path": "native_replay/inputs/checkpoints/H4/A55.pt",
+      "sha256": "9f06a192313f050783c442b9cdc134857e63280f30acad94ecaa18f6544b32d0"
+    }
+  },
+  "input_sha256": {
+    "protocol": "71f93ce615c2a594ed373d879d1ff480c22579165d14eab8a5aa1673551b312e",
+    "scores": "03dafad92c44f9b1291dc1ebe87f07bb2a943c3955e58bde4aeb01ca416fa67b",
+    "architecture_definitions": "c986e62ed0e9f40805d1f7662d0024dc49a00e77aaaf0968be12ce0adb03cc25"
+  },
+  "scope": "Validation on reused historical A VMs. No Stage B/C/D/E outcome is inferred."
+}

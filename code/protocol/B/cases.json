@@ -1,0 +1,4565 @@
+{
+  "status": "B_COHORT_READY",
+  "cases": [
+    {
+      "case_id": "fastStorage:22|H1|K10",
+      "slug": "vm22_H1_K10",
+      "VM": "fastStorage:22",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/22.csv",
+      "member_sha256": "ab479baa300ef32854aea6f8d98dfdb3b35351c723ec8cdeaebc3fab0ab879e5",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 1504434201,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "45778296d458578b678a542bc58cbb095588244ac6a65474b62d282490bd9193",
+      "check_sha256": "0c84dc626996fa87e3544b2b9e2a7506a6365f1a3b1d3dd8aa21d7725acafd89",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:22|H1|K20",
+      "slug": "vm22_H1_K20",
+      "VM": "fastStorage:22",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/22.csv",
+      "member_sha256": "ab479baa300ef32854aea6f8d98dfdb3b35351c723ec8cdeaebc3fab0ab879e5",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 1504434731,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "5a0044ab5d5519c9c6e04bc26ce27f7f1d893a53f28a91a2dd22aa6b2736f824",
+      "check_sha256": "669a18c400ae09a6ce115326c88b3a383505c5fdb85ce5232f7495d84ad518b9",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:22|H4|K10",
+      "slug": "vm22_H4_K10",
+      "VM": "fastStorage:22",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/22.csv",
+      "member_sha256": "ab479baa300ef32854aea6f8d98dfdb3b35351c723ec8cdeaebc3fab0ab879e5",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 1504434312,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "2f006fbfc36221019d367129ca557cfbdb2d8feac24d49b23d231d36bf186d30",
+      "check_sha256": "58d5af4b520a6e31fcc45bf1bcf19f30be895f3e859feabea9b4a466e7f5474b",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:22|H4|K20",
+      "slug": "vm22_H4_K20",
+      "VM": "fastStorage:22",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/22.csv",
+      "member_sha256": "ab479baa300ef32854aea6f8d98dfdb3b35351c723ec8cdeaebc3fab0ab879e5",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 1504434842,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "92f37b1bcf4ef852ffeb686fc5a335a6788bc998e9f17b7221f5186e681228e2",
+      "check_sha256": "7ffeaa365cf0e32f567c31f590b64c756f8353a2bbb5acf25c2471d43dda834a",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:71|H1|K10",
+      "slug": "vm71_H1_K10",
+      "VM": "fastStorage:71",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/71.csv",
+      "member_sha256": "d431eee61269fa89004c159dd6f16defc63ec51cf4590e856713fc4fd2de69e6",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 792964798,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "1e89d8b4eadce9736dcd34d4f2a38c3fc9ad240ac360ee719361b232a0d5d668",
+      "check_sha256": "984d3af3f2c9eb1192fc9cb1873b8ac3460be6ecb147ff4603e1bf81567cac84",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:71|H1|K20",
+      "slug": "vm71_H1_K20",
+      "VM": "fastStorage:71",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/71.csv",
+      "member_sha256": "d431eee61269fa89004c159dd6f16defc63ec51cf4590e856713fc4fd2de69e6",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 792965328,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "db8f3eea2d8144cddd23815ee3e554918289d1077f28c599c832b94be2a404c2",
+      "check_sha256": "293e1a95f9c255914ae50be1d8576bfbcf1f2e15348faaa5c3716a4a71c914b7",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:71|H4|K10",
+      "slug": "vm71_H4_K10",
+      "VM": "fastStorage:71",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/71.csv",
+      "member_sha256": "d431eee61269fa89004c159dd6f16defc63ec51cf4590e856713fc4fd2de69e6",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 792964909,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "d8b46ed57a3a9e5ecbfc268eacef51ed696e6789cd3513e62d7c983f767b726d",
+      "check_sha256": "0d85c15694390e5fd7084cb6e3d74373235e99fdf3a04f54c45c852f7452fd78",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:71|H4|K20",
+      "slug": "vm71_H4_K20",
+      "VM": "fastStorage:71",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/71.csv",
+      "member_sha256": "d431eee61269fa89004c159dd6f16defc63ec51cf4590e856713fc4fd2de69e6",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 792965439,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "414c5fad7b0914329d8148e79e4846e7158bb8ff27f2b115036fc223529dad00",
+      "check_sha256": "b002ae8696b5681026e86cd755773be8201de2a554ca8d4a5e7a9d1194abed7a",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:127|H1|K10",
+      "slug": "vm127_H1_K10",
+      "VM": "fastStorage:127",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/127.csv",
+      "member_sha256": "da2d4149f01d6ca07c91a46bd94043c9135a587c4779267462f3617cb7e43ff6",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 755168588,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "be4a005999d2119c26958b38e6c49abfd229a51785d012a306cdfb8b39734379",
+      "check_sha256": "fe9bbb0a1f86b840acd2d53a6acbec67905d6178cc5805ece6ffacb5eafa2f35",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:127|H1|K20",
+      "slug": "vm127_H1_K20",
+      "VM": "fastStorage:127",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/127.csv",
+      "member_sha256": "da2d4149f01d6ca07c91a46bd94043c9135a587c4779267462f3617cb7e43ff6",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 755169118,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "83921abc11e62421266afa7778d6e02df1a4cd17b5e443dc89f1389f66f6e173",
+      "check_sha256": "0181dd7e4add7b74999d26682a54259d1b4b49dbe6af3e0a7660372db89f9cc0",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:127|H4|K10",
+      "slug": "vm127_H4_K10",
+      "VM": "fastStorage:127",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/127.csv",
+      "member_sha256": "da2d4149f01d6ca07c91a46bd94043c9135a587c4779267462f3617cb7e43ff6",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 755168699,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "bd39db1dd6bacb05e26bf2c8625103239270d4c06d5f26205f19affc57337682",
+      "check_sha256": "825038d27bda325eb309ef812cc3d7418f62e872a311d564212cefea8bb3bfde",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:127|H4|K20",
+      "slug": "vm127_H4_K20",
+      "VM": "fastStorage:127",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/127.csv",
+      "member_sha256": "da2d4149f01d6ca07c91a46bd94043c9135a587c4779267462f3617cb7e43ff6",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 755169229,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "a1efbb542c1137d1a0d6f9159de74bc3cb4f29c7881ea1d0d098b97a2ebd015d",
+      "check_sha256": "85748d8fb94815542a1a56658ea41384ab851c886dd9d79d96723f1731c5459b",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:147|H1|K10",
+      "slug": "vm147_H1_K10",
+      "VM": "fastStorage:147",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/147.csv",
+      "member_sha256": "8dec23cdb44688cdcc7b717b39b7bbdb6f49156ae09fe64b809063017abf2f8d",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2951945746,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "122201354bbf002548d955f174e9176b74bd1fca009ca81b5596b994e45c31b1",
+      "check_sha256": "f675cf9f0b039da6b816d74e6fe2bab3b0c6b2634e5cd409a9c874d998ff23b8",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:147|H1|K20",
+      "slug": "vm147_H1_K20",
+      "VM": "fastStorage:147",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/147.csv",
+      "member_sha256": "8dec23cdb44688cdcc7b717b39b7bbdb6f49156ae09fe64b809063017abf2f8d",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2951946276,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "d0c172334093289d3923476f3b1e97f3d7c6bd3c131e4d3b27e78dc5fc4bb253",
+      "check_sha256": "17b23d7b4879e95ca6df0ffbf31faf7f45db0487cda1999fc485697666bea855",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:147|H4|K10",
+      "slug": "vm147_H4_K10",
+      "VM": "fastStorage:147",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/147.csv",
+      "member_sha256": "8dec23cdb44688cdcc7b717b39b7bbdb6f49156ae09fe64b809063017abf2f8d",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2951945857,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "1cea205eb70585c13a0bb2e347c2081ef7fc3f453d1e7a6b9415a51c5e16c37e",
+      "check_sha256": "1136dc666f36dfa497322e1f5a600293b32221180b4aa34e81422b850a388f58",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:147|H4|K20",
+      "slug": "vm147_H4_K20",
+      "VM": "fastStorage:147",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/147.csv",
+      "member_sha256": "8dec23cdb44688cdcc7b717b39b7bbdb6f49156ae09fe64b809063017abf2f8d",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2951946387,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "ef034b73eefb5ec253b987b298ed42aeb1ec453243469947f745d95ef355afec",
+      "check_sha256": "b1406979edf9ec25ffd277b9b4e8609a8809829fa605c6bee3d5f75b3afcf306",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:249|H1|K10",
+      "slug": "vm249_H1_K10",
+      "VM": "fastStorage:249",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/249.csv",
+      "member_sha256": "259113d47645052cdb4bcd8084369bac53161f9b81071526370f5cb19260b895",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2629793596,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "6fd38f21b7c85bf58b99ba54ceb82398bacfa20c2acfa30a0207f20d6530d450",
+      "check_sha256": "60fd6cdf50d438bd7f9d0582f25413ee12bb2c319780f5fe987562bb90523580",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:249|H1|K20",
+      "slug": "vm249_H1_K20",
+      "VM": "fastStorage:249",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/249.csv",
+      "member_sha256": "259113d47645052cdb4bcd8084369bac53161f9b81071526370f5cb19260b895",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2629794126,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "eaeb7502f583af1676c3d891278d594ec6c6ffc031aea03b0ba74e50ae934fe4",
+      "check_sha256": "adb2b37e5855d2885976eef5d43cd94945972631a371cfff19a8aba40af1292c",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:249|H4|K10",
+      "slug": "vm249_H4_K10",
+      "VM": "fastStorage:249",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/249.csv",
+      "member_sha256": "259113d47645052cdb4bcd8084369bac53161f9b81071526370f5cb19260b895",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2629793707,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "587de6b43555a7bb103fc04705f07fc387984e94418680f8ff82880724f443ec",
+      "check_sha256": "d7692fbb501f19c93d559b3ec2312cecdd2954db927727618795d9adf181ec23",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:249|H4|K20",
+      "slug": "vm249_H4_K20",
+      "VM": "fastStorage:249",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/249.csv",
+      "member_sha256": "259113d47645052cdb4bcd8084369bac53161f9b81071526370f5cb19260b895",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2629794237,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "04131155d7daf8cf3e9b8dea355067ca9bdcdfc424cb6f58647891da98f976a1",
+      "check_sha256": "ea5163073a461f17bbab8ffd2e8298a91809897ac401cf871dc158aa5c794b21",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:292|H1|K10",
+      "slug": "vm292_H1_K10",
+      "VM": "fastStorage:292",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/292.csv",
+      "member_sha256": "3bf6b63069c02cdf0c64ec4a457c619ba38d4f22f1e1b6e8b9f3b42be9e9823a",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2379327198,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "a1e7586842b8056fa952ec0086d14c9619cbfcedef180fa1e1a24db9f533632b",
+      "check_sha256": "0a31bd4eacf22658506b8a3b4c716b0e8782bc96b9cbb320230d97121d836dcc",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:292|H1|K20",
+      "slug": "vm292_H1_K20",
+      "VM": "fastStorage:292",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/292.csv",
+      "member_sha256": "3bf6b63069c02cdf0c64ec4a457c619ba38d4f22f1e1b6e8b9f3b42be9e9823a",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2379327728,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "6268367ee290dd61f2256eae176739877c7a9b9174d6773e0a097aec643cbe49",
+      "check_sha256": "8d3dd2a18d327721cb74a8794c4a853c3fb38f5bb364d58b1783f6ab2e040bd8",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:292|H4|K10",
+      "slug": "vm292_H4_K10",
+      "VM": "fastStorage:292",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/292.csv",
+      "member_sha256": "3bf6b63069c02cdf0c64ec4a457c619ba38d4f22f1e1b6e8b9f3b42be9e9823a",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2379327309,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "8bfaa499164f864ab1e9df6991e2ceca815be3ceaee9b3b0b484df153a3886f9",
+      "check_sha256": "d3dd791a923ae546cbab822080895f3b106d11ac558d838252e35b0bb524d3a5",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:292|H4|K20",
+      "slug": "vm292_H4_K20",
+      "VM": "fastStorage:292",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/292.csv",
+      "member_sha256": "3bf6b63069c02cdf0c64ec4a457c619ba38d4f22f1e1b6e8b9f3b42be9e9823a",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2379327839,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "2f73d37f0e0812911df1228287637210af0b5461c2b4d59d2d5104e028c182fb",
+      "check_sha256": "d6254890990c0d96af9a0a687f9b88fe7043ff452246a0235b1f413a620bb9ac",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:458|H1|K10",
+      "slug": "vm458_H1_K10",
+      "VM": "fastStorage:458",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/458.csv",
+      "member_sha256": "69a4911ef6d0bc54db55c52a7fc927992b8e7874ecd681c449f93a03aa90607b",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2079826438,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "49f90af0393eb04db19b9f6944e4365e8d0a7639f4554589aafa2974b6b9fc8d",
+      "check_sha256": "d10a2bf48d13fa19e20cad88e4bd5f290434735aee155a131d182c43487dfb81",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:458|H1|K20",
+      "slug": "vm458_H1_K20",
+      "VM": "fastStorage:458",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/458.csv",
+      "member_sha256": "69a4911ef6d0bc54db55c52a7fc927992b8e7874ecd681c449f93a03aa90607b",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2079826968,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "684210d210c3afae1fb0fee8069c66b6e3226fb64bf7e74a11ced3f3c82d8717",
+      "check_sha256": "190df56c66830dfac60c3728fbad138e3d9c918522e56fbc66cfcb389e2cd1e5",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:458|H4|K10",
+      "slug": "vm458_H4_K10",
+      "VM": "fastStorage:458",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/458.csv",
+      "member_sha256": "69a4911ef6d0bc54db55c52a7fc927992b8e7874ecd681c449f93a03aa90607b",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2079826549,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "2fcd039fbf3fceb532ecf75aaec1471d81a804e617f66ea824c0d67361e3670a",
+      "check_sha256": "f0ca9fa0e37745c98bd1ca4f0e7572f303c1dd3081b6f1af93103dfb29ddaee1",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:458|H4|K20",
+      "slug": "vm458_H4_K20",
+      "VM": "fastStorage:458",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/458.csv",
+      "member_sha256": "69a4911ef6d0bc54db55c52a7fc927992b8e7874ecd681c449f93a03aa90607b",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2079827079,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "052e88df698ad84182e68f9efa4008474322edb75391284ea550a37fad3cd2d0",
+      "check_sha256": "e104b97f92625a3029a8674f2eeecae3921d1063f890e5cb2d99636fbeaa434e",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:530|H1|K10",
+      "slug": "vm530_H1_K10",
+      "VM": "fastStorage:530",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/530.csv",
+      "member_sha256": "50431f48d17a454b2925c90a08c2b724fbf6fc3cd88eabb1e77eed89641b2177",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 1452134188,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "2711d5d287d319ef5436085f16ad655ef642955c0515da0b9736a619c9882a0c",
+      "check_sha256": "adee50db8f234e1a6eaebf87b4b8b715e99fbe63db8e98f9b7780a86a1bc6f40",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:530|H1|K20",
+      "slug": "vm530_H1_K20",
+      "VM": "fastStorage:530",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/530.csv",
+      "member_sha256": "50431f48d17a454b2925c90a08c2b724fbf6fc3cd88eabb1e77eed89641b2177",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 1452134718,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "1462e40ca1bb8302d2012148ecea63fea6c7a7dd4f4b3908599c553e1ce2fffd",
+      "check_sha256": "e0d89a19e4ed14c32737205b2d8edb12936b47e656e07c3aa66b660ac0bcff05",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:530|H4|K10",
+      "slug": "vm530_H4_K10",
+      "VM": "fastStorage:530",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/530.csv",
+      "member_sha256": "50431f48d17a454b2925c90a08c2b724fbf6fc3cd88eabb1e77eed89641b2177",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 1452134299,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "4f65f5b861133b4cd88c5932a2284ab0442e5426a2118a5fe2c34869c8786259",
+      "check_sha256": "c413d5b01b264e98f71bfa21fad9d131dd3de5f17f48c48be4ad426dccb27834",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:530|H4|K20",
+      "slug": "vm530_H4_K20",
+      "VM": "fastStorage:530",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/530.csv",
+      "member_sha256": "50431f48d17a454b2925c90a08c2b724fbf6fc3cd88eabb1e77eed89641b2177",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 1452134829,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "b98016964b2fae8ba231a2784ab6067093d88443a9eb3f05f1d705733d7fa130",
+      "check_sha256": "fcc630febca1d6847fcaf721ffe6ad575342d229444787621b612ae4d4d686b9",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:535|H1|K10",
+      "slug": "vm535_H1_K10",
+      "VM": "fastStorage:535",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/535.csv",
+      "member_sha256": "3e6c70ebcdc25fc554fd8cfd02424265edc03fde55f7cbe5074ff016619e285c",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 640800979,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "d9748961311d6ec411713d604138a77bd2d2486e3c9b10cfae4e338f0a16cfc8",
+      "check_sha256": "a10cc0a69b39a83b3443445e4d5fc3ceeb8d8bdf5c75b86800df7e0b5e717df0",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:535|H1|K20",
+      "slug": "vm535_H1_K20",
+      "VM": "fastStorage:535",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/535.csv",
+      "member_sha256": "3e6c70ebcdc25fc554fd8cfd02424265edc03fde55f7cbe5074ff016619e285c",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 640801509,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "797b2a3127b23cc69d1e1bd4b653b01c798a817ace0092dd62f4b0e8c99b56ce",
+      "check_sha256": "ca18b6f11bfac434e743673da68bf6fbf60e32c94fbd509775a398dd7bb608d8",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:535|H4|K10",
+      "slug": "vm535_H4_K10",
+      "VM": "fastStorage:535",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/535.csv",
+      "member_sha256": "3e6c70ebcdc25fc554fd8cfd02424265edc03fde55f7cbe5074ff016619e285c",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 640801090,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "387d8b8028f5fe80c533a76d90c64a873835f0282c6d39b8233e3fb3643841e4",
+      "check_sha256": "2ffc554984359592de24e8d66e8232e9fa607eb2892568800776b55a679fc4c3",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:535|H4|K20",
+      "slug": "vm535_H4_K20",
+      "VM": "fastStorage:535",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/535.csv",
+      "member_sha256": "3e6c70ebcdc25fc554fd8cfd02424265edc03fde55f7cbe5074ff016619e285c",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 640801620,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "c6a5539f5fb34a6e18141486a9c2b0fc93e1fe5ee03e7b0a5c43d980bb99dba6",
+      "check_sha256": "af5d255981bd6862862215d3085c348fb4417b0347cff1ce5f772d4a2dbd0e70",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:733|H1|K10",
+      "slug": "vm733_H1_K10",
+      "VM": "fastStorage:733",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/733.csv",
+      "member_sha256": "b391227ba83d5f3310e3d8796fa2872f2bed516d7d49a6041a83de1449dff835",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2627806400,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "5fe7f74abe4096061f7b59f83fedc0de441482ea1802d01bf890e2506eb8778a",
+      "check_sha256": "9f297106471d033001fc4f973eb5ebb9b7bb5fac9001c050bb2a7505271f5785",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:733|H1|K20",
+      "slug": "vm733_H1_K20",
+      "VM": "fastStorage:733",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/733.csv",
+      "member_sha256": "b391227ba83d5f3310e3d8796fa2872f2bed516d7d49a6041a83de1449dff835",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2627806930,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "2971dfc49c27506c4b98f1ac903a975a5ba0d696e44b930832f4e5ab6ac53e1d",
+      "check_sha256": "3b6a4c7497c56b838a25ec2d159abe9478293ae597c396f6c4e8c01c864fb1ff",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:733|H4|K10",
+      "slug": "vm733_H4_K10",
+      "VM": "fastStorage:733",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/733.csv",
+      "member_sha256": "b391227ba83d5f3310e3d8796fa2872f2bed516d7d49a6041a83de1449dff835",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2627806511,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "9d5516c1a2cfe8850af97c1db14566abe95c243bd1e5ff75dc8b228af545e432",
+      "check_sha256": "1bb932ffd6fac4661ebd003fa0511de0c9c551c8ec0a0e398457014fec9cee45",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:733|H4|K20",
+      "slug": "vm733_H4_K20",
+      "VM": "fastStorage:733",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/733.csv",
+      "member_sha256": "b391227ba83d5f3310e3d8796fa2872f2bed516d7d49a6041a83de1449dff835",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2627807041,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "b185716023e2fb7abf9ce70cfa1f8c8cebdfb3bea42098048c9ec456e3fdfabb",
+      "check_sha256": "529e5b9407c5604a41825b4df5b097504feac86afcfc20d035f672ea89c31781",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:895|H1|K10",
+      "slug": "vm895_H1_K10",
+      "VM": "fastStorage:895",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/895.csv",
+      "member_sha256": "fb0d583883b389014f8ffa145d4323be1b3154c6e9626c6e4bb1578cf53753f9",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3660469321,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "5e8531532516614b11ee97ddfcbc7533de7c52e48c00384e349e735b58fe7528",
+      "check_sha256": "d5dbb80a43e10b7c21b35c3e6260e05020b76f591b2f54ea5591d19313f1bea6",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:895|H1|K20",
+      "slug": "vm895_H1_K20",
+      "VM": "fastStorage:895",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/895.csv",
+      "member_sha256": "fb0d583883b389014f8ffa145d4323be1b3154c6e9626c6e4bb1578cf53753f9",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 3660469851,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "279e073ee747214f5e3222dae24a8cc8f5319f5a0417da80d7e6779d55552a3f",
+      "check_sha256": "1bf4dc32ba5a9d85d9b8641a5763e7d309f25e674227e2c0fc1b89f45ba97c36",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:895|H4|K10",
+      "slug": "vm895_H4_K10",
+      "VM": "fastStorage:895",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/895.csv",
+      "member_sha256": "fb0d583883b389014f8ffa145d4323be1b3154c6e9626c6e4bb1578cf53753f9",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3660469432,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "e5496e4198f7532a83e91d5f024f4b5fc2c2e06dfb913f59d25a38306e246c9f",
+      "check_sha256": "c193516c0f6dda0bde5c159be56e84f0edb3c4332c29a0420cf1d3d92ac64a2d",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:895|H4|K20",
+      "slug": "vm895_H4_K20",
+      "VM": "fastStorage:895",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/895.csv",
+      "member_sha256": "fb0d583883b389014f8ffa145d4323be1b3154c6e9626c6e4bb1578cf53753f9",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 3660469962,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "19f807b00a10f6279de35a3ce5fc93645ba8e95e579ae2bd9a36a68e04a2b3a6",
+      "check_sha256": "f6b7badb503e98b250c38ed69d79bcfcba3188c025b629a7d5a18d184f5656de",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:968|H1|K10",
+      "slug": "vm968_H1_K10",
+      "VM": "fastStorage:968",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 287,
+      "raw_member": "fastStorage/2013-8/968.csv",
+      "member_sha256": "882b22a59b36521d415b7faa56f8fb8df35eb7ecc91449021c64789479f5a71a",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3405145669,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "8d074e4626f2a6abde8bb70443097412df8997aabc76fb2fc30fb741f3a0ecf7",
+      "check_sha256": "6cb901728c0f6370559ae2d9466ed98675a406c4f5947c2c2ace74d008d44b23",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:968|H1|K20",
+      "slug": "vm968_H1_K20",
+      "VM": "fastStorage:968",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 287,
+      "raw_member": "fastStorage/2013-8/968.csv",
+      "member_sha256": "882b22a59b36521d415b7faa56f8fb8df35eb7ecc91449021c64789479f5a71a",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 3405146199,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "24e26993c97ac5afd784925caf32530e09979188a21fe6fa0c62219f0c102ad7",
+      "check_sha256": "def4f22c592199d292306f4f8610abe49a676c2c6d8d52643864d96e413617b7",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:968|H4|K10",
+      "slug": "vm968_H4_K10",
+      "VM": "fastStorage:968",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 287,
+      "raw_member": "fastStorage/2013-8/968.csv",
+      "member_sha256": "882b22a59b36521d415b7faa56f8fb8df35eb7ecc91449021c64789479f5a71a",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3405145780,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "1e0f7ba1bc6038dcbc223ea939aa0e47ebb3faf704177d812ed2911175614cc2",
+      "check_sha256": "1cc2be645688fccef8a90ec7638200168a54835ac5d4cb30e7d4487f524fee50",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:968|H4|K20",
+      "slug": "vm968_H4_K20",
+      "VM": "fastStorage:968",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 287,
+      "raw_member": "fastStorage/2013-8/968.csv",
+      "member_sha256": "882b22a59b36521d415b7faa56f8fb8df35eb7ecc91449021c64789479f5a71a",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 3405146310,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "8213fe1352439bd747f97720d1ee069d71b8eaf1f8fe36ddb818d12709039e0c",
+      "check_sha256": "5d683dec761df6ea1b124fee69f7849dc56fd1c8c2f44994de08c67641e63c47",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1015|H1|K10",
+      "slug": "vm1015_H1_K10",
+      "VM": "fastStorage:1015",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1015.csv",
+      "member_sha256": "8fd6ddb609c1a1a2e6d1eacacfbea70c9120da81ca9be3e9c6c647d26e1e7bdc",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2821562791,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "0648cb0bd1d7de9b15a4eaf6357069029ce27481279d9e303c5ee6b82aa0d68a",
+      "check_sha256": "7ee9a9e19c7367ce0b51548dbcb06983b698520d9b86179f5c23def5da7e9589",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1015|H1|K20",
+      "slug": "vm1015_H1_K20",
+      "VM": "fastStorage:1015",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1015.csv",
+      "member_sha256": "8fd6ddb609c1a1a2e6d1eacacfbea70c9120da81ca9be3e9c6c647d26e1e7bdc",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2821563321,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "5603d700c1eec9de33c707b95b8341c03405ea0a83d8e12d5046bec3e8f8800f",
+      "check_sha256": "52b958ad0fcd88adcef9ea902bf5dcb85abd4b15cf5c9ee177602fb2c741907b",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1015|H4|K10",
+      "slug": "vm1015_H4_K10",
+      "VM": "fastStorage:1015",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1015.csv",
+      "member_sha256": "8fd6ddb609c1a1a2e6d1eacacfbea70c9120da81ca9be3e9c6c647d26e1e7bdc",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2821562902,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "3b9a620617f2b7c9096a3dd3f39d7038fd40d779aecd96050e53d5a2ed6670e6",
+      "check_sha256": "4c056adfe3ebe347257edb79ec127649dc3aec456cb991e186e00c7bd308528e",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1015|H4|K20",
+      "slug": "vm1015_H4_K20",
+      "VM": "fastStorage:1015",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1015.csv",
+      "member_sha256": "8fd6ddb609c1a1a2e6d1eacacfbea70c9120da81ca9be3e9c6c647d26e1e7bdc",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2821563432,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "04399f5d4a514202564361c42d220566647cbf64867cc57afbd5d1085e41b1a9",
+      "check_sha256": "4acbb73a5e73528d61d610a77548495f82ef5683d84ba63cada2a505a4c3b18a",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1041|H1|K10",
+      "slug": "vm1041_H1_K10",
+      "VM": "fastStorage:1041",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1041.csv",
+      "member_sha256": "51cfd62c655e28cbafbf1afa300a27111419933590602eff6a02d8ebcdc0c3fe",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3567724004,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "4f7bc7c2b20b18375a1006b469cf80e41ca520b311f2b6bb315ab7743021b553",
+      "check_sha256": "e1e61ed929321c6dc1c4f6c7c46e94da92a578a84e030984fca264a0e16fe8d9",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1041|H1|K20",
+      "slug": "vm1041_H1_K20",
+      "VM": "fastStorage:1041",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1041.csv",
+      "member_sha256": "51cfd62c655e28cbafbf1afa300a27111419933590602eff6a02d8ebcdc0c3fe",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 3567724534,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "2317f224b677a465d4612e5fe178d7add6e73f3f9b235c9f35d4b7f4059b5289",
+      "check_sha256": "a550aaf285d2f396fc2f609999ecf47a890a31c088e468ad38ebb6ab2917ecab",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1041|H4|K10",
+      "slug": "vm1041_H4_K10",
+      "VM": "fastStorage:1041",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1041.csv",
+      "member_sha256": "51cfd62c655e28cbafbf1afa300a27111419933590602eff6a02d8ebcdc0c3fe",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3567724115,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "c35936f2b61f5da74efbee58ddd0078c62af73563e312a8608dd05bceaa314a6",
+      "check_sha256": "b1e10fb1954388ea343d1d398007123010d6c2a6526f41967834d096293fed96",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1041|H4|K20",
+      "slug": "vm1041_H4_K20",
+      "VM": "fastStorage:1041",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1041.csv",
+      "member_sha256": "51cfd62c655e28cbafbf1afa300a27111419933590602eff6a02d8ebcdc0c3fe",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 3567724645,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "619821f01639cb24f07ea0ca6f60084cb28b62072e2e58bf719b4c873087d49d",
+      "check_sha256": "23479922d95670ce3c45629c3e0a3b840068fc4f59ebe1a5d88da424abd5cf10",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1046|H1|K10",
+      "slug": "vm1046_H1_K10",
+      "VM": "fastStorage:1046",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1046.csv",
+      "member_sha256": "1a09523df8c2c566ce99164fe0aa1043aa12a5274bffc9d0c5299f0d0ff48afd",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3243799422,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "84bf46b4917a535f4b06747c6fb4d46a6e551ff551ce612207a2ebbe00177b24",
+      "check_sha256": "27b05b33a252412ba23ff81653ca48592c35ad2cbcbafc441a38e103d7c05df0",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1046|H1|K20",
+      "slug": "vm1046_H1_K20",
+      "VM": "fastStorage:1046",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1046.csv",
+      "member_sha256": "1a09523df8c2c566ce99164fe0aa1043aa12a5274bffc9d0c5299f0d0ff48afd",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 3243799952,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "e68981f27e9152306de295781662b3b8224a59820a464f2988d150583b5f1f01",
+      "check_sha256": "1120a2bdafd3a183da87a8366204f1b0c47d5bf1a7219baadc5ca502abbe670c",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1046|H4|K10",
+      "slug": "vm1046_H4_K10",
+      "VM": "fastStorage:1046",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1046.csv",
+      "member_sha256": "1a09523df8c2c566ce99164fe0aa1043aa12a5274bffc9d0c5299f0d0ff48afd",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3243799533,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "aecc40e50d5a74b945d5c51ed3001470dbaef8aa5c6ce89cae312c26d7e6356b",
+      "check_sha256": "78736bcc1586d56e6d60bba071818352638642bdb20917fc669cb368b51031e1",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1046|H4|K20",
+      "slug": "vm1046_H4_K20",
+      "VM": "fastStorage:1046",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1046.csv",
+      "member_sha256": "1a09523df8c2c566ce99164fe0aa1043aa12a5274bffc9d0c5299f0d0ff48afd",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 3243800063,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "135807d16b97aca0a3b18fcceb56cc3e0cc2ef110015154bfd1fe4ef1fa72341",
+      "check_sha256": "2c4d8a6ee257f3c6ee1097f914acb02e9632d94ed50d9d16cc4a01c63f4fb299",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1149|H1|K10",
+      "slug": "vm1149_H1_K10",
+      "VM": "fastStorage:1149",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1149.csv",
+      "member_sha256": "9e5b3452b4c84607d28547d12bb66bd8d9de50099617e7e4b0d2ff8d2e13f277",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2345632994,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "1f15e7f2fa9e072ffc44863fb0270d6eef94e7992b59dfd3ceee7d412f9da17c",
+      "check_sha256": "c03ea43bfa57bc796c8a05443473c54327ce786b9a2a43fdb09a3c90695c5122",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1149|H1|K20",
+      "slug": "vm1149_H1_K20",
+      "VM": "fastStorage:1149",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1149.csv",
+      "member_sha256": "9e5b3452b4c84607d28547d12bb66bd8d9de50099617e7e4b0d2ff8d2e13f277",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2345633524,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "9cdb57e0c7bb9a7be2382e3ef426f64156c6a28a5c536bbb79cb5b61df643ca1",
+      "check_sha256": "bd71c28f0a40f0b8370f599f09826eaf77e2ef5e164367937ca6672bbbf6441b",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1149|H4|K10",
+      "slug": "vm1149_H4_K10",
+      "VM": "fastStorage:1149",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1149.csv",
+      "member_sha256": "9e5b3452b4c84607d28547d12bb66bd8d9de50099617e7e4b0d2ff8d2e13f277",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2345633105,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "80f8d685b2610eea93d1b66050434e522e1a631d96ae3f1e6d59be3a35792c3c",
+      "check_sha256": "086b2bf2c73a9f5a99d93d6fb720c12d200e240b014b375960083e2b2dec9fb7",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1149|H4|K20",
+      "slug": "vm1149_H4_K20",
+      "VM": "fastStorage:1149",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1149.csv",
+      "member_sha256": "9e5b3452b4c84607d28547d12bb66bd8d9de50099617e7e4b0d2ff8d2e13f277",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2345633635,
+      "historical_role": "calibration",
+      "tier": "medium",
+      "saved_budget_tier": "medium",
+      "parameter_cap": 100000,
+      "operation_cap": 5000000,
+      "prefix_sha256": "95a365d8cac978145b78ac3194d53015ffdef960346aef7802041ee721e5c4ab",
+      "check_sha256": "b572901138fa84f1c4f9e796ab6632f9f8eec5f13928108ea361f1871de29a76",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1171|H1|K10",
+      "slug": "vm1171_H1_K10",
+      "VM": "fastStorage:1171",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1171.csv",
+      "member_sha256": "7dc9eb7f45cb13e833d070d08a4dc91630b59218027efcfff49315410ba293bc",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2722658091,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "590eafac8cd83fb974c1c7d4f7c336afc3e6638c0cdc5d14f02b6d94f5d86443",
+      "check_sha256": "f882ad8c687309558cf1cbede8e5bc943f8345be89292282117ee887e66287a2",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1171|H1|K20",
+      "slug": "vm1171_H1_K20",
+      "VM": "fastStorage:1171",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1171.csv",
+      "member_sha256": "7dc9eb7f45cb13e833d070d08a4dc91630b59218027efcfff49315410ba293bc",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2722658621,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "f6a826273c6affe382b629ed3e41be3807a14d73e9c099d75272b3e9a5af60de",
+      "check_sha256": "b64b793f48812f97e741f5822e73d1efab6fcc2edfd990bc2d59de66639e5519",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1171|H4|K10",
+      "slug": "vm1171_H4_K10",
+      "VM": "fastStorage:1171",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1171.csv",
+      "member_sha256": "7dc9eb7f45cb13e833d070d08a4dc91630b59218027efcfff49315410ba293bc",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2722658202,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "1d9f7ae589d6dd82c2db112b032ba4b3ce78474d71623491f0c2e3181350726c",
+      "check_sha256": "791a80680014fad602bf717cdbc7aca18ae4cde4249b2e95b96f7a939e207dc7",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1171|H4|K20",
+      "slug": "vm1171_H4_K20",
+      "VM": "fastStorage:1171",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1171.csv",
+      "member_sha256": "7dc9eb7f45cb13e833d070d08a4dc91630b59218027efcfff49315410ba293bc",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2722658732,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "f86530375dff84d2565d606bdfa5d7f564ef001fc6ec4be5f95d8c6c4b120b93",
+      "check_sha256": "d650fb4dbdec150b6627db2fb4de29b260e8e9d146d8a52f1f930dcce8212925",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1172|H1|K10",
+      "slug": "vm1172_H1_K10",
+      "VM": "fastStorage:1172",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1172.csv",
+      "member_sha256": "fa5b94d3fe890d452314ad7c362edf0cb2d7c3ee887c5216db3fc1a5ffe4ede5",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 817523375,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "5afadcf67710d2d55498322d028a3a03488f87cbf914fde2b2a5645cf4fa31c3",
+      "check_sha256": "442670220355050cd13f65089bd601fe9afd05bd8350ecd0957ef26b3f775f7f",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1172|H1|K20",
+      "slug": "vm1172_H1_K20",
+      "VM": "fastStorage:1172",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1172.csv",
+      "member_sha256": "fa5b94d3fe890d452314ad7c362edf0cb2d7c3ee887c5216db3fc1a5ffe4ede5",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 817523905,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "a8e2c2fe4a4eb0313778520404b39f21be313042fb2c8f4389786f60d27c7ebb",
+      "check_sha256": "c238eda67b013998705a3f8792fbd04ced92f462092aed9394088c0926e79159",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1172|H4|K10",
+      "slug": "vm1172_H4_K10",
+      "VM": "fastStorage:1172",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1172.csv",
+      "member_sha256": "fa5b94d3fe890d452314ad7c362edf0cb2d7c3ee887c5216db3fc1a5ffe4ede5",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 817523486,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "72c23b80db9b19913f2e2a626e92ccc666f635a3c0098b8a88dd3c19c2d6e8a3",
+      "check_sha256": "44836abf3d4b431806312ce617271b67561cbeb416fa87d05592e31ddf578b1b",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1172|H4|K20",
+      "slug": "vm1172_H4_K20",
+      "VM": "fastStorage:1172",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1172.csv",
+      "member_sha256": "fa5b94d3fe890d452314ad7c362edf0cb2d7c3ee887c5216db3fc1a5ffe4ede5",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 817524016,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "3b360b2c07f07df99021fdc00c72c033cc3a161fa8d50014cdaa358cd1a0b525",
+      "check_sha256": "568ed312f5ef3a8f09f7503fda79165ff9e705e626ffc93f07c54486ff28052c",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1204|H1|K10",
+      "slug": "vm1204_H1_K10",
+      "VM": "fastStorage:1204",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1204.csv",
+      "member_sha256": "615ac21b42876bb61b30f0ecce8d0193148dac46d736100e07f8fbf312f64a40",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3376505562,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "161fb3a3a83e08bffc0063c8a26e7745468cfde1ce0a8b09d25461e9c2312584",
+      "check_sha256": "4be71fbe09b17b05eee385b2dda9386a79d3e591114c48251b7018aaa8ea43ce",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1204|H1|K20",
+      "slug": "vm1204_H1_K20",
+      "VM": "fastStorage:1204",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1204.csv",
+      "member_sha256": "615ac21b42876bb61b30f0ecce8d0193148dac46d736100e07f8fbf312f64a40",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 3376506092,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "6c5e7a8698ab61a5a2dc61572e05ccdef64b8b9546fd8b7e2297bcacd8176d2b",
+      "check_sha256": "56c41e8f9163956789eed29db1c1147bfefc642a858c43f07d6d5eabd46eacdd",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1204|H4|K10",
+      "slug": "vm1204_H4_K10",
+      "VM": "fastStorage:1204",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1204.csv",
+      "member_sha256": "615ac21b42876bb61b30f0ecce8d0193148dac46d736100e07f8fbf312f64a40",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 3376505673,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "249d12eb21671a9c848ea6bbd5a20dd8f2b4da7f42627c3af9aebb80cd978d1c",
+      "check_sha256": "0664b692cb77451523e9cc8e7a5068bdc7ed2b34dfb255ce04f77fa5ed3fd374",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1204|H4|K20",
+      "slug": "vm1204_H4_K20",
+      "VM": "fastStorage:1204",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1204.csv",
+      "member_sha256": "615ac21b42876bb61b30f0ecce8d0193148dac46d736100e07f8fbf312f64a40",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 3376506203,
+      "historical_role": "calibration",
+      "tier": "tight",
+      "saved_budget_tier": "tight",
+      "parameter_cap": 30000,
+      "operation_cap": 1500000,
+      "prefix_sha256": "934f3ba33832cb7057657f3adf96090968e59d2abbb5157728c80fb4c5ff32f5",
+      "check_sha256": "5de24ff24ba25f1c43172df803aa2dd218ef2e41febfc9354932b65a908d6cf2",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    },
+    {
+      "case_id": "fastStorage:1237|H1|K10",
+      "slug": "vm1237_H1_K10",
+      "VM": "fastStorage:1237",
+      "role": "B",
+      "H": 1,
+      "K": 10,
+      "T": 1552,
+      "t0": 1551,
+      "B": 627,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1237.csv",
+      "member_sha256": "af58c9b2047fee80461449542030e3f2c35e9e6276f167cb6291ac8ccde1e4bc",
+      "bounds": {
+        "support": [
+          0,
+          106
+        ],
+        "validation": [
+          106,
+          1553
+        ],
+        "check": [
+          1553,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2850040452,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "29b960cd8783b6d2193c0554a109d81cc274769eed5efa8275f6230ab6f69e14",
+      "check_sha256": "655aa5aa37ad41944f8d1ebdf2aa26b2f53024a87d9a7f52bb4d1c50009ae9ad",
+      "support_count": 10,
+      "validation_valid_count": 1351,
+      "check_origin_count": 627,
+      "check_valid_count": 627,
+      "validation_origins_halfopen": [
+        201,
+        1552
+      ],
+      "check_origins_halfopen": [
+        1552,
+        2179
+      ],
+      "check_target_extent_halfopen": [
+        1553,
+        2180
+      ],
+      "check_mask_sha256": "930029dab757b9459411bfa66e8486e59bc54ece02220773c510313adb07b59b"
+    },
+    {
+      "case_id": "fastStorage:1237|H1|K20",
+      "slug": "vm1237_H1_K20",
+      "VM": "fastStorage:1237",
+      "role": "B",
+      "H": 1,
+      "K": 20,
+      "T": 1557,
+      "t0": 1556,
+      "B": 625,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1237.csv",
+      "member_sha256": "af58c9b2047fee80461449542030e3f2c35e9e6276f167cb6291ac8ccde1e4bc",
+      "bounds": {
+        "support": [
+          0,
+          116
+        ],
+        "validation": [
+          116,
+          1558
+        ],
+        "check": [
+          1558,
+          2279
+        ],
+        "test": [
+          2279,
+          3000
+        ]
+      },
+      "seed": 2850040982,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "71ebb72f85631e6412611b3f1fc29c48500234206c7885d19a6adb357b48589d",
+      "check_sha256": "dee8b7d4cfdc8f3730f2e7fd555878873787688682c24acf7fab0d4f86824508",
+      "support_count": 20,
+      "validation_valid_count": 1346,
+      "check_origin_count": 625,
+      "check_valid_count": 625,
+      "validation_origins_halfopen": [
+        211,
+        1557
+      ],
+      "check_origins_halfopen": [
+        1557,
+        2182
+      ],
+      "check_target_extent_halfopen": [
+        1558,
+        2183
+      ],
+      "check_mask_sha256": "c1fa8a51175063216458829c1f64e6b07a056412516b573889d1dc129e1e4df6"
+    },
+    {
+      "case_id": "fastStorage:1237|H4|K10",
+      "slug": "vm1237_H4_K10",
+      "VM": "fastStorage:1237",
+      "role": "B",
+      "H": 4,
+      "K": 10,
+      "T": 1553,
+      "t0": 1549,
+      "B": 624,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1237.csv",
+      "member_sha256": "af58c9b2047fee80461449542030e3f2c35e9e6276f167cb6291ac8ccde1e4bc",
+      "bounds": {
+        "support": [
+          0,
+          109
+        ],
+        "validation": [
+          109,
+          1554
+        ],
+        "check": [
+          1554,
+          2277
+        ],
+        "test": [
+          2277,
+          3000
+        ]
+      },
+      "seed": 2850040563,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "864fa84f145897bf0c231f491998ea7783c5bac34921aa468c39c50db04c91ce",
+      "check_sha256": "a02df9c10d5034c11383d14b66c36c03e3f819dffd0d6cc488cc90644db62530",
+      "support_count": 10,
+      "validation_valid_count": 1346,
+      "check_origin_count": 624,
+      "check_valid_count": 624,
+      "validation_origins_halfopen": [
+        204,
+        1550
+      ],
+      "check_origins_halfopen": [
+        1553,
+        2177
+      ],
+      "check_target_extent_halfopen": [
+        1554,
+        2181
+      ],
+      "check_mask_sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f"
+    },
+    {
+      "case_id": "fastStorage:1237|H4|K20",
+      "slug": "vm1237_H4_K20",
+      "VM": "fastStorage:1237",
+      "role": "B",
+      "H": 4,
+      "K": 20,
+      "T": 1559,
+      "t0": 1555,
+      "B": 621,
+      "native_start": 288,
+      "raw_member": "fastStorage/2013-8/1237.csv",
+      "member_sha256": "af58c9b2047fee80461449542030e3f2c35e9e6276f167cb6291ac8ccde1e4bc",
+      "bounds": {
+        "support": [
+          0,
+          119
+        ],
+        "validation": [
+          119,
+          1560
+        ],
+        "check": [
+          1560,
+          2280
+        ],
+        "test": [
+          2280,
+          3000
+        ]
+      },
+      "seed": 2850041093,
+      "historical_role": "calibration",
+      "tier": "loose",
+      "saved_budget_tier": "loose",
+      "parameter_cap": 500000,
+      "operation_cap": 20000000,
+      "prefix_sha256": "b0f6d094573b55ccf4e6014446e07aa3afae8b699ed3fa8084a08e52162893ba",
+      "check_sha256": "6dc15c66d0a8b99b5e12294fafe3653066e916bf11b8f99f5dfa5b02742ff814",
+      "support_count": 20,
+      "validation_valid_count": 1342,
+      "check_origin_count": 621,
+      "check_valid_count": 621,
+      "validation_origins_halfopen": [
+        214,
+        1556
+      ],
+      "check_origins_halfopen": [
+        1559,
+        2180
+      ],
+      "check_target_extent_halfopen": [
+        1560,
+        2184
+      ],
+      "check_mask_sha256": "4822eaea53545f3c1936b681c64c1af798d586ef53bf4fc27b6e9f4fd555f41c"
+    }
+  ]
+}

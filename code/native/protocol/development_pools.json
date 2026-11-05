@@ -1,0 +1,52 @@
+{
+  "pools": {
+    "Dev20_full": [
+      "fastStorage:1033",
+      "fastStorage:1122",
+      "fastStorage:1157",
+      "fastStorage:117",
+      "fastStorage:137",
+      "fastStorage:177",
+      "fastStorage:209",
+      "fastStorage:244",
+      "fastStorage:265",
+      "fastStorage:34",
+      "fastStorage:407",
+      "fastStorage:453",
+      "fastStorage:499",
+      "fastStorage:574",
+      "fastStorage:77",
+      "fastStorage:783",
+      "fastStorage:793",
+      "fastStorage:86",
+      "fastStorage:965",
+      "fastStorage:979"
+    ],
+    "Dev_subpool_0": [
+      "fastStorage:793",
+      "fastStorage:1122",
+      "fastStorage:1157",
+      "fastStorage:574",
+      "fastStorage:177",
+      "fastStorage:34",
+      "fastStorage:77"
+    ],
+    "Dev_subpool_1": [
+      "fastStorage:499",
+      "fastStorage:1033",
+      "fastStorage:407",
+      "fastStorage:209",
+      "fastStorage:117",
+      "fastStorage:783",
+      "fastStorage:265"
+    ],
+    "Dev_subpool_2": [
+      "fastStorage:86",
+      "fastStorage:244",
+      "fastStorage:453",
+      "fastStorage:137",
+      "fastStorage:979",
+      "fastStorage:965"
+    ]
+  }
+}

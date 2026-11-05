@@ -1,0 +1,698 @@
+[
+  {
+    "arch_id": 0,
+    "arch_key": "MLP_L2_H32_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 32,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 1,
+    "arch_key": "MLP_L2_H32_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 2,
+    "arch_key": "MLP_L2_H64_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 64,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 3,
+    "arch_key": "MLP_L2_H64_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 64,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 4,
+    "arch_key": "MLP_L2_H128_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 128,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 5,
+    "arch_key": "MLP_L2_H128_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 128,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 6,
+    "arch_key": "MLP_L3_H32_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 3,
+      "hidden_dim": 32,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 7,
+    "arch_key": "MLP_L3_H32_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 3,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 8,
+    "arch_key": "MLP_L3_H64_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 3,
+      "hidden_dim": 64,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 9,
+    "arch_key": "MLP_L3_H64_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 3,
+      "hidden_dim": 64,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 10,
+    "arch_key": "MLP_L3_H128_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 3,
+      "hidden_dim": 128,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 11,
+    "arch_key": "MLP_L3_H128_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 3,
+      "hidden_dim": 128,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 12,
+    "arch_key": "MLP_L4_H32_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 4,
+      "hidden_dim": 32,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 13,
+    "arch_key": "MLP_L4_H32_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 4,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 14,
+    "arch_key": "MLP_L4_H64_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 4,
+      "hidden_dim": 64,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 15,
+    "arch_key": "MLP_L4_H64_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 4,
+      "hidden_dim": 64,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 16,
+    "arch_key": "MLP_L4_H128_D0.0",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 4,
+      "hidden_dim": 128,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 17,
+    "arch_key": "MLP_L4_H128_D0.1",
+    "family": "MLP",
+    "hparams": {
+      "n_layers": 4,
+      "hidden_dim": 128,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 18,
+    "arch_key": "TCN_B2_C8_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 8,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 19,
+    "arch_key": "TCN_B2_C8_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 8,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 20,
+    "arch_key": "TCN_B2_C8_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 8,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 21,
+    "arch_key": "TCN_B2_C8_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 8,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 22,
+    "arch_key": "TCN_B2_C16_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 16,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 23,
+    "arch_key": "TCN_B2_C16_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 16,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 24,
+    "arch_key": "TCN_B2_C16_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 16,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 25,
+    "arch_key": "TCN_B2_C16_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 16,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 26,
+    "arch_key": "TCN_B2_C32_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 27,
+    "arch_key": "TCN_B2_C32_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 28,
+    "arch_key": "TCN_B2_C32_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 32,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 29,
+    "arch_key": "TCN_B2_C32_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 2,
+      "channels": 32,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 30,
+    "arch_key": "TCN_B3_C8_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 8,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 31,
+    "arch_key": "TCN_B3_C8_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 8,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 32,
+    "arch_key": "TCN_B3_C8_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 8,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 33,
+    "arch_key": "TCN_B3_C8_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 8,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 34,
+    "arch_key": "TCN_B3_C16_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 16,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 35,
+    "arch_key": "TCN_B3_C16_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 16,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 36,
+    "arch_key": "TCN_B3_C16_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 16,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 37,
+    "arch_key": "TCN_B3_C16_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 16,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 38,
+    "arch_key": "TCN_B3_C32_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 39,
+    "arch_key": "TCN_B3_C32_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 40,
+    "arch_key": "TCN_B3_C32_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 32,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 41,
+    "arch_key": "TCN_B3_C32_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 32,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 42,
+    "arch_key": "TCN_B4_C8_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 8,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 43,
+    "arch_key": "TCN_B4_C8_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 8,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 44,
+    "arch_key": "TCN_B4_C8_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 8,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 45,
+    "arch_key": "TCN_B4_C8_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 8,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 46,
+    "arch_key": "TCN_B4_C16_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 16,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 47,
+    "arch_key": "TCN_B4_C16_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 16,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 48,
+    "arch_key": "TCN_B4_C16_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 16,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 49,
+    "arch_key": "TCN_B4_C16_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 16,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 50,
+    "arch_key": "TCN_B4_C32_K3_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 51,
+    "arch_key": "TCN_B4_C32_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 52,
+    "arch_key": "TCN_B4_C32_K5_Dil1",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 32,
+      "kernel": 5,
+      "dilation": 1
+    }
+  },
+  {
+    "arch_id": 53,
+    "arch_key": "TCN_B4_C32_K5_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 4,
+      "channels": 32,
+      "kernel": 5,
+      "dilation": 2
+    }
+  },
+  {
+    "arch_id": 54,
+    "arch_key": "GRU_L1_H16_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 16,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 55,
+    "arch_key": "GRU_L1_H16_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 16,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 56,
+    "arch_key": "GRU_L1_H32_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 32,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 57,
+    "arch_key": "GRU_L1_H32_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 58,
+    "arch_key": "GRU_L1_H64_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 64,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 59,
+    "arch_key": "GRU_L1_H64_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 64,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 60,
+    "arch_key": "GRU_L2_H16_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 16,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 61,
+    "arch_key": "GRU_L2_H16_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 16,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 62,
+    "arch_key": "GRU_L2_H32_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 32,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 63,
+    "arch_key": "GRU_L2_H32_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  {
+    "arch_id": 64,
+    "arch_key": "GRU_L2_H64_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 64,
+      "dropout": 0.0
+    }
+  },
+  {
+    "arch_id": 65,
+    "arch_key": "GRU_L2_H64_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 2,
+      "hidden_dim": 64,
+      "dropout": 0.1
+    }
+  }
+]

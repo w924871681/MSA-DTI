@@ -1,0 +1,36 @@
+{
+  "method": "msa",
+  "source": {
+    "1": {
+      "path": "fresh_msa/weights/H1/A57.pt",
+      "sha256": "b78472efafc031ef3363267f098c721d4a0ef2ca488770dbee0a583bc94d2486"
+    },
+    "4": {
+      "path": "fresh_msa/weights/H4/A57.pt",
+      "sha256": "dd02b1060c8c4ffa19e4cfb15bc53c1ba78a7c9e9e9a489434fc87abb7cafb4e"
+    }
+  },
+  "selected": {
+    "arch_id": 57,
+    "arch_key": "GRU_L1_H32_D0.1",
+    "mean_heldout_mse": 0.00342003622226027,
+    "max_parameters": 5796,
+    "max_operations": 1050880
+  },
+  "architecture": {
+    "arch_id": 57,
+    "arch_key": "GRU_L1_H32_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  "eligible_count": 10,
+  "C_vm_count": 20,
+  "C_tasks": 80,
+  "adapted_models_verified": 800,
+  "role": "MSA deployment reference",
+  "scope": "C held-out development assessment, not E accuracy. The replacement threshold is not estimated here."
+}

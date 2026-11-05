@@ -1,0 +1,27 @@
+{
+  "method": "scratch",
+  "source": {},
+  "selected": {
+    "arch_id": 54,
+    "arch_key": "GRU_L1_H16_D0.0",
+    "mean_heldout_mse": 0.03150775437421116,
+    "max_parameters": 2132,
+    "max_operations": 377984
+  },
+  "architecture": {
+    "arch_id": 54,
+    "arch_key": "GRU_L1_H16_D0.0",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 16,
+      "dropout": 0.0
+    }
+  },
+  "eligible_count": 66,
+  "C_vm_count": 20,
+  "C_tasks": 80,
+  "adapted_models_verified": 5280,
+  "role": "frozen target backbone for this baseline",
+  "scope": "C held-out development assessment, not E accuracy. The replacement threshold is not estimated here."
+}

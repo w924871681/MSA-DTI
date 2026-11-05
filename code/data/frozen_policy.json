@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "stage": "D",
+  "budget": "medium",
+  "reference": 57,
+  "policy": "selector",
+  "tau": 0.2,
+  "reference_only_mse": 0.00885733853437368,
+  "trials": [
+    {
+      "tau": 0,
+      "mse": 0.008173706600627138,
+      "harm_rate": 0.1,
+      "switch_rate": 1
+    },
+    {
+      "tau": 0.05,
+      "mse": 0.008183410079462636,
+      "harm_rate": 0.075,
+      "switch_rate": 0.925
+    },
+    {
+      "tau": 0.075,
+      "mse": 0.008266093770448752,
+      "harm_rate": 0.075,
+      "switch_rate": 0.8625
+    },
+    {
+      "tau": 0.1,
+      "mse": 0.008315025316977523,
+      "harm_rate": 0.075,
+      "switch_rate": 0.85
+    },
+    {
+      "tau": 0.125,
+      "mse": 0.008315025316977523,
+      "harm_rate": 0.075,
+      "switch_rate": 0.85
+    },
+    {
+      "tau": 0.15,
+      "mse": 0.008302436683121231,
+      "harm_rate": 0.0375,
+      "switch_rate": 0.8125
+    },
+    {
+      "tau": 0.2,
+      "mse": 0.008302436683121231,
+      "harm_rate": 0.0375,
+      "switch_rate": 0.8125
+    }
+  ],
+  "D_tasks": 80,
+  "D_vms": 20,
+  "candidate_task_pairs": 1360,
+  "assessment_scope": "calibration only; no E results",
+  "source_reference_sha256": "9632ac0a5ea55f94afa4a56db8b171e2b3a65578921418bc86c497d08bb52257"
+}

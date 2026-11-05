@@ -1,0 +1,616 @@
+{
+  "stage": "B",
+  "screening_comparator": "S50_A55",
+  "vm_count": 20,
+  "tasks": 80,
+  "validation_and_check_rows": 3728,
+  "new_adaptations": 3728,
+  "verified_prior_adaptations": 0,
+  "threshold_per_evidence_type": 2,
+  "passing_challenger_count": 18,
+  "passing_challengers": [
+    0,
+    6,
+    8,
+    13,
+    27,
+    31,
+    32,
+    35,
+    40,
+    45,
+    46,
+    47,
+    50,
+    54,
+    57,
+    58,
+    61,
+    63
+  ],
+  "retained_including_comparator_count": 19,
+  "retained_including_comparator": [
+    0,
+    6,
+    8,
+    13,
+    27,
+    31,
+    32,
+    35,
+    40,
+    45,
+    46,
+    47,
+    50,
+    54,
+    55,
+    57,
+    58,
+    61,
+    63
+  ],
+  "members": [
+    {
+      "arch_id": 0,
+      "token": "S50_A0",
+      "eligible_tasks": 52,
+      "check_wins": 8,
+      "validation_wins": 6,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 0,
+        "arch_key": "MLP_L2_H32_D0.0",
+        "family": "MLP",
+        "hparams": {
+          "n_layers": 2,
+          "hidden_dim": 32,
+          "dropout": 0.0
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A0.pt",
+          "sha256": "3fa1bcbd0b53da9605c0ac9a3d8f8bcdc4823e4ab8437cd316cb06023f3d5900"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A0.pt",
+          "sha256": "29adfde3606ae24f1ec5e5f3bcd04767636624c29cd9649956e5c27b91739536"
+        }
+      }
+    },
+    {
+      "arch_id": 6,
+      "token": "S50_A6",
+      "eligible_tasks": 52,
+      "check_wins": 8,
+      "validation_wins": 10,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 6,
+        "arch_key": "MLP_L3_H32_D0.0",
+        "family": "MLP",
+        "hparams": {
+          "n_layers": 3,
+          "hidden_dim": 32,
+          "dropout": 0.0
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A6.pt",
+          "sha256": "5cfa3fc44e1936112372f34640b67de2ee0cd6cca9215d42e0fccbe8664e6aa3"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A6.pt",
+          "sha256": "e9eb68620ce4b2c75cb69d061f42e6ad617c035123f18f12dd82e71829d84691"
+        }
+      }
+    },
+    {
+      "arch_id": 8,
+      "token": "S50_A8",
+      "eligible_tasks": 28,
+      "check_wins": 2,
+      "validation_wins": 2,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 8,
+        "arch_key": "MLP_L3_H64_D0.0",
+        "family": "MLP",
+        "hparams": {
+          "n_layers": 3,
+          "hidden_dim": 64,
+          "dropout": 0.0
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A8.pt",
+          "sha256": "853266dc1b893690ac40020169ae5d64f819eb0d1ffb159e41d408c7b5c1a035"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A8.pt",
+          "sha256": "dcd1f18fa4aa4cfb28d7e636a7bf7ceef8f67393c67736cdedf1cc58e7d6097f"
+        }
+      }
+    },
+    {
+      "arch_id": 13,
+      "token": "S50_A13",
+      "eligible_tasks": 52,
+      "check_wins": 2,
+      "validation_wins": 0,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 13,
+        "arch_key": "MLP_L4_H32_D0.1",
+        "family": "MLP",
+        "hparams": {
+          "n_layers": 4,
+          "hidden_dim": 32,
+          "dropout": 0.1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A13.pt",
+          "sha256": "981e444e199079c2d7abfceebe798e0eeeac3fb4bfc022392a9fe4555172cfe1"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A13.pt",
+          "sha256": "be9a35e5d0356d64e7f044c3be15a85bda821823d231b99a3dafbe561b79c422"
+        }
+      }
+    },
+    {
+      "arch_id": 27,
+      "token": "S50_A27",
+      "eligible_tasks": 52,
+      "check_wins": 2,
+      "validation_wins": 0,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 27,
+        "arch_key": "TCN_B2_C32_K3_Dil2",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 2,
+          "channels": 32,
+          "kernel": 3,
+          "dilation": 2
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A27.pt",
+          "sha256": "c78e5e36b37560ac739ea1e13790f44f58f31b669fab53813b4b846556ffda2f"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A27.pt",
+          "sha256": "7c2c0621c1d9375b547123c5d2ad1a2867fc4f787eacd12e7c60feeaa6a1e1fd"
+        }
+      }
+    },
+    {
+      "arch_id": 31,
+      "token": "S50_A31",
+      "eligible_tasks": 80,
+      "check_wins": 0,
+      "validation_wins": 2,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 31,
+        "arch_key": "TCN_B3_C8_K3_Dil2",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 3,
+          "channels": 8,
+          "kernel": 3,
+          "dilation": 2
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A31.pt",
+          "sha256": "58732212388bf2763a7dda24024242a7f04c785b661fef8315dd29e4ee28ffba"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A31.pt",
+          "sha256": "a4010a6dfbe5576ad5d60f4bc294d98976de848c79648cb99671050c1eccdd87"
+        }
+      }
+    },
+    {
+      "arch_id": 32,
+      "token": "S50_A32",
+      "eligible_tasks": 80,
+      "check_wins": 17,
+      "validation_wins": 15,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 32,
+        "arch_key": "TCN_B3_C8_K5_Dil1",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 3,
+          "channels": 8,
+          "kernel": 5,
+          "dilation": 1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A32.pt",
+          "sha256": "9937f47a1d17907e3608cec926629f3579a4193f9be620254229c55699367e49"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A32.pt",
+          "sha256": "982a8de571572d9f1057231687b6a6e1547bc77ec33177afd1041807c8362b53"
+        }
+      }
+    },
+    {
+      "arch_id": 35,
+      "token": "S50_A35",
+      "eligible_tasks": 80,
+      "check_wins": 8,
+      "validation_wins": 8,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 35,
+        "arch_key": "TCN_B3_C16_K3_Dil2",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 3,
+          "channels": 16,
+          "kernel": 3,
+          "dilation": 2
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A35.pt",
+          "sha256": "eef53dbac0febee645bbd2d9797239f9808cd004dcf74503b2813dfbcabbde75"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A35.pt",
+          "sha256": "5e3520e0b079d82a78f4c0bf5996f026f3ecffaadb03cdfc8e041b8c7d698e95"
+        }
+      }
+    },
+    {
+      "arch_id": 40,
+      "token": "S50_A40",
+      "eligible_tasks": 28,
+      "check_wins": 6,
+      "validation_wins": 6,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 40,
+        "arch_key": "TCN_B3_C32_K5_Dil1",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 3,
+          "channels": 32,
+          "kernel": 5,
+          "dilation": 1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A40.pt",
+          "sha256": "fde8dbe7a29b4977c7e083e1f011f43763472e5fbb7f1b9c7820ca0e5ac55714"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A40.pt",
+          "sha256": "c05ecfd7079e1095b62833f94127517e793e9488f70a91bb4f8af65fa02ccb4f"
+        }
+      }
+    },
+    {
+      "arch_id": 45,
+      "token": "S50_A45",
+      "eligible_tasks": 80,
+      "check_wins": 6,
+      "validation_wins": 1,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 45,
+        "arch_key": "TCN_B4_C8_K5_Dil2",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 4,
+          "channels": 8,
+          "kernel": 5,
+          "dilation": 2
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A45.pt",
+          "sha256": "4ce4e511bed25d15d79e002314faf47feeaf5fec5c325b15448428b5478e9179"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A45.pt",
+          "sha256": "4873f3d526ad68697efcd5a6e606b2f2f26ae56d1853f1551c2624419e345059"
+        }
+      }
+    },
+    {
+      "arch_id": 46,
+      "token": "S50_A46",
+      "eligible_tasks": 80,
+      "check_wins": 2,
+      "validation_wins": 3,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 46,
+        "arch_key": "TCN_B4_C16_K3_Dil1",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 4,
+          "channels": 16,
+          "kernel": 3,
+          "dilation": 1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A46.pt",
+          "sha256": "432a188d25327627ba0385cf61457e2d049ccac5c889a89d95683c984b2cf04a"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A46.pt",
+          "sha256": "1c4cf4de365b21c8125e527070753c0fe2b51ee4b71b0fe5c99ded4406e8f27b"
+        }
+      }
+    },
+    {
+      "arch_id": 47,
+      "token": "S50_A47",
+      "eligible_tasks": 80,
+      "check_wins": 2,
+      "validation_wins": 4,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 47,
+        "arch_key": "TCN_B4_C16_K3_Dil2",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 4,
+          "channels": 16,
+          "kernel": 3,
+          "dilation": 2
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A47.pt",
+          "sha256": "4b88b9e9b68b4432d36bce3b468a6ffc99fe36dce0ed2d8b2f93e4ea726be884"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A47.pt",
+          "sha256": "c2f663c92777bfe63e6220e4d769705fee80f5a70988556a84618fe93c3a8e30"
+        }
+      }
+    },
+    {
+      "arch_id": 50,
+      "token": "S50_A50",
+      "eligible_tasks": 52,
+      "check_wins": 0,
+      "validation_wins": 2,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 50,
+        "arch_key": "TCN_B4_C32_K3_Dil1",
+        "family": "TCN",
+        "hparams": {
+          "n_blocks": 4,
+          "channels": 32,
+          "kernel": 3,
+          "dilation": 1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A50.pt",
+          "sha256": "c79b90457521b89cb3fc3f8dffcc8cd890c42507b04e5ed2b9e5105f7c278639"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A50.pt",
+          "sha256": "9d21a70e20477b3abccfa44424604f7195b763b9de68cd8457eaf9ab6c418ed5"
+        }
+      }
+    },
+    {
+      "arch_id": 54,
+      "token": "S50_A54",
+      "eligible_tasks": 80,
+      "check_wins": 2,
+      "validation_wins": 4,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 54,
+        "arch_key": "GRU_L1_H16_D0.0",
+        "family": "GRU",
+        "hparams": {
+          "n_layers": 1,
+          "hidden_dim": 16,
+          "dropout": 0.0
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A54.pt",
+          "sha256": "e294fac8684da7f059944084c4f3477ba005d599c480621e5573db67cada1e9b"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A54.pt",
+          "sha256": "10b7d3c76ca85e8f36051c5621aeb131a75f220e85f00a621d690d6ed60a4844"
+        }
+      }
+    },
+    {
+      "arch_id": 55,
+      "token": "S50_A55",
+      "eligible_tasks": 80,
+      "check_wins": 0,
+      "validation_wins": 0,
+      "passed_counts": 0,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 55,
+        "arch_key": "GRU_L1_H16_D0.1",
+        "family": "GRU",
+        "hparams": {
+          "n_layers": 1,
+          "hidden_dim": 16,
+          "dropout": 0.1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A55.pt",
+          "sha256": "a6f59cb25ed3219c5bb00834ecda2c114da7ee906db313535ae310ec87d3ecef"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A55.pt",
+          "sha256": "9f06a192313f050783c442b9cdc134857e63280f30acad94ecaa18f6544b32d0"
+        }
+      }
+    },
+    {
+      "arch_id": 57,
+      "token": "S50_A57",
+      "eligible_tasks": 80,
+      "check_wins": 0,
+      "validation_wins": 2,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 57,
+        "arch_key": "GRU_L1_H32_D0.1",
+        "family": "GRU",
+        "hparams": {
+          "n_layers": 1,
+          "hidden_dim": 32,
+          "dropout": 0.1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A57.pt",
+          "sha256": "b78472efafc031ef3363267f098c721d4a0ef2ca488770dbee0a583bc94d2486"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A57.pt",
+          "sha256": "dd02b1060c8c4ffa19e4cfb15bc53c1ba78a7c9e9e9a489434fc87abb7cafb4e"
+        }
+      }
+    },
+    {
+      "arch_id": 58,
+      "token": "S50_A58",
+      "eligible_tasks": 52,
+      "check_wins": 2,
+      "validation_wins": 0,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 58,
+        "arch_key": "GRU_L1_H64_D0.0",
+        "family": "GRU",
+        "hparams": {
+          "n_layers": 1,
+          "hidden_dim": 64,
+          "dropout": 0.0
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A58.pt",
+          "sha256": "37da101598e62c7e1447d4aaf6c9e2ab118e633ae9dcdd82941d8e0d8452da28"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A58.pt",
+          "sha256": "bfa01d8c7a103ae6f4320c79336c7d71218bc3fc42a09ca0ee77f48ab42c3214"
+        }
+      }
+    },
+    {
+      "arch_id": 61,
+      "token": "S50_A61",
+      "eligible_tasks": 80,
+      "check_wins": 1,
+      "validation_wins": 2,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 61,
+        "arch_key": "GRU_L2_H16_D0.1",
+        "family": "GRU",
+        "hparams": {
+          "n_layers": 2,
+          "hidden_dim": 16,
+          "dropout": 0.1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A61.pt",
+          "sha256": "c300f1537bab1e5e40c0ddd706b56413e1a5d8824f8e9da35a45ae221336592b"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A61.pt",
+          "sha256": "f6549c259f6f85d89790218a149fec84702f270cb26f394f1a76ab6b6afbfb1a"
+        }
+      }
+    },
+    {
+      "arch_id": 63,
+      "token": "S50_A63",
+      "eligible_tasks": 52,
+      "check_wins": 2,
+      "validation_wins": 2,
+      "passed_counts": 1,
+      "retained": 1,
+      "architecture": {
+        "arch_id": 63,
+        "arch_key": "GRU_L2_H32_D0.1",
+        "family": "GRU",
+        "hparams": {
+          "n_layers": 2,
+          "hidden_dim": 32,
+          "dropout": 0.1
+        }
+      },
+      "source_checkpoints": {
+        "H1": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H1/A63.pt",
+          "sha256": "8d9e4348f083f5b6f723db8aedab374f7410abbbb9e022e345c0c10701577611"
+        },
+        "H4": {
+          "path_relative_to_A": "native_replay/inputs/checkpoints/H4/A63.pt",
+          "sha256": "bdd9fb88136402cc0ef113d3fd049d08a4a73a7b6921e8d81f3ebfdffb6e2788"
+        }
+      }
+    }
+  ],
+  "scope": "Group B screening result. One C1 source-initialized record per retained configuration. The comparator is kept once. No second source recipe, deployment default, margin, or E metric is implied."
+}
