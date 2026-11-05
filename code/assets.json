@@ -19,8 +19,8 @@
   },
   "supplement-evidence.zip": {
     "group": "supplement",
-    "bytes": 237923338,
-    "sha256": "7295701f8d4cd00bb9e52a0d1103d33e8ee75248c20da094e10b72d416908c11",
+    "bytes": 237403658,
+    "sha256": "8b7eba6aa7d1fb98c5a10f9ce4ada8d7fbe57eba0730b823bb00a8722440d6cd",
     "url": "https://github.com/w924871681/MSA-DTI/releases/download/review-v1/supplement-evidence.zip"
   }
 }

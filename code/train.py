@@ -176,7 +176,8 @@ def main():
     sys.path[:0]=[str(SUP),str(RUN),str(RUN/"timing_s50_flow_20261104/C_real/scripts")]
     if args.stage=="source-smoke":
         import source_sensitivity as source
-        source.OUT=RUN/"smoke-weights";source.init();source.train((20,2904,0,1))
+        source.OUT=RUN/"smoke-weights";source.OUT.mkdir(exist_ok=True)
+        source.init();source.train((20,2904,0,1))
         print("A0, H=1 source training receipt:",read(source.OUT/"n20_s2904/H1_A0.json"))
     elif args.stage=="supplement":supplementary_training()
     elif args.stage=="supplement-panels":supplementary_panels()

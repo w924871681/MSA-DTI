@@ -49,6 +49,8 @@ python code/run_targets.py --dataset azure --tasks 1
 
 Each smoke command fits **all eight methods at all three budgets** for one task. Remove `--tasks 1` to run all 120 tasks per dataset. Use `--method pt msa` to run a subset. Model choice uses the observed prefix. The runner saves the selected weights before opening future labels for scoring. It prints architecture mismatches and the maximum absolute error differences for each metric and writes complete task records in `work/reruns/`. The optional `--strict` switch applies the much tighter archived-forecast replay tolerance to a fresh run. GPU kernels and training libraries can change floating point results and occasionally change the selected architecture.
 
+To refit the main ablation table, run `python code/run_ablation.py --bitbrains /path/to/fastStorage.zip` after fetching weights. The four arms share the same medium-budget task inputs and A57 reference. `--tasks 1` runs one task.
+
 ## Retrain from the public traces
 
 On a machine with CUDA (Linux is the original training platform), start in an empty working copy with the training dependencies installed. The following path derives the source tensors, retrains source weights, screens architectures, selects the references, calibrates on D and evaluates E. It also retrains the baseline source components and selects the fixed backbones on C.
