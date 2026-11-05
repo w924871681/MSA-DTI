@@ -10,6 +10,20 @@ def checksum(path):
 def py(path,*args,cwd=None):
     env=dict(os.environ,PYTHONDONTWRITEBYTECODE="1",MPLBACKEND="Agg",PYTHONUTF8="1")
     subprocess.run([sys.executable,"-B",str(path),*map(str,args)],cwd=cwd,env=env,check=True)
+def same_pdf(current,reference):
+    """Different font/PDF encoders may represent identical drawn content differently."""
+    import pymupdf
+    import numpy as np
+    with pymupdf.open(stream=current,filetype="pdf") as actual,pymupdf.open(stream=reference,filetype="pdf") as expected:
+        if len(actual)!=len(expected):return False
+        for page,ref in zip(actual,expected):
+            if tuple(page.rect)!=tuple(ref.rect):return False
+            if "".join(page.get_text().split())!="".join(ref.get_text().split()):return False
+            panels=[p.get_pixmap(matrix=pymupdf.Matrix(2,2),alpha=False) for p in (page,ref)]
+            pixels=[np.frombuffer(pm.samples,dtype=np.uint8).reshape(pm.height,pm.width,pm.n) for pm in panels]
+            delta=np.abs(pixels[0].astype(np.int16)-pixels[1].astype(np.int16))
+            if delta.mean()>0.35 or np.mean(delta.max(axis=2)>48)>0.0015:return False
+    return True
 def fetch(groups):
     manifest=json.loads((CODE/"assets.json").read_bytes())
     dest=WORK/"assets";dest.mkdir(parents=True,exist_ok=True)
@@ -43,15 +57,18 @@ def build(from_verified):
         with zipfile.ZipFile(ROOT/"latex.zip") as canonical:
             expected={s for s in canonical.namelist() if s.startswith("tables/") and s not in ("tables/baselines.tex","tables/configuration.tex")}
             expected|={s for s in canonical.namelist() if s.startswith("figures/") and s.endswith(".pdf") and s!="figures/fig4.pdf"}
+            rendered=[]
             for name in sorted(expected):
                 item=stage/name
                 # Text newline representation depends on the operating system.
                 a=item.read_bytes();b=canonical.read(name)
                 if name.endswith(".tex"):a,b=a.replace(b"\r\n",b"\n"),b.replace(b"\r\n",b"\n")
-                if a!=b:raise ValueError("Output differs from latex.zip: "+name)
+                if a!=b:
+                    if not name.endswith(".pdf") or not same_pdf(a,b):raise ValueError("Output differs from latex.zip: "+name)
+                    rendered.append(name)
             canonical.extractall(out)
             for name in expected:shutil.copyfile(stage/name,out/name)
-        print("Verified all",len(expected),"regenerated figure and table files. Output:",out)
+        print("Verified",len(expected),"figure/table files;",len(rendered),"PDFs matched by page size, text and 144-dpi rendering. Output:",out)
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     sub=parser.add_subparsers(dest="cmd",required=True)
