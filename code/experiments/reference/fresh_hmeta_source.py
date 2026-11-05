@@ -4,7 +4,7 @@ The native 240 outer iterations update a shared meta bank sequentially, so
 only one of the 12 available worker slots is active for this dependency.
 The resume checkpoint includes Python-independent Torch CPU/CUDA RNG state.
 """
-import fcntl,hashlib,json,os,shutil,subprocess,sys,time
+import hashlib,json,os,shutil,subprocess,sys,time
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent; ORIG=ROOT/'original'; C=next((ROOT/'flow').glob('C*'))
@@ -69,6 +69,7 @@ def worker(smoke=False):
     save(stage/('SMOKE_PASS.json' if smoke else 'SOURCE_COMPLETE.json'),{'sha256':sha(stage/'hmeta.pt'),'completed_unix':time.time(),'iterations':target,'smoke':smoke})
 
 def main():
+    import fcntl
     OUT.mkdir(parents=True,exist_ok=True)
     with (OUT/'supervisor.lock').open('a+') as guard:
         fcntl.flock(guard,fcntl.LOCK_EX|fcntl.LOCK_NB)

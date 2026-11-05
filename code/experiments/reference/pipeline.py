@@ -1,7 +1,6 @@
 """Continue frozen source conditions through distinct A/B/C/D/E cohorts."""
 import concurrent.futures as cf
 import csv
-import fcntl
 import json
 import multiprocessing as mp
 import os
@@ -136,6 +135,7 @@ def archive():
         os.replace(tmp,HERE/name);result[name]=q.sha(HERE/name)
     return result
 def supervise():
+    import fcntl
     with (HERE/"pipeline.lock").open("a+") as lock:
         fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         try:

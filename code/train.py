@@ -161,7 +161,7 @@ def supplementary_panels():
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument("stage",choices=["prepare","all","msa","policy","search","pt","medet","scratch","hmeta","supplement","supplement-panels"])
+    p.add_argument("stage",choices=["prepare","all","source-smoke","msa","policy","search","pt","medet","scratch","hmeta","supplement","supplement-panels"])
     p.add_argument("--bitbrains",type=Path)
     args=p.parse_args()
     if args.stage in ("prepare","all"):
@@ -169,13 +169,16 @@ def main():
         prepare(args.bitbrains.resolve())
         if args.stage=="prepare":return
     if not (RUN/"prepared.json").is_file():p.error("run prepare first")
-    if sys.platform!="linux":p.error("training uses the Linux/POSIX experiment workers (Linux or WSL2 with CUDA)")
     if args.stage=="all":
         for s in ["msa","policy","search","pt","medet","scratch","hmeta"]:
             subprocess.run([sys.executable,"-B",__file__,s],check=True)
         return
     sys.path[:0]=[str(SUP),str(RUN),str(RUN/"timing_s50_flow_20261104/C_real/scripts")]
-    if args.stage=="supplement":supplementary_training()
+    if args.stage=="source-smoke":
+        import source_sensitivity as source
+        source.OUT=RUN/"smoke-weights";source.init();source.train((20,2904,0,1))
+        print("A0, H=1 source training receipt:",read(source.OUT/"n20_s2904/H1_A0.json"))
+    elif args.stage=="supplement":supplementary_training()
     elif args.stage=="supplement-panels":supplementary_panels()
     elif args.stage=="msa":train_msa()
     elif args.stage=="policy":policy()

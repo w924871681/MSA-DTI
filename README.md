@@ -51,7 +51,7 @@ Each smoke command fits **all eight methods at all three budgets** for one task.
 
 ## Retrain from the public traces
 
-On **Linux or WSL2 with CUDA**, start in an empty working copy with the training dependencies installed. The following path derives the source tensors, retrains source weights, screens architectures, selects the references, calibrates on D and evaluates E. It also retrains the baseline source components and selects the fixed backbones on C.
+On a machine with CUDA (Linux is the original training platform), start in an empty working copy with the training dependencies installed. The following path derives the source tensors, retrains source weights, screens architectures, selects the references, calibrates on D and evaluates E. It also retrains the baseline source components and selects the fixed backbones on C.
 
 ```bash
 python code/train.py all --bitbrains /path/to/fastStorage.zip
@@ -59,11 +59,13 @@ python code/run_targets.py --trained work/training/export --dataset bitbrains --
 python code/run_targets.py --trained work/training/export --dataset azure
 ```
 
+For a smaller source-training check, run `python code/train.py prepare --bitbrains /path/to/fastStorage.zip` and `python code/train.py source-smoke`. This fits one architecture from scratch for 50 epochs.
+
 The individual training stages are `prepare`, `msa`, `policy`, `search`, `pt`, `medet`, `scratch` and `hmeta`. The single-device runner uses one process per stage. The historical wall-clock numbers in Table 4 come from the original scheduling and recorded interruptions. Use the original measurements to verify that table and report new machine timings separately. [Training workers](code/experiments/reference) · [Verification scope](code/VALIDATION.md)
 
-## Data access and attribution
-
 For a new run of the supplemental source-pool, seed, optimizer, subset and hardware experiments, run `train.py prepare` as above, `python code/reproduce.py fetch weights`, then `python code/train.py supplement` on Linux/CUDA. The original control weights anchor the comparison. New panels and device timings are written to `work/training/supplement/panels/`.
+
+## Data access and attribution
 
 - **Bitbrains.** Bitbrains IT Services Inc. provided the traces through the Grid Workloads Archive. This study uses GWA-T-12 fastStorage. See S. Shen, V. van Beek and A. Iosup, *Statistical Characterization of Business-Critical Workloads Hosted in Cloud Datacenters*, CCGrid 2015. [Provider and acknowledgement terms](https://atlarge-research.com/gwa-t-12/)
 - **Azure.** The provider is Microsoft. Use the 2019 Azure VM trace (V2). The repository includes the derived CPU time series for the 30 selected subscriptions, with the other nine channels masked. These derived data are supplied under the provider's CC BY 4.0 data license. The extraction retains 3,000 consecutive five-minute readings per VM after the initial day. To check the extraction, download the 75 CPU shards named in the frozen manifest into one directory and run `python code/get_azure.py /path/to/shards`. The script verifies provider hashes, repeats the coverage screen on 280 prespecified candidates and compares all 120 task inputs. Please cite Microsoft's *Resource Central* paper when using the traces. [V2 documentation](https://github.com/Azure/AzurePublicDataset/blob/master/AzurePublicDatasetV2.md) · [Provider download list](https://github.com/Azure/AzurePublicDataset/blob/master/AzurePublicDatasetLinksV2.txt) · [Data license](https://github.com/Azure/AzurePublicDataset/blob/master/LICENSE) · [Shard manifest](code/protocol/azure/shards.json)

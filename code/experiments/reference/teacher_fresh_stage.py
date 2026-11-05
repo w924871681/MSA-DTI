@@ -4,7 +4,7 @@ Run on the server as `python3 -B teacher_fresh_stage.py`; GPU 0 and 12
 processes are intentionally fixed for the Bitbrains run. Each completed
 episode is checkpointed separately and identified by all relevant inputs.
 """
-import fcntl, hashlib, json, os, shutil, signal, subprocess, sys, time
+import hashlib, json, os, shutil, signal, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -78,6 +78,7 @@ def run_episode(cid,h,k,lock_hash):
          validation_mse=losses,lock_sha256=lock_hash,start_unix=started,end_unix=time.time()))
 
 def supervisor():
+    import fcntl
     OUT.mkdir(parents=True,exist_ok=True)
     with (OUT/'supervisor.lock').open('a+') as f:
         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)

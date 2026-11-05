@@ -1,6 +1,5 @@
 """Run the prespecified source-pool/seed variants with the original 50-epoch recipe."""
 import concurrent.futures as cf
-import fcntl
 import hashlib
 import json
 import multiprocessing as mp
@@ -76,6 +75,7 @@ def lane(gpu):
     with cf.ProcessPoolExecutor(max_workers=8,mp_context=mp.get_context("spawn"),initializer=init) as p:
         for future in cf.as_completed([p.submit(train,j) for j in jobs]):future.result()
 def run():
+    import fcntl
     live={}
     try:
         assert sha(DATA)=="62f7b942fc584b2fc0e3894367cde6dfe1303d0f1a38ba3f70cc6de76196880c"
