@@ -103,6 +103,8 @@ def main():
     parser.add_argument("--bitbrains",type=Path)
     parser.add_argument("--method",choices=list(METHODS),nargs="+",default=list(METHODS))
     parser.add_argument("--tasks",type=int,default=120)
+    parser.add_argument("--output-dir", type=Path, default=WORK/"reruns",
+                        help="Directory for the CSVs from one experiment")
     parser.add_argument("--trained",type=Path,help="Use a newly trained export directory for weights, reference, bank, margin, source prior and fixed backbones")
     parser.add_argument("--strict",action="store_true",help="Require exact architecture and numeric agreement at archive replay tolerance")
     args=parser.parse_args()
@@ -144,9 +146,17 @@ def main():
             with u.candidate_backend_context(u.ARCH[i],u.DEVICE,"gru-native"),torch.no_grad():
                 pred=m(x).cpu().numpy()[valid]
             rows.append(dict(method=METHODS[method],budget=tier,VM=c["VM"],H=c["H"],K=c["K"],arch=i,**metrics(pred,y)))
-    frame=pd.DataFrame(rows);dest=WORK/"reruns";dest.mkdir(exist_ok=True)
+    frame=pd.DataFrame(rows);dest=args.output_dir;dest.mkdir(exist_ok=True,parents=True)
     suffix="-".join(args.method) if len(args.method)<8 else "all"
-    frame.to_csv(dest/f"{args.dataset}-{args.tasks}-{suffix}.csv",index=False)
+    target = dest/f"{args.dataset}-{args.tasks}-{suffix}.csv"
+    with tempfile.NamedTemporaryFile(dir=dest, suffix=".tmp", delete=False) as fp:
+        pending = Path(fp.name)
+    try:
+        frame.to_csv(pending, index=False)
+        os.replace(pending, target)
+    finally:
+        pending.unlink(missing_ok=True)
+    print("Target scores:", target.resolve())
     compare(args.dataset,frame,exact=args.strict)
 if __name__=="__main__":
     main()

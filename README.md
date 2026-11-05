@@ -9,61 +9,57 @@ Code, data protocols and manuscript for the budget-constrained initialization of
 | Frozen inputs and results | [Cohorts and task manifests](code/protocol) · [Paper data](code/data) · [Weights and per-window forecasts](https://github.com/w924871681/MSA-DTI/releases/tag/review-v1) |
 | Report generation | [Figure and table scripts](code/plotting) · [Verification scripts](code/verification) |
 
-The manuscript links above open the current typeset files. The [review-v1 release](https://github.com/w924871681/MSA-DTI/releases/tag/review-v1) preserves the experimental snapshot used for the reported results.
+The [review-v1 release](https://github.com/w924871681/MSA-DTI/releases/tag/review-v1) contains the source and checksummed experimental assets. Run the commands below from the extracted repository root. Download the original **fastStorage** ZIP from the [Grid Workloads Archive](https://atlarge-research.com/gwa-t-12/) ([direct download](https://atlarge-research.com/gwa-traces/gwa_t_12_fastStorage.zip)). Replace `/path/to/fastStorage.zip` with its location. Its SHA-256 is `11313f528a0cbcbe57e63162f8ae5a41a9c7e7c1a79872e294ff3c5bbaa2e671`. The selected Azure inputs are included.
 
-## Reproduce the tables and figures
+## 1. Check the published results and reproduce the paper figures
 
-Start in the repository root. Use Python 3.11. For Linux or macOS the commands below create a virtual environment. On Windows use `.venv\Scripts\activate` after creating it.
+Use Python 3.11. The following commands need only a CPU. On Windows activate the environment with `.venv/Scripts/activate`.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r code/requirements-figures.txt
-python code/reproduce.py figures
-```
-
-This generates Figures 5–10 and S1–S3 plus 17 LaTeX table files and text fragments. The code checks the regenerated assets against the editable paper. Figures 1–4 and the two descriptive main-text tables are supplied in the LaTeX project. The assembled sources and figures are in `work/paper/`. Compile `main.tex` and `supplementary.tex` separately in Overleaf or with pdfLaTeX. Both final PDFs are also included at the top level.
-
-## Independently check the published predictions
-
-Download the **fastStorage** ZIP from the [Grid Workloads Archive](https://atlarge-research.com/gwa-t-12/) ([direct download](https://atlarge-research.com/gwa-traces/gwa_t_12_fastStorage.zip)). Keep the original ZIP intact. The expected SHA-256 is `11313f528a0cbcbe57e63162f8ae5a41a9c7e7c1a79872e294ff3c5bbaa2e671`. Substitute its actual location in the following commands.
-
-```bash
 python code/reproduce.py scores --bitbrains /path/to/fastStorage.zip
 python code/reproduce.py supplement --bitbrains /path/to/fastStorage.zip
 python code/reproduce.py figures --from-verified
 ```
 
-The first command downloads checksummed author forecasts, reconstructs the label windows and recalculates MSE, MAE and Worst-10% for eight methods, three budgets and 120 tasks in each dataset. It compares the selected architecture and numerical metrics task by task. The second command checks the supplemental selections, forecast errors, source checkpoints and timing records. It also verifies the preselection ablation and the additional Azure search runs. The last command feeds the recomputed scores back into the paper's reporting scripts. Resource profiles, historical timings and retained-bank calibration records have separate inputs. Generated outputs appear in `work/verified/` and `work/paper/`.
+The first two commands check the downloaded assets (or use the copies in `work/assets/`), reconstruct future labels and verify results. The third regenerates and checks nine experimental figures (5–10 and S1–S3) and 17 LaTeX tables or text fragments against the paper. The four illustrations and two descriptive tables are supplied in the editable LaTeX project. For figures directly from the supplied summaries, run `python code/reproduce.py figures`. Output is in `work/verified/` and `work/paper/`. Compile `main.tex` and `supplementary.tex` separately there.
 
-The primary PT-FT uses the fixed A39 backbone at every budget. Tight-budget predictions from the auxiliary budget-aware PT-FT run in the historical CSV are excluded from the primary comparison. The three NAS searches build their shortlists under each active budget. Azure Table 6 reports feasible outputs and uses the same 30 subscriptions at all three budgets.
+The main PT-FT comparison uses the fixed A39 backbone at each budget. The three NAS searches form their shortlists under the active budget. The Azure evaluation uses the same 30 subscriptions at all three budgets.
 
-## Rerun adaptation and selection
+## 2. Train on the public traces and report your own results
 
-Use a separate **Python 3.11** environment with an NVIDIA GPU and driver supporting CUDA 12.1. The reported runs used a Tesla V100S, PyTorch 2.5.1+cu121 and the native GRU backend. Install the CUDA dependencies and load the frozen source weights.
-
-```bash
-python -m pip install -r code/requirements-train.txt
-python code/reproduce.py fetch weights
-python code/run_targets.py --dataset bitbrains --bitbrains /path/to/fastStorage.zip --tasks 1
-python code/run_targets.py --dataset azure --tasks 1
-```
-
-Each smoke command fits **all eight methods at all three budgets** for one task. Remove `--tasks 1` to run all 120 tasks per dataset. Use `--method pt msa` to run a subset. Model choice uses the observed prefix. The runner saves the selected weights before opening future labels for scoring. It prints architecture mismatches and the maximum absolute error differences for each metric and writes complete task records in `work/reruns/`. The optional `--strict` switch applies the much tighter archived-forecast replay tolerance to a fresh run. GPU kernels and training libraries can change floating point results and occasionally change the selected architecture.
-
-To refit the main ablation table, run `python code/run_ablation.py --bitbrains /path/to/fastStorage.zip` after fetching weights. The four arms share the same medium-budget task inputs and A57 reference. `--tasks 1` runs one task.
-
-## Retrain from the public traces
-
-On a machine with CUDA (Linux is the original training platform), start in an empty working copy with the training dependencies installed. The following path derives the source tensors, retrains source weights, screens architectures, selects the references, calibrates on D and evaluates E. It also retrains the baseline source components and selects the fixed backbones on C.
+Use a separate Python 3.11 environment on Linux with an NVIDIA GPU. The original experiment used a Tesla V100S, PyTorch 2.5.1 with CUDA 12.1 and the native GRU backend. From a clean working copy, train the source models, select the references on the historical cohorts, calibrate the switching margin and evaluate the two target datasets. Use a separate output directory for each experiment.
 
 ```bash
+python -m pip install -r code/requirements-train.txt -r code/requirements-figures.txt
 python code/train.py all --bitbrains /path/to/fastStorage.zip
-python code/run_targets.py --trained work/training/export --dataset bitbrains --bitbrains /path/to/fastStorage.zip
-python code/run_targets.py --trained work/training/export --dataset azure
+python code/run_targets.py --trained work/training/export --dataset bitbrains --bitbrains /path/to/fastStorage.zip --output-dir work/runs/full
+python code/run_targets.py --trained work/training/export --dataset azure --output-dir work/runs/full
+python code/reproduce.py figures --from-run work/runs/full
 ```
 
-For a smaller source-training check, run `python code/train.py prepare --bitbrains /path/to/fastStorage.zip` and `python code/train.py source-smoke`. This fits one architecture from scratch for 50 epochs.
+The full report checks for eight methods, three budgets and the same 120 tasks per method in each dataset. It writes three files under `work/runs/full/report/`:
+
+- `task_scores.csv` lists each selected architecture, its scores, parameter count, operation count and whether it met both limits.
+- `performance_and_feasibility.csv` gives the task counts, feasibility counts and errors by method and budget. Both all-output and feasible-only errors are included. A blank feasible-only metric means that no selected model met both limits.
+- `performance_and_feasibility.pdf` plots prediction error and deployment coverage from these results. Published timings, ablations and calibration records have separate inputs.
+
+### Quick GPU check with the published source weights
+
+To test target adaptation, selection, scoring and plotting on one task per dataset, use the same training and plotting dependencies and run:
+
+```bash
+python code/reproduce.py fetch weights
+python code/run_targets.py --dataset bitbrains --bitbrains /path/to/fastStorage.zip --tasks 1 --output-dir work/runs/smoke
+python code/run_targets.py --dataset azure --tasks 1 --output-dir work/runs/smoke
+python code/reproduce.py figures --from-run work/runs/smoke --partial
+```
+
+This example fits all eight methods under all three budgets. The report labels the number of tasks actually evaluated. Remove `--tasks 1` to evaluate all 120 tasks per dataset and omit `--partial` for a full report. The runner also accepts `--method pt msa` for a smaller comparison. Use the same task and method coverage across budgets and keep distinct runs in separate directories. GPU and library differences may affect fitted errors or the selected architecture; `--strict` checks them against the archived predictions at replay tolerance.
+
+For a source-training check, run `python code/train.py prepare --bitbrains /path/to/fastStorage.zip` and `python code/train.py source-smoke` to fit one architecture for 50 epochs. For the main ablation, run `python code/run_ablation.py --bitbrains /path/to/fastStorage.zip` after fetching weights. Its four arms share the medium-budget tasks and the A57 reference; `--tasks 1` selects one task.
 
 The individual training stages are `prepare`, `msa`, `policy`, `search`, `pt`, `medet`, `scratch` and `hmeta`. The single-device runner uses one process per stage. The historical wall-clock numbers in Table 4 come from the original scheduling and recorded interruptions. Use the original measurements to verify that table and report new machine timings separately. [Training workers](code/experiments/reference) · [Verification scope](code/VALIDATION.md)
 
