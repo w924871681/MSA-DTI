@@ -1,0 +1,26 @@
+{
+  "azure-forecasts.zip": {
+    "group": "scores",
+    "bytes": 9536953,
+    "sha256": "17ce77897b9ee0d76b7f1848b3c17c2acf3cfb2861b7941817111eba51c4e39c",
+    "url": "https://github.com/w924871681/MSA-DTI/releases/download/review-v1/azure-forecasts.zip"
+  },
+  "bitbrains-forecasts.zip": {
+    "group": "scores",
+    "bytes": 9268401,
+    "sha256": "44086b4e92b47c96c180c6d363478fc40bad2205a36c25d4205a44e1eada6de4",
+    "url": "https://github.com/w924871681/MSA-DTI/releases/download/review-v1/bitbrains-forecasts.zip"
+  },
+  "model-weights.zip": {
+    "group": "weights",
+    "bytes": 91023426,
+    "sha256": "55a1d122c615b78ff91e48a389f15bb90d3d41c4857da375f714c7642dde0416",
+    "url": "https://github.com/w924871681/MSA-DTI/releases/download/review-v1/model-weights.zip"
+  },
+  "supplement-evidence.zip": {
+    "group": "supplement",
+    "bytes": 237403658,
+    "sha256": "8b7eba6aa7d1fb98c5a10f9ce4ada8d7fbe57eba0730b823bb00a8722440d6cd",
+    "url": "https://github.com/w924871681/MSA-DTI/releases/download/review-v1/supplement-evidence.zip"
+  }
+}

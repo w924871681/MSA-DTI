@@ -1,0 +1,138 @@
+{
+  "checkpoints": [
+    {
+      "token": "PT_A57_ref",
+      "H": 1,
+      "arch_index": 57,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H32_D0.1",
+      "initialization_seed": 3062
+    },
+    {
+      "token": "C1_A57_pair",
+      "H": 1,
+      "arch_index": 57,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H32_D0.1",
+      "initialization_seed": 12961
+    },
+    {
+      "token": "A1",
+      "H": 1,
+      "arch_index": 1,
+      "architecture_family": "MLP",
+      "arch_key": "MLP_L2_H32_D0.1",
+      "initialization_seed": 3006
+    },
+    {
+      "token": "A6",
+      "H": 1,
+      "arch_index": 6,
+      "architecture_family": "MLP",
+      "arch_key": "MLP_L3_H32_D0.0",
+      "initialization_seed": 3011
+    },
+    {
+      "token": "A13",
+      "H": 1,
+      "arch_index": 13,
+      "architecture_family": "MLP",
+      "arch_key": "MLP_L4_H32_D0.1",
+      "initialization_seed": 3018
+    },
+    {
+      "token": "A55",
+      "H": 1,
+      "arch_index": 55,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H16_D0.1",
+      "initialization_seed": 3060
+    },
+    {
+      "token": "A56",
+      "H": 1,
+      "arch_index": 56,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H32_D0.0",
+      "initialization_seed": 3061
+    },
+    {
+      "token": "PT_A57_ref",
+      "H": 4,
+      "arch_index": 57,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H32_D0.1",
+      "initialization_seed": 3365
+    },
+    {
+      "token": "C1_A57_pair",
+      "H": 4,
+      "arch_index": 57,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H32_D0.1",
+      "initialization_seed": 42961
+    },
+    {
+      "token": "A1",
+      "H": 4,
+      "arch_index": 1,
+      "architecture_family": "MLP",
+      "arch_key": "MLP_L2_H32_D0.1",
+      "initialization_seed": 3309
+    },
+    {
+      "token": "A6",
+      "H": 4,
+      "arch_index": 6,
+      "architecture_family": "MLP",
+      "arch_key": "MLP_L3_H32_D0.0",
+      "initialization_seed": 3314
+    },
+    {
+      "token": "A13",
+      "H": 4,
+      "arch_index": 13,
+      "architecture_family": "MLP",
+      "arch_key": "MLP_L4_H32_D0.1",
+      "initialization_seed": 3321
+    },
+    {
+      "token": "A55",
+      "H": 4,
+      "arch_index": 55,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H16_D0.1",
+      "initialization_seed": 3363
+    },
+    {
+      "token": "A56",
+      "H": 4,
+      "arch_index": 56,
+      "architecture_family": "GRU",
+      "arch_key": "GRU_L1_H32_D0.0",
+      "initialization_seed": 3364
+    }
+  ],
+  "source_machine_ids": [
+    "fastStorage:872",
+    "fastStorage:306",
+    "fastStorage:323",
+    "fastStorage:44",
+    "fastStorage:400",
+    "fastStorage:710",
+    "fastStorage:270",
+    "fastStorage:471",
+    "fastStorage:1181",
+    "fastStorage:865",
+    "fastStorage:1050",
+    "fastStorage:278",
+    "fastStorage:342",
+    "fastStorage:153",
+    "fastStorage:293",
+    "fastStorage:1018",
+    "fastStorage:933",
+    "fastStorage:20",
+    "fastStorage:867",
+    "fastStorage:890"
+  ]
+}

@@ -1,0 +1,3 @@
+# Frozen records and plotting inputs have content digests. Preserve the exact bytes on every platform.
+* -text
+

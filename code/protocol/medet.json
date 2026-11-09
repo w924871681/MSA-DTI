@@ -1,0 +1,36 @@
+{
+  "method": "medet",
+  "source": {
+    "1": {
+      "path": "fresh_baselines/medet/source/medet/H1/A57.pt",
+      "sha256": "e5dd035e9b969d3b3227ad5eb01a91766b726139d32649b2d2388f5c85210036"
+    },
+    "4": {
+      "path": "fresh_baselines/medet/source/medet/H4/A57.pt",
+      "sha256": "3117174112757674ebe696340579d0a9eb254860323ad006b7141ff5289a78d1"
+    }
+  },
+  "selected": {
+    "arch_id": 57,
+    "arch_key": "GRU_L1_H32_D0.1",
+    "mean_heldout_mse": 0.0036591592943076914,
+    "max_parameters": 5796,
+    "max_operations": 1050880
+  },
+  "architecture": {
+    "arch_id": 57,
+    "arch_key": "GRU_L1_H32_D0.1",
+    "family": "GRU",
+    "hparams": {
+      "n_layers": 1,
+      "hidden_dim": 32,
+      "dropout": 0.1
+    }
+  },
+  "eligible_count": 66,
+  "C_vm_count": 20,
+  "C_tasks": 80,
+  "adapted_models_verified": 5280,
+  "role": "frozen target backbone for this baseline",
+  "scope": "C held-out development assessment, not E accuracy. The replacement threshold is not estimated here."
+}

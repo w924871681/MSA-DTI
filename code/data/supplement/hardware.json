@@ -1,0 +1,19 @@
+{
+  "cpu": "Intel Xeon Processor (Skylake, IBRS)",
+  "gpu": "Tesla V100S-PCIE-32GB",
+  "torch": "2.5.1+cu121",
+  "cuda": "12.1",
+  "threads": 1,
+  "hardware": {
+    "windows_per_call": 1,
+    "warmups": 100,
+    "blocks": 5,
+    "calls_per_block": 1000,
+    "pipeline_warmups": 1,
+    "pipeline_repeats": 5,
+    "pipeline_methods": [
+      "MSA-DTI",
+      "fixed PT-FT"
+    ]
+  }
+}

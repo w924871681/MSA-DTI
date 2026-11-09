@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "bcc307d1853a6976585c9c50acba6a05806a4e1f06affef3847d2c1417198558",
+  "qualified": 89,
+  "selected": [
+    {
+      "project_id": "Od+648kXhgKnQXJ5kd1D/qV2ZArdlHso2obf1ao5awu1d9QPN3ogrZIso67aoPzu",
+      "role": "test",
+      "vm_id": "Ry/G/hEmbhzUiq6VkmZ2Y+9Jsax+yIh+QR84K7B7Yuh61DbGV+NQUKXA1TlHQJf9",
+      "file": "Azure_stage/series/535679516dcffe91.npz",
+      "sha256": "7589c7bf837c44c516426867819ad16b943fb1ae3714123d0ffe9700ed99beaa"
+    },
+    {
+      "project_id": "7a118if7VEOOP5XNG9gSzKDJ/qOQhcpLKUw6Z3oF49w1TvnMFDYlnjt25RsiaYWu",
+      "role": "test",
+      "vm_id": "QKFQpxG+Xc650eZX3vl8lCnXhjC6rxQtNS0qck9i4QZ70dEH+KzVOvKbQUbcurqm",
+      "file": "Azure_stage/series/56e5b0cc6e6d4892.npz",
+      "sha256": "ca71fdae0dbaaa418d54f9b572b8b797d675925e54ccd4999a1d3ff55f77d53c"
+    },
+    {
+      "project_id": "UhvekTCGWKF+/4j5PWV38QIepQgult0PL04WnAl+HwnduuMOIc/pIwA/ExiHyb05",
+      "role": "test",
+      "vm_id": "V56QcU/3MbBdoHFGGwDtdOD1KwLkbZ39XXpH7X1DGOr2W608tXkUjMveNVO6dcBW",
+      "file": "Azure_stage/series/7cc007517668f3ab.npz",
+      "sha256": "652fd1fc557ad30157b994ba089419dce5bfbf7ccdfcce11f3bcec03298ba99c"
+    },
+    {
+      "project_id": "BIhd4LQGvaJ8jMvdT1TIVmOzJhYB7qx58Uw16/XsjJHYHGKRJ/N1oCcwzbOuRoJF",
+      "role": "test",
+      "vm_id": "T14hIhPPd4FXqkxuw+l0oiPsQ3SuivAyTF8VVkDC3ZoZqGOlEXJE6MiWuu5JWlRS",
+      "file": "Azure_stage/series/1d38033e6b8fc283.npz",
+      "sha256": "4ae06d1ce150ddf8a8df128c78abb32d79311344b9eba611a99b3355376d0c9c"
+    },
+    {
+      "project_id": "NtQzdd9B8zzUt/xyoq5DnVSJ4ml0S15XZ7w0CrDe93Ll/L6eYMRiAdtiXg14k+ah",
+      "role": "test",
+      "vm_id": "smrh7tIBIv10lWzvIDG7xlM2jDPMTa6sguPFOB67XuV7qgq8l1EZy0Gd+D+D3K4k",
+      "file": "Azure_stage/series/7a26ab3da1d4b9d7.npz",
+      "sha256": "7589224e17b11250ce6789831f72dec4b45cac2669e9bbd8538bd44529f9aa9d"
+    },
+    {
+      "project_id": "0Ll9EJMlzrDsvniczWTjHVhU+ZaRUVmSYJnNfHhbIkToeJLr+f77DwrCTob5I9Q+",
+      "role": "test",
+      "vm_id": "iGZQm8VIUP43GRDSjbec6GkmRtjUX4pqnJd5BTuFZiAtfdNEjDJmyGrP+JEt/J2t",
+      "file": "Azure_stage/series/7ce2318a576f7a61.npz",
+      "sha256": "e9643a4e8551de933f9babc67617c548b70e731de560c666fd5c44222ae9ea3a"
+    },
+    {
+      "project_id": "ub8asc73k0Q0qqTQf1wyQAKFr8/P87/younqRbvTS+3/jL0bdWqpQptFAFwO87/e",
+      "role": "test",
+      "vm_id": "DhBHZQIZAT48qpkb2s53eSwsu5v9po9k86mYm21MiyrGnfIMUpxeFeo0Jclk7X+H",
+      "file": "Azure_stage/series/8f490fc9ea13fc8f.npz",
+      "sha256": "9c56e41dcae5537d4aad25dc5957dcbe495ef07ce3c2e93970aa7bf5df88489a"
+    },
+    {
+      "project_id": "xlv9dspCwCr7IWhCMUAkNgOdFj/pvklob8xS7ZPiBRLOHTdHlFNZyolsU58/0Dpb",
+      "role": "test",
+      "vm_id": "sFCYgmEgUKjjdyKF/JnGZlXGcE0mlZjQ6h9G2/R6qIiGmOhthvl+NXf/8+r3mkja",
+      "file": "Azure_stage/series/916ed1a22aed8c17.npz",
+      "sha256": "7b484cb2418ba41a4a0355a53cc1a0408996241e5d0a89665e85d56e68de3a12"
+    },
+    {
+      "project_id": "axnXS4Mt8p4THT4sexwvmjGTZHxr9tNUuo8wvx6wgCog6vSiwUrBwHelkDE+GZyB",
+      "role": "test",
+      "vm_id": "NgUHkeZj8ymLFJC03wdyM47o4YHD5lTRdsdNF1iqUK+KGdA/AO8vidqkGkuqRYrL",
+      "file": "Azure_stage/series/dd90ee5fad9d19fc.npz",
+      "sha256": "25d4106bf12122ed6600fbac1c569ebd841700100bf714a52d9bad83b376d137"
+    },
+    {
+      "project_id": "k2u3UrBgJ49kdCYhco0Avw4aVp3QlI92rUbuJPgyjcAPqKD8vnFR5wZDR8KG25HK",
+      "role": "test",
+      "vm_id": "0ZF4WygcQgzsFf+UbyjNpdYci1IQjzJlBimy7u0TMR9DJsjDecmmxo5VJRQvwHnl",
+      "file": "Azure_stage/series/0a49b5c19f8a734e.npz",
+      "sha256": "f9a56cd94b1ecffa4361855eb728ed033e45862de2c124722f332c6009445c16"
+    },
+    {
+      "project_id": "HJ026+wUUDoHJ7gHvusqAENkUMt2nU/9tqXcgJUq0DAHGb/6XuTP0mM17FE9wxkR",
+      "role": "test",
+      "vm_id": "AD+rjEKCioWsTxQUCL4GH31SV32nCIDeH8e+CjcIVAMSiaMYhn8etVk0ohrQOFHl",
+      "file": "Azure_stage/series/30082b03fc504de0.npz",
+      "sha256": "e7f7272dc6bde44d5ff372ac166849a9eff3c15592ae7e7fb7ac068845f9f950"
+    },
+    {
+      "project_id": "WdhuwezOFubYWv2ZliwX9V2z01DxhQSTGXiKhCzqdmFfHXABg2YWfPyIiibORSWN",
+      "role": "test",
+      "vm_id": "PaTgWV07p8Fps0lowjLQDaE8Cg5PPOd3I8bqs1ILAGvTTzYgwiqvtgeaQitM7pVT",
+      "file": "Azure_stage/series/d1ac8cd76cad5309.npz",
+      "sha256": "b3d3561b9c7172fee1d1096fe8aa3c4909daa914cfb44d5cd49750633adf2e79"
+    },
+    {
+      "project_id": "82+MItkDZgS6ViQhp50tFLcA0BNMYd8UU2id/FY55k0fULqcqU2ty5pIvJ/o9ldK",
+      "role": "test",
+      "vm_id": "9N9oKWacKo3N2WrArmp76pQXjF5rH/fKrk0mM1vlgjzac8UB/oAv0dsna3IgYyOX",
+      "file": "Azure_stage/series/aaae2dac5149e69b.npz",
+      "sha256": "837380dfb956b0f4e6c71d5b7cf082d1e493817e8a305bb3355dac443e2a20fb"
+    },
+    {
+      "project_id": "NFnCdLrJRnxIkOEJkyI5vwRqJygq2MKelF+PT37KNaMMrJisQugeI0K+p5EQ91Sy",
+      "role": "test",
+      "vm_id": "kF4zsBOQBqxgn/qX35cVdFF/QzMNxblq3Lcyr2mYsyMmc8UMlwigwYecNv7LW1N9",
+      "file": "Azure_stage/series/7dd7973ecc3f36fc.npz",
+      "sha256": "bf1404d76ae5a2c55c6ee0468ba782e97c3a22235bba5ecc58931bab8df71b36"
+    },
+    {
+      "project_id": "3BD6o4Ocr20Q08h6n+RzNqMWTAnpdzwKGtC3vBEoZIXrgxugckvb/4AC+zs+eXqT",
+      "role": "test",
+      "vm_id": "B55Igk682AW97kYroswLIJhMFFHdfENIeIRUxDdfOajQjskf1kNpAMmcoxbBspG9",
+      "file": "Azure_stage/series/53eb03527ad9173d.npz",
+      "sha256": "8c850ebfb83dfa0f26f78ca3ce73060569a85c41344364144d74a5500728ab84"
+    },
+    {
+      "project_id": "E+kcG0wEY1gpxuarFm1jGAwz/ku3nhHV407BE8s2Nx73aWAUQTSseslyuYwJSNaf",
+      "role": "test",
+      "vm_id": "EVB1XdctbNNOi3hZA2HbQnCLmTHvpLMdQraA5p1Lb/vLudptpnSUjdsGYNE7Yoxo",
+      "file": "Azure_stage/series/fdd01403048cbfc7.npz",
+      "sha256": "8090e3deb0432fb5b3a055550f8bc8a301075559d3ff659bfe1a5fce358481bc"
+    },
+    {
+      "project_id": "8dt/3COs/4wKoBzgIz7oW/wYCFVGNitoaniWEghhPKeBH6s41aXk6mEFO8aHCkMZ",
+      "role": "test",
+      "vm_id": "MOarevfE98tmijJk/6JRpprKoUBbcFKLJo8/LAfSZSLCrhvipVtfvAx7Efmw0Dsm",
+      "file": "Azure_stage/series/c90b8a42cec8b6e4.npz",
+      "sha256": "b69ba7216772c05952e991acb423618785071185bbbcef9c6dbe94e7d1c6d585"
+    },
+    {
+      "project_id": "XEYimd8Spi7Wo+LK+CIsabGTZyeJlbofjdGrADyJgSNE15J8bKGplGMqfet/e0Vh",
+      "role": "test",
+      "vm_id": "j2JgOZBe6joYj4Zb0jJZfRE6LIzSQkn9qxq/aLAsTJrKpEZrAFtsZPMMS16zM2Yj",
+      "file": "Azure_stage/series/f60c9406c2a4a770.npz",
+      "sha256": "0bdccc7573bb855bea09fc6e37f7213ebdf6ce5f77deae665db98b2613948132"
+    },
+    {
+      "project_id": "yu+wghQ0XNnnpdVTxqDo8G06VPgKU1EyiBuXoyx6RFk9bfRImiJoHGuZKCeWgkor",
+      "role": "test",
+      "vm_id": "8N6TK7W6YMj6Mh1ZecuoP9czThr0UU8WEBuGinahtzYdUUV6IgEBenlr4yStr00/",
+      "file": "Azure_stage/series/cec6266823900cf5.npz",
+      "sha256": "b202aec54683f66971a96e72f7f4e9453cb0ce64fd5ee2fd5e290beae043cfbc"
+    },
+    {
+      "project_id": "dCoCRWQ+mXqpmkX+dosHbX+NTSdNfiR6CPY6r2YXz/4hEVlTatR52wGBVO0lRL/b",
+      "role": "test",
+      "vm_id": "Bjcwopo38L8ODAl5ZJKmMIrXGibSubrxNxNYNJ85AVpOYVdLBazaoVP2Jct1QcRS",
+      "file": "Azure_stage/series/30f5a6cc717c1313.npz",
+      "sha256": "1791be6b686cab380c6d813a3d531852684aec74615a8deb08e4e927a9de7679"
+    },
+    {
+      "project_id": "oHoNw+sZ5iwCI4VXusEtVLySZi/FDcYy2+Of5kKGz97d7URxq/aSyhwtocb2XvyD",
+      "role": "test",
+      "vm_id": "YAhhkmYOOCqTxMAl8f0Vk6hp9hZHtDS5O7x419kBWjR6YFQr428MZzfcxe9UJBSW",
+      "file": "Azure_stage/series/3902516fdfa93544.npz",
+      "sha256": "9ec556d654ba85246225cc7ccadf6cd9c66e6a11f181cba3cb1826684b0b9783"
+    },
+    {
+      "project_id": "I2TExLiVDcTAtuihRQd9hG2jyKb6uIoNZ3GdrBbZ0OwQM0ijlpiDdsA6jCg8zEy/",
+      "role": "test",
+      "vm_id": "PTbCVi2EtOhYOiWoyi+o5rPLvyQZlONZkocYqB5yHsvgfQeJAxpBJ64sk6y3mj+V",
+      "file": "Azure_stage/series/30411d3a8ed97123.npz",
+      "sha256": "dae65bafca923fdbf7b03d22b856e0f5fd10e1bcf4279a3d6a7bbbdc53a2bf9a"
+    },
+    {
+      "project_id": "NpDPjSm+N6UEJ9h/6+jKjEN7w4rmWF9/DEWfAG1kRAj+bvjX57Oc98eYBzh723Vr",
+      "role": "test",
+      "vm_id": "+fWkA+VxMUL0kCkbjfkGcPm/IldATGJ1LoVJysqRM42SPlRaL2QqGOixbx+x7PmC",
+      "file": "Azure_stage/series/32e1fb55169fbff0.npz",
+      "sha256": "9cb4b1e3fa68169babdbe5b5ee317f0c157db2c65485d1b2bfb67d1cd32b39f6"
+    },
+    {
+      "project_id": "r6jbMGGrQoP+zj99YIAW4MoDNig/AuucC0uKBU7MHAJh/BKClQUX+/XSQJlG6Flm",
+      "role": "test",
+      "vm_id": "4hranm/Zz7t0RO+jAMKswBfwjcT14RW5/HDP5Jx9LCLTD3GbpYZSz/vNfGkgel3b",
+      "file": "Azure_stage/series/679f41b1e6b4b9c5.npz",
+      "sha256": "2448f5452b708fbcdf8f14851542da09bdab300172f2b3c89d77363156b2d02c"
+    },
+    {
+      "project_id": "+/YA8wlr9oNPa0aTNGF/EztfJBl8yh8Z5uCN4Dd9MZcYH0vFYgf191+mtOzzt6Xt",
+      "role": "test",
+      "vm_id": "9ygg9wpxJtndEbfWyXgSiXiNT/RkhBbsYJHR/6w2OBfYAVUEi6xVAgGth8Ek4RW4",
+      "file": "Azure_stage/series/61dd828ba44c7b0d.npz",
+      "sha256": "049acf7ea6fe2b8eb06f0bb781c81dc549447828c964166b71440941cb0e5222"
+    },
+    {
+      "project_id": "pXGZviV8nGq9X1XFSHeRW/SKsv1UCWsRgWxt6ryyFMGmUrTYUMxx8u5GIxzKU57O",
+      "role": "test",
+      "vm_id": "5id+aKm8TxBPaM/rM0hLhYcJwOvkWg1TVLDwX8Amwf/ZLzK8L7mWpS9fIUeUUSMj",
+      "file": "Azure_stage/series/4fdf1fd3da311806.npz",
+      "sha256": "758592c35b83d2506f801fa6ee22fe28923e4f91a736c3ed5fb371025b836259"
+    },
+    {
+      "project_id": "Fvq/iBEqRJ6HXJWmjxI15lcw3AUjMye7QL468P49yEL00zo6dOQEPUUt4aWwl/Vu",
+      "role": "test",
+      "vm_id": "gJpJxGVgZ0NgkdoCf+a21bDv45ZqkmK7m3Xytt09dcRiCUAqT0Inyr4Utzey3/Us",
+      "file": "Azure_stage/series/b895068e931e4032.npz",
+      "sha256": "65256a09a13c42d8a16aa77a280010d6ce9b7d2a51c7e0d3c542010bfceb1a46"
+    },
+    {
+      "project_id": "ZvKfUZDcCoK/OyCz7Zv8LpoT7yHoKSSxXJkkZVQY0k3bqx8cHxEh44D8WIFjye5L",
+      "role": "test",
+      "vm_id": "SRpprOMaeeAZfPT7onqNMfLAmNSrAZ8PrfMfPVJGLYFScEyZWLR+2KsdW/us9Zf1",
+      "file": "Azure_stage/series/464da2a2135e4b2e.npz",
+      "sha256": "57a3f3cd3b4e90c79ef74907b89092ee90b21d8378f64d29995187788e8e236f"
+    },
+    {
+      "project_id": "2UjqE0zl8n30tTuBD/uC1GYKOc8vCt4oYhrlW9tgCXOCOTbbt78av0SdzkBF5IaW",
+      "role": "test",
+      "vm_id": "NUmUGszRXoQs0Rs/2Gbw6DeJ/1lmMv6cM2z4hGB86FgPYVfzFRouAWMd+0GthZlD",
+      "file": "Azure_stage/series/690ea0acef0965c6.npz",
+      "sha256": "a0c252800f857f508e7e874f505d0225691b401745edad68c14624f95010701b"
+    },
+    {
+      "project_id": "DPyHXKhqOVIxekaj3aDbq/GyH8ReFDT6CYTPo4VAB/vonwUNOn/+ublFsyVbeTMg",
+      "role": "test",
+      "vm_id": "zAcJ/2gi/0+7kvIC7QtrNDOviSBggN5KG8qH0HjswGCr75q4lanpazoB/ZNhhwA5",
+      "file": "Azure_stage/series/55b6047fa1b76ac6.npz",
+      "sha256": "991fb5e7544c21e0b1d3276217cb981e3feb99887a7d0b53608e649c7d56a081"
+    }
+  ],
+  "selection_uses_prediction_results": false,
+  "screen": "five-minute coverage and finite nonnegative CPU only"
+}

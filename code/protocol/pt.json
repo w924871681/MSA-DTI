@@ -1,0 +1,37 @@
+{
+  "method": "pt",
+  "source": {
+    "1": {
+      "path": "fresh_baselines/pt/source/pt/H1/A39.pt",
+      "sha256": "0d19f8d725ff7c3c1319ce65e0db432b0bf42f624df6ba50ea298630d95341f7"
+    },
+    "4": {
+      "path": "fresh_baselines/pt/source/pt/H4/A39.pt",
+      "sha256": "13779970bf7f980c569dc75c9c6ffe603f2a57f47935de86c48d9252ed875b0c"
+    }
+  },
+  "selected": {
+    "arch_id": 39,
+    "arch_key": "TCN_B3_C32_K3_Dil2",
+    "mean_heldout_mse": 0.0033855124409948438,
+    "max_parameters": 18916,
+    "max_operations": 3563776
+  },
+  "architecture": {
+    "arch_id": 39,
+    "arch_key": "TCN_B3_C32_K3_Dil2",
+    "family": "TCN",
+    "hparams": {
+      "n_blocks": 3,
+      "channels": 32,
+      "kernel": 3,
+      "dilation": 2
+    }
+  },
+  "eligible_count": 66,
+  "C_vm_count": 20,
+  "C_tasks": 80,
+  "adapted_models_verified": 5280,
+  "role": "frozen target backbone for this baseline",
+  "scope": "C held-out development assessment, not E accuracy. The replacement threshold is not estimated here."
+}
