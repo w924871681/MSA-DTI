@@ -39,7 +39,7 @@ FROZEN_HYPERPARAMETERS: dict[str, object] = {
     "sgd_steps": 50,
     "sgd_lr": 0.02,
     "grad_clip_norm": 1.0,
-    "early_checkpoints": [0, 10, 25, 50],
+    "early_checkpoints": ["b50", "b25", "b10", "bW", "a0"],
     "channel_importance_ridge": 0.01,
     "routing_load_columns": {1: 3, 5: 10},
     "causal_load_scales": [1, 5, 20, 96],

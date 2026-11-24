@@ -1,0 +1,83 @@
+[
+  {
+    "tag": "ORIG_WIN",
+    "stem": "E_vm1009_H1_K20_A35",
+    "stage": "E",
+    "slug": "vm1009_H1_K20",
+    "arch_id": 35,
+    "family": "TCN",
+    "H": 1,
+    "K": 20,
+    "seed": 2887682097,
+    "base02_state": "b50",
+    "expected_j_low1": 1,
+    "expected_j_low5": 1,
+    "expected_body": "orig",
+    "expected_families": [
+      "r_separate"
+    ],
+    "expected_actions": [
+      "r_sep1_23_203"
+    ],
+    "expected_val_mse": 2.51175290385466e-08,
+    "expected_future_mse": 9.434903125979153e-09,
+    "expected_params": 5569,
+    "expected_macs": 522256
+  },
+  {
+    "tag": "LOW1_WIN",
+    "stem": "E_vm1009_H1_K20_A47",
+    "stage": "E",
+    "slug": "vm1009_H1_K20",
+    "arch_id": 47,
+    "family": "TCN",
+    "H": 1,
+    "K": 20,
+    "seed": 2887682097,
+    "base02_state": "b25",
+    "expected_j_low1": 0,
+    "expected_j_low5": 0,
+    "expected_body": "low1",
+    "expected_families": [
+      "r_separate"
+    ],
+    "expected_actions": [
+      "r_sep1_03_003"
+    ],
+    "expected_val_mse": 2.5314164871538163e-08,
+    "expected_future_mse": 9.356885400815281e-09,
+    "expected_params": 7137,
+    "expected_macs": 669712
+  },
+  {
+    "tag": "MISSING_FAM_WIN",
+    "stem": "E_vm1036_H4_K10_A32",
+    "stage": "E",
+    "slug": "vm1036_H4_K10",
+    "arch_id": 32,
+    "family": "TCN",
+    "H": 4,
+    "K": 10,
+    "seed": 3183774663,
+    "base02_state": "b50",
+    "expected_j_low1": 3,
+    "expected_j_low5": 3,
+    "expected_body": "orig",
+    "expected_families": [
+      "legacy_special",
+      "legacy_special",
+      "r_mix",
+      "legacy_special"
+    ],
+    "expected_actions": [
+      "V_orth_96_0_0.5",
+      "V_orth_96_0_1.0",
+      "r_mix_03_103",
+      "V_orth_96_0_1.0"
+    ],
+    "expected_val_mse": 0.0021168612872572,
+    "expected_future_mse": 0.0054342839573862,
+    "expected_params": 2892,
+    "expected_macs": 268832
+  }
+]

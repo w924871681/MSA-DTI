@@ -1,163 +1,237 @@
-"""Repeat target adaptation and selection on one CUDA device using the frozen source assets."""
+"""Run frozen MSA-DTI (RGMS selection + SPA structure-preserving adaptation) on target centers.
+
+Uses the frozen RGMS candidate selection cache (or newly generated response probes)
+together with the exact frozen SPA pipeline (`base02` 5-state early adaptation,
+22-config support-only initial readout, optional single-channel causal load routing,
+and multi-scale load-decomposed output calibration folded into the existing linear head).
+"""
+from __future__ import annotations
+
 import argparse
-import os
+import json
 import sys
 import tempfile
-from functools import lru_cache
 from pathlib import Path
-from contextlib import contextmanager
+
 import numpy as np
 import pandas as pd
-
-from inputs import CODE, WORK, METHODS, TIERS, carrier, cases, digest, file_hash, metrics, read, truth
-from verify_results import compare
-sys.path.insert(0,str(CODE/"native/src"))
-from msa_dti import runtime as u, baseline_runtime as br
-from msa_dti.prefix import prefix_selection, DTYPE
-from msa_dti.features import causal_features
 import torch
-WEIGHTS=WORK/"weights"
-SETTINGS=CODE/"protocol"
-PLAN=read(CODE/"verification/pipeline_plan.json")
-POLICY=read(CODE/"data/frozen_policy.json")
 
-@lru_cache(maxsize=2)
-def search_weights(h):
-    return {u.make_bank_key_shared(H=h,arch_key=a.arch_key,input_dim=25,L=96):
-        load(WEIGHTS/f"search/H{h}/A{i}.pt")["state_dict"] for i,a in enumerate(u.ARCH)}
+CODE_DIR = Path(__file__).resolve().parent
+REPO_ROOT = CODE_DIR.parent
+if str(CODE_DIR) not in sys.path:
+    sys.path.insert(0, str(CODE_DIR))
+if str(CODE_DIR / "native" / "src") not in sys.path:
+    sys.path.append(str(CODE_DIR / "native" / "src"))
 
-def load(path):
-    return torch.load(path,map_location="cpu",weights_only=True)
+from inputs import TIERS, WORK, carrier, cases, digest, metrics, read, truth  # noqa: E402
+from msa_dti.adaptation import adapt_model_spa, early_stop_base02, extract_hidden_and_pred  # noqa: E402
+from msa_dti.config import (  # noqa: E402
+    CANDIDATE_BANK,
+    DEPLOYMENT_BUDGETS,
+    HORIZON_SUPPORT_GRID,
+    feasible_candidates,
+    load_resource_profiles,
+)
+from msa_dti.selection import select_candidate  # noqa: E402
+from msa_dti_native import runtime as rt  # noqa: E402
+from msa_dti_native.features import causal_features  # noqa: E402
+from msa_dti_native.prefix import DTYPE, prefix_selection  # noqa: E402
 
-def fit(i,h,seed,state,xs,ys,xv):
-    model=u.build(i,h,state,seed)
-    with u.candidate_backend_context(u.ARCH[i],u.DEVICE,"gru-native"):
-        u.seed(seed)
-        opt=torch.optim.SGD(model.parameters(),lr=.01)
-        for _ in range(50):
-            model.train();opt.zero_grad(set_to_none=True)
-            ((model(xs)-ys)**2).mean().backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(),1.,error_if_nonfinite=True);opt.step()
-        model.eval()
-        with torch.no_grad():val=model(xv).cpu().numpy()
-    return model,val
+DATA_DIR = CODE_DIR / "data"
+PROTO_DIR = CODE_DIR / "protocol"
 
-def target_features(stage,c,raw_path,root):
-    prefix=carrier(stage,c,raw_path,prefix=True)
-    if digest(prefix)!=c["prefix_hash"]:raise ValueError("Wrong prefix")
-    path=root/(c["slug"]+".bin")
-    path.write_bytes(prefix)
-    return prefix_selection(c,path,read(CODE/"protocol/E/normalization.json"))
 
-def select(c,features,method,root):
-    h,seed=c["H"],c["seed"]
-    xs,ys,xv,yv=[torch.from_numpy(features[k]) for k in ("Xs","ys","Xv","yv")]
-    tiers=list(TIERS)
-    if method=="msa" or method in ("pt","medet","scratch"):
-        xx,yy,vv=[x.to(u.DEVICE).contiguous() for x in (xs,ys,xv)]
-        if method!="msa":
-            spec=read(SETTINGS/(method+".json"))
-            i=spec["selected"]["arch_id"]
-            state=None if method=="scratch" else load(WEIGHTS/f"{method}/H{h}.pt")
-            if state is not None:state=state.get("state_dict",state)
-            model,_=fit(i,h,seed,state,xx,yy,vv)
-            return {t:(i,model) for t in tiers}
-        profiles={i:tuple(u.profile_arch(u.ARCH[i],96,25,h)) for i in PLAN["bank"]}
-        out={}; cache={}
-        for tier in tiers:
-            ids=[i for i in profiles if all(x<=y for x,y in zip(profiles[i],PLAN["caps"][tier]))]
-            for i in ids:
-                if i not in cache:
-                    state=load(WEIGHTS/f"msa/strong_H{h}_A{i}.pt")["state_dict"]
-                    model,val=fit(i,h,seed,state,xx,yy,vv)
-                    loss=np.square(val.astype(np.float64)-features["yv"].astype(np.float64)).mean(1).mean()
-                    cache[i]=(loss,model)
-            ref=POLICY["reference"]
-            valid=[i for i in ids if i==ref or (POLICY["tau"] is not None and cache[i][0]<=(1-POLICY["tau"])*cache[ref][0])]
-            i=min(valid,key=lambda j:(cache[j][0],*profiles[j],j));out[tier]=(i,cache[i][1])
-        return out
-    if method=="h_meta_nas":
-        if not hasattr(br,"HM"):
-            br.HM=load(WEIGHTS/"hmeta.pt");br.HMHASH=file_hash(WEIGHTS/"hmeta.pt")
-        br.CURRENT=dict(case=c,prefix_sha=c["prefix_hash"],native_hash=file_hash(Path(br.__file__)),cache=root/"cache"/c["slug"],
-                        logical_adaptations=0,actual_adaptations=0,cache_hits=0,events=[],proxies={})
-        out={}
-        for t in ("medium","tight","loose"):
-            state,i,_=br.hmeta(h,t,seed,xs,ys,xv,yv)
-            out[t]=(i,u.build(i,h,state,seed))
-        return out
-    pi=read(SETTINGS/"pi50.json")["pi50"] if method=="meta_nas_lite" else None
-    out={}
-    for tier in tiers:
-        model,_,row,details,_,_=u.native._run_search_case(method,{"bank":search_weights(h),"pi50":pi},u.CFG,u.ARCH,u.DEVICE,
-            "gru-native",xs,ys,xv,yv,tier,h,25,96,seed)
-        i=int(row["arch_idx"])
-        if i not in u.native.feasible_indices(u.CFG,u.ARCH,tier,96,25,h):raise ValueError("Over-budget search")
-        out[tier]=(i,model)
-    return out
+def load_source_state(weights_dir: Path, horizon: int, arch_id: int) -> dict[str, torch.Tensor]:
+    """Load source-trained weights from either H{H}_A{id}.pt or strong_H{H}_A{id}.pt."""
+    candidates = [
+        weights_dir / f"H{horizon}_A{arch_id}.pt",
+        weights_dir / "msa" / f"strong_H{horizon}_A{arch_id}.pt",
+        weights_dir / f"strong_H{horizon}_A{arch_id}.pt",
+        weights_dir / f"H{horizon}" / f"A{arch_id}.pt",
+    ]
+    for path in candidates:
+        if path.is_file():
+            obj = torch.load(path, map_location="cpu", weights_only=True)
+            return obj["state_dict"] if isinstance(obj, dict) and "state_dict" in obj else obj
+    raise FileNotFoundError(
+        f"Source checkpoint for H={horizon}, A{arch_id} not found under {weights_dir}"
+    )
 
-def main():
-    global WEIGHTS,SETTINGS,POLICY,PLAN
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dataset",choices=["bitbrains","azure"],required=True)
-    parser.add_argument("--bitbrains",type=Path)
-    parser.add_argument("--method",choices=list(METHODS),nargs="+",default=list(METHODS))
-    parser.add_argument("--tasks",type=int,default=120)
-    parser.add_argument("--output-dir", type=Path, default=WORK/"reruns",
-                        help="Directory for the CSVs from one experiment")
-    parser.add_argument("--trained",type=Path,help="Use a newly trained export directory for weights, reference, bank, margin, source prior and fixed backbones")
-    parser.add_argument("--strict",action="store_true",help="Require exact architecture and numeric agreement at archive replay tolerance")
-    args=parser.parse_args()
-    if args.trained:
-        SETTINGS=args.trained.resolve();WEIGHTS=SETTINGS/"weights"
-        POLICY=read(SETTINGS/"policy.json");PLAN={**PLAN,"bank":POLICY["bank"]}
-    if args.dataset=="bitbrains" and args.bitbrains is None:parser.error("Bitbrains needs --bitbrains PATH")
-    if not 1<=args.tasks<=120 or len(args.method)!=len(set(args.method)):parser.error("Invalid task count or duplicate method")
-    if not torch.cuda.is_available():raise SystemExit("CUDA required for the original comparison kernels")
-    stage="E" if args.dataset=="bitbrains" else "azure"; cohort=cases(stage)[:args.tasks]; rows=[]
-    WORK.mkdir(exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix="target-",dir=WORK) as tmp:
-        root=Path(tmp); actions=[]
-        # Save model states for every requested task before opening future labels.
+
+def select_rgms_from_cache(stage: str, slug: str, horizon: int, support_k: int, budget: str) -> dict:
+    """Run exact frozen RGMS selection for one (stage, slug, budget) using rgms_dev_cache.npz."""
+    meta = read(DATA_DIR / "rgms_dev_meta.json")
+    profiles = load_resource_profiles(DATA_DIR / "budget_resource_profiles.json")
+    sh = HORIZON_SUPPORT_GRID.index((int(horizon), int(support_k)))
+    sinfo = meta["shards"][str(sh)]
+    dev_idx = next(
+        idx for idx, row in enumerate(sinfo["dev"]) if row["stage"] == stage and row["slug"] == slug
+    )
+    omax, pmax = DEPLOYMENT_BUDGETS[budget]
+    feas = feasible_candidates(profiles, horizon, omax, pmax)
+    loo_k = [r["loo_k"] for r in sinfo["C"]]
+    loo_a = [r["loo_alpha"] for r in sinfo["C"]]
+
+    with np.load(DATA_DIR / "rgms_dev_cache.npz") as z:
+        return select_candidate(
+            z[f"sh{sh}_dev_x"][dev_idx],
+            z[f"sh{sh}_dev_b"][dev_idx],
+            z[f"sh{sh}_dev_feat"][dev_idx],
+            z[f"sh{sh}_C_x"],
+            z[f"sh{sh}_C_b"],
+            z[f"sh{sh}_C_q"],
+            z[f"sh{sh}_C_qold"],
+            z[f"sh{sh}_C_feat"],
+            feas,
+            k=sinfo["final_k"],
+            alpha=sinfo["final_alpha"],
+            hist_loo_k=loo_k,
+            hist_loo_alpha=loo_a,
+        )
+
+
+def run_spa_fixture(device: torch.device) -> int:
+    """Execute live SPA verification on the bundled 3-instance Bitbrains E fixture."""
+    fix_dir = DATA_DIR / "spa_fixture"
+    manifest = read(fix_dir / "manifest.json")
+    for item in manifest:
+        stem = item["stem"]
+        arch_id = int(item["arch_id"])
+        H = int(item["H"])
+        fam = str(item["family"])
+        base_sd = torch.load(fix_dir / f"{stem}_base02.pt", map_location="cpu", weights_only=True)
+        with np.load(fix_dir / f"{stem}_data.npz") as d:
+            xs, ys, xv, yv, xfut, yfut = d["Xs"], d["ys"], d["Xv"], d["yv"], d["Xfut"], d["yfut"]
+
+        model = rt.build(arch_id, H, base_sd, int(item["seed"])).to(device)
+        res = adapt_model_spa(model, fam, base_sd, xs, ys, xv, yv, device=device)
+        model.load_state_dict(res["deployed_state_dict"], strict=True)
+        _, _, pred_fut, _, _ = extract_hidden_and_pred(model, torch.from_numpy(xfut).to(device))
+        fut_mse = float(np.square(pred_fut.astype(np.float64) - yfut.astype(np.float64)).mean())
+
+        assert res["topology_invariant"], f"{stem}: topology invariance violated"
+        assert res["selected_body"] == item["expected_body"], (
+            f"{stem}: body {res['selected_body']} != {item['expected_body']}"
+        )
+        assert res["winning_families"] == item["expected_families"], (
+            f"{stem}: families {res['winning_families']} != {item['expected_families']}"
+        )
+        assert res["winning_actions"] == item["expected_actions"], (
+            f"{stem}: actions {res['winning_actions']} != {item['expected_actions']}"
+        )
+        rel_val = abs(res["val_mse"] - item["expected_val_mse"]) / max(item["expected_val_mse"], 1e-15)
+        rel_fut = abs(fut_mse - item["expected_future_mse"]) / max(item["expected_future_mse"], 1e-15)
+        assert rel_val < 1e-4, f"{stem}: val_mse rel diff {rel_val:.3e}"
+        assert rel_fut < 1e-4, f"{stem}: future_mse rel diff {rel_fut:.3e}"
+        print(
+            f"PASS [{item['tag']}] {stem}: body={res['selected_body']} "
+            f"j*={res['routed_info']['low1']['j']} val_rel={rel_val:.2e} fut_rel={rel_fut:.2e}"
+        )
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dataset", choices=["bitbrains", "azure"], default="bitbrains")
+    parser.add_argument("--bitbrains", type=Path, help="Path to GWA-T-12 fastStorage.zip (for Bitbrains E)")
+    parser.add_argument("--weights-dir", type=Path, help="Directory holding source checkpoints H{H}_A{arch}.pt")
+    parser.add_argument("--budgets", choices=list(TIERS), nargs="+", default=list(TIERS))
+    parser.add_argument("--tasks", type=int, default=120)
+    parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--output-dir", type=Path, default=WORK / "runs" / "msa_dti")
+    parser.add_argument("--verify-fixture", action="store_true", help="Run bundled 3-instance SPA fixture check and exit")
+    args = parser.parse_args()
+
+    device = torch.device(args.device)
+    if args.verify_fixture:
+        return run_spa_fixture(device)
+
+    if args.dataset == "bitbrains" and args.bitbrains is None:
+        parser.error("--bitbrains PATH_TO_FASTSTORAGE_ZIP is required when --dataset bitbrains")
+    if args.weights_dir is None:
+        parser.error("--weights-dir PATH is required for full target instantiation")
+    if not 1 <= args.tasks <= 120:
+        parser.error("--tasks must be between 1 and 120")
+
+    stage = "E" if args.dataset == "bitbrains" else "azure"
+    norm = read(PROTO_DIR / "E" / "normalization.json")
+    cohort = cases(stage)[: args.tasks]
+    rows: list[dict] = []
+    WORK.mkdir(parents=True, exist_ok=True)
+
+    with tempfile.TemporaryDirectory(prefix="msa-target-", dir=WORK) as tmp:
+        tmp_dir = Path(tmp)
         for c in cohort:
-            d=target_features(stage,c,args.bitbrains,root)
-            for method in args.method:
-                chosen=select(c,d,method,root); saved={}
-                for tier,(i,model) in chosen.items():
-                    path=root/f"{c['slug']}_{method}_{tier}.pt"
-                    if id(model) not in saved:
-                        torch.save({k:v.detach().cpu() for k,v in model.state_dict().items()},path)
-                        saved[id(model)]=(path,file_hash(path))
-                    path,sha=saved[id(model)]
-                    actions.append((c,method,tier,i,path,sha))
-                del chosen
-            print("selected",c["slug"],flush=True)
-        last=None
-        for c,method,tier,i,path,sha in actions:
-            if c["slug"]!=last:
-                raw=carrier(stage,c,args.bitbrains);y,valid=truth(c,raw)
-                r=np.frombuffer(raw,dtype=DTYPE)
-                feat=causal_features(r["timestamp"],r["raw"],read(CODE/"protocol/E/normalization.json"))
-                origins=np.arange(c["T"],c["T"]+c["B"])
-                x=torch.from_numpy(np.stack([feat[o-95:o+1] for o in origins]).astype(np.float32)).to(u.DEVICE)
-                last=c["slug"]
-            if file_hash(path)!=sha:raise RuntimeError("Adapted state changed")
-            m=u.build(i,c["H"],load(path),c["seed"]);m.eval()
-            with u.candidate_backend_context(u.ARCH[i],u.DEVICE,"gru-native"),torch.no_grad():
-                pred=m(x).cpu().numpy()[valid]
-            rows.append(dict(method=METHODS[method],budget=tier,VM=c["VM"],H=c["H"],K=c["K"],arch=i,**metrics(pred,y)))
-    frame=pd.DataFrame(rows);dest=args.output_dir;dest.mkdir(exist_ok=True,parents=True)
-    suffix="-".join(args.method) if len(args.method)<8 else "all"
-    target = dest/f"{args.dataset}-{args.tasks}-{suffix}.csv"
-    with tempfile.NamedTemporaryFile(dir=dest, suffix=".tmp", delete=False) as fp:
-        pending = Path(fp.name)
-    try:
-        frame.to_csv(pending, index=False)
-        os.replace(pending, target)
-    finally:
-        pending.unlink(missing_ok=True)
-    print("Target scores:", target.resolve())
-    compare(args.dataset,frame,exact=args.strict)
-if __name__=="__main__":
-    main()
+            pre_bytes = carrier(stage, c, args.bitbrains, prefix=True)
+            if digest(pre_bytes) != c["prefix_hash"]:
+                raise ValueError(f"Prefix SHA-256 mismatch for {c['slug']}")
+            pre_path = tmp_dir / f"{c['slug']}.bin"
+            pre_path.write_bytes(pre_bytes)
+            pref = prefix_selection(c, pre_path, norm)
+            xs, ys, xv, yv = pref["Xs"], pref["ys"], pref["Xv"], pref["yv"]
 
+            # Future evaluation tensors are opened only after prefix adaptation completes
+            raw_fut = carrier(stage, c, args.bitbrains, prefix=False)
+            y_fut, valid_fut = truth(c, raw_fut)
+            raw_rows = np.frombuffer(raw_fut, dtype=DTYPE)
+            feat_all = causal_features(raw_rows["timestamp"], raw_rows["raw"], norm)
+            origins = np.arange(c["T"], c["T"] + c["B"])
+            x_fut_t = torch.from_numpy(
+                np.stack([feat_all[o - 95 : o + 1] for o in origins]).astype(np.float32)[valid_fut]
+            ).to(device)
+
+            adapted_cache: dict[int, tuple[dict, float, dict]] = {}
+            for budget in args.budgets:
+                sel = select_rgms_from_cache(stage, c["slug"], int(c["H"]), int(c["K"]), budget)
+                arch_id = int(sel["selected_arch"])
+                if arch_id not in adapted_cache:
+                    sd0 = load_source_state(args.weights_dir, int(c["H"]), arch_id)
+                    fam = rt.ARCH[arch_id].family
+                    model = rt.build(arch_id, int(c["H"]), sd0, int(c["seed"])).to(device)
+                    with rt.candidate_backend_context(rt.ARCH[arch_id], device, "gru-native"):
+                        base_name, base_sd, _ = early_stop_base02(
+                            model,
+                            sd0,
+                            torch.from_numpy(xs).to(device),
+                            torch.from_numpy(ys).to(device),
+                            torch.from_numpy(xv).to(device),
+                            yv,
+                            seed=int(c["seed"]),
+                        )
+                        spa_res = adapt_model_spa(model, fam, base_sd, xs, ys, xv, yv, device=device)
+                        model.load_state_dict(spa_res["deployed_state_dict"], strict=True)
+                        _, _, pred_fut, _, _ = extract_hidden_and_pred(model, x_fut_t)
+                    m_dict = metrics(pred_fut, y_fut)
+                    adapted_cache[arch_id] = (spa_res, base_name, m_dict)
+
+                spa_res, base_name, m_dict = adapted_cache[arch_id]
+                rows.append(
+                    {
+                        "stage": stage,
+                        "VM": c["VM"],
+                        "slug": c["slug"],
+                        "H": int(c["H"]),
+                        "K": int(c["K"]),
+                        "budget": budget,
+                        "arch": arch_id,
+                        "q_init": sel["initial_arch"],
+                        "q_top": sel["consensus_arch"],
+                        "direct_margin": sel["direct_margin"],
+                        "base02_state": base_name,
+                        "spa_body": spa_res["selected_body"],
+                        "topology_invariant": spa_res["topology_invariant"],
+                        **m_dict,
+                    }
+                )
+            print(f"completed {stage}/{c['slug']}", flush=True)
+
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    out_csv = args.output_dir / f"{args.dataset}_{args.tasks}_msa_dti.csv"
+    pd.DataFrame(rows).to_csv(out_csv, index=False)
+    print(f"Wrote {len(rows)} target deployment results to {out_csv.resolve()}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

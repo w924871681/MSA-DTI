@@ -1,72 +1,87 @@
 # MSA-DTI
 
-Official code, frozen experimental datasets, protocols, and reproduction package for:
+Official code, frozen experimental datasets, protocols, and verified reproduction package for:
 
 > **Response-Guided Model Selection and Structure-Preserving Adaptation for Few-Shot Digital Twin Instantiation**
 
-MSA-DTI instantiates deployable predictive digital twins (DTs) for new computing centers from a shared reusable model bank under hard per-model operation and parameter limits. It couples **response-guided model selection** (linearized response estimation, historical bias correction, pairwise consensus, and direct-margin guarded switching) with **structure-preserving adaptation** (guarded early adaptation, in-place single-channel causal load routing, and multi-scale output calibration with zero added parameters and zero added operations).
+MSA-DTI instantiates deployable predictive digital twins (DTs) for new computing centers from a shared reusable model bank under hard per-model operation and parameter limits. It couples **response-guided model selection (RGMS)** (linearized response estimation, dynamic-anchor historical bias correction, single-candidate reachable contender enumeration, complete-graph pairwise consensus, and direct-margin guarded switching) with **structure-preserving adaptation (SPA)** (5-state guarded early adaptation, 22-config support-only initial readout selection, optional in-place single-channel causal load routing, and multi-scale load-decomposed output calibration folded algebraically into the existing output layer with zero added parameters and zero added operations).
 
 ## Repository Structure
 
 | Path | Description |
 | --- | --- |
-| `code/msa_dti/` | Core standalone implementation of MSA-DTI (`config.py`, `selection.py`, `adaptation.py`) |
-| `code/native/` | Native PyTorch model architectures (MLP, TCN, GRU), source-training recipes, and protocols |
-| `code/protocol/` | Frozen cohort splits, task manifests (Bitbrains, Azure V2, UFCG 2024–2025, Bitbrains Rnd6), and `frozen_config.json` |
-| `code/data/` | Frozen experimental summary tables, 720-deployment records, timing logs, and sensitivity audits |
+| `code/msa_dti/` | Exact standalone implementation of frozen RGMS (`selection.py`), SPA (`adaptation.py`), and frozen bank/budget config (`config.py`) |
+| `code/native/src/msa_dti_native/` | Native PyTorch model architectures (MLP, TCN, GRU), causal feature extraction, prefix windowing, and source-training recipes |
+| `code/protocol/` | Frozen cohort splits, task manifests (Bitbrains A–E, Azure V2, UFCG 2024–2025, Bitbrains Rnd6), and `frozen_config.json` |
+| `code/data/` | Frozen experimental summary tables, 720-deployment & 216-external records, `rgms_dev_cache.npz` (720-deployment live RGMS verification cache), `spa_fixture/` (3 frozen Bitbrains E SPA verification instances), timing logs, and sensitivity audits |
 | `code/plotting/` | Scripts (`generate_paper_assets.py`) and Tinos fonts reproducing Figures 5–11 and Tables 1–6 & S3–S11 |
-| `code/verification/` | Integrity and numerical verification suite (`verify_results.py`) |
-| `code/reproduce.py` | Unified CLI to verify frozen results and regenerate all experimental figures and tables |
+| `code/verification/` | Three-tier automated verification suite (`verify_results.py`) |
+| `code/reproduce.py` | Unified CLI to verify frozen results + live RGMS/SPA parity and regenerate all experimental figures and tables |
+| `code/run_targets.py` | End-to-end RGMS + SPA target instantiation runner (supports `--verify-fixture` and full Bitbrains/Azure runs) |
+| `code/train.py` | Bitbrains cohort preparation and native source-model training entry point |
 
-Compiled manuscript PDFs (`main.pdf`, `supplementary.pdf`), the editable LaTeX project (`MSA-DTI-latex-project.zip`), finalized vector figures (`MSA-DTI-figures-final.zip`), and the standalone frozen data/script archive (`MSA-DTI-experiment-data-and-scripts.zip`) are attached to [Release v1.0](https://github.com/w924871681/MSA-DTI/releases/tag/v1.0).
+## Quickstart: Three-Tier Verification & Paper Asset Reproduction
 
-## Quickstart: Verify Results & Regenerate Paper Figures (CPU)
-
-Requires Python 3.10+ (CPU only, ~10 seconds):
+Requires Python 3.10+ (~15 seconds total):
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 python -m pip install -r code/requirements-figures.txt
+# Install PyTorch (CPU or CUDA) from code/requirements-train.txt to include Tier 3 live SPA verification
 
-# Verify frozen experimental artifacts and core modules
+# Run three-tier verification:
+#   Tier 1: Frozen dataset integrity & key paper metrics (Bitbrains E, Azure V2, UFCG, Rnd6)
+#   Tier 2: Live RGMS selection across all 720 development deployments (720/720 exact match, max|margin diff| < 1e-12)
+#   Tier 3: Live SPA adaptation across 3 frozen Bitbrains E instances (orig, low1, legacy_special; +0 params, +0 MACs)
 python code/reproduce.py verify
 
 # Regenerate all experimental figures (Figs. 5-11) and LaTeX tables (Tables 1-6, S3-S11)
 python code/reproduce.py figures
+
+# Or run both in one step
+python code/reproduce.py all
 ```
 
 Generated figures and LaTeX tables are written to `work/paper/figures/` and `work/paper/tables/`.
 
-## Core Algorithm Modules
+## Core Algorithm Modules (`code/msa_dti/`)
 
 - **Response-Guided Model Selection** (`code/msa_dti/selection.py`):
-  - `center_scale`: cross-center scale normalization
-  - `calibrated_scores`: historical-neighbor bias correction and initial candidate selection
-  - `pairwise_direct_margins`: standardized three-group distance matching and direct pairwise margin estimation
-  - `consensus_scores` & `guarded_replacement`: complete-graph consensus ranking with direct-margin switching guard
+  - `center_scale` & `history_reference_scale`: cross-center scale $s_c$ and budget reference scale $C_b$
+  - `anchor_pair_features` & `calibrated_scores`: dynamic target anchor $q_{\mathrm{anc}}$, 35-D anchor-relative paired features, and historical-neighbor bias correction (Stage A)
+  - `reachable_set`: single-candidate historical subset replacement enumeration $\mathcal{R}_c$
+  - `pairwise_direct_margins`, `consensus_scores`, `guarded_replacement`, `select_candidate`: three-group standardized L1 pairwise margin estimation, complete-graph consensus ranking on $\mathcal{R}_c$, and direct-margin switching guard (Stage B)
 - **Structure-Preserving Adaptation** (`code/msa_dti/adaptation.py`):
-  - `channel_importance`: leave-one-channel-out ridge reconstruction importance scoring
-  - `rewrite_single_channel` & `topology_signature`: exact in-place single-channel routing across MLP, TCN, and GRU layers with SHA-256 topology verification (+0 parameters, +0 operations)
-  - `reconstruct_response` & `multi_scale_calibration`: unlabeled response reconstruction and multi-scale load-decomposed readout folded algebraically into the existing linear output layer
+  - `early_stop_base02`: 5-state guarded early adaptation (`b50`, `b25`, `b10`, midpoint `bW`, `a0`)
+  - `fit_initial_readout_r62` & `r63_native_proposals`: 22-config support-only initial readout selection and 161-candidate single-scale/joint readout bank for unmodified backbones
+  - `channel_importance`, `routable_channels`, `rewrite_single_channel`, `topology_signature`: leave-one-channel-out ridge importance scoring and exact in-place single-channel causal load routing across MLP, TCN, and GRU layers with SHA-256 topology verification (+0 parameters, +0 operations)
+  - `reconstruct_response`, `multi_scale_calibration`, `adapt_model_spa`: multi-scale load-decomposed calibration (`orig`: 1,089 candidates; `low1`/`low5`: 928 candidates) folded algebraically into the existing linear output layer
 
-## Full Source Training & Target Adaptation (GPU)
+## End-to-End Source Training & Target Instantiation (GPU)
 
-For end-to-end training from public cloud traces, install PyTorch with CUDA (`code/requirements-train.txt`) and download the original **GWA-T-12 fastStorage** archive from the [Grid Workloads Archive](https://atlarge-research.com/gwa-t-12/) (SHA-256: `11313f528a0cbcbe57e63162f8ae5a41a9c7e7c1a79872e294ff3c5bbaa2e671`):
+Download the original **GWA-T-12 fastStorage** archive from the [Grid Workloads Archive](https://atlarge-research.com/gwa-t-12/) (SHA-256: `11313f528a0cbcbe57e63162f8ae5a41a9c7e7c1a79872e294ff3c5bbaa2e671`):
 
 ```bash
 python -m pip install -r code/requirements-train.txt
+
+# Verify bundled 3-instance SPA fixture directly
+python code/run_targets.py --verify-fixture
+
+# Prepare verified Bitbrains cohorts and run native source training
 python code/train.py prepare --bitbrains /path/to/fastStorage.zip
-python code/train.py all --bitbrains /path/to/fastStorage.zip
-python code/run_targets.py --trained work/training/export --dataset bitbrains --bitbrains /path/to/fastStorage.zip --output-dir work/runs/full
-python code/run_targets.py --trained work/training/export --dataset azure --output-dir work/runs/full
+python code/train.py c1 --bitbrains /path/to/fastStorage.zip
+
+# Run frozen RGMS + SPA target instantiation using source checkpoints
+python code/run_targets.py --dataset bitbrains --bitbrains /path/to/fastStorage.zip --weights-dir /path/to/source_weights --output-dir work/runs/bitbrains
+python code/run_targets.py --dataset azure --weights-dir /path/to/source_weights --output-dir work/runs/azure
 ```
 
 ## Public Datasets & Attribution
 
 - **Bitbrains GWA-T-12 fastStorage** (primary in-domain evaluation & held-out Rnd6 queue): Grid Workloads Archive, Shen et al., *CCGrid 2015*.
 - **Microsoft Azure Public Dataset V2** (cross-platform external evaluation): 30 subscriptions with 9 unavailable raw telemetry channels masked; derived CPU series included under CC BY 4.0.
-- **UFCG OpenStack 2024–2025** (zero-tuning prospective private-cloud evaluation): 12 qualifying projects sealed prior to unlocking evaluation windows (`code/protocol/ufcg_cases.csv`).
+- **UFCG OpenStack 2024–2025** (prospective private-cloud evaluation): 12 qualifying projects sealed prior to unlocking evaluation windows (`code/protocol/ufcg_cases.csv`).
 
 ## License
 

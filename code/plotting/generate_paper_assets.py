@@ -808,11 +808,11 @@ def build_tables():
 \toprule
 Dataset / Cohort & Role & Centers (Tasks) & Observed Channels & Evaluation Protocol \\
 \midrule
-Bitbrains (Source, A, B) & Candidate bank training & 60 VMs & 10 raw (25 feat.) & Frozen 19-model bank \\
-Bitbrains (C, D) & Historical records / dev & 20 + 20 VMs (160) & 10 raw (25 feat.) & History bank for selection \\
-Bitbrains (E) & Primary evaluation & 30 VMs (120 $\times$ 3) & 10 raw (25 feat.) & Causal cutoff evaluation \\
-Azure Public Dataset V2 & Cross-platform external & 30 subs (120 $\times$ 3) & 1 CPU (9 missing) & Cross-platform benchmark \\
-UFCG OpenStack 2024--2025 & Prospective external & 12 proj (48 $\times$ 3) & 1 vCPU (9 missing) & Zero-tuning, sealed once \\
+Bitbrains (Source, A, B) & Candidate bank construction & 60 VMs & 10 raw (25 feat.) & Frozen 19-model bank \\
+Bitbrains (C, D) & Historical records / dev & 20 + 20 VMs (160) & 10 raw (25 feat.) & Calibration (C), development (D) \\
+Bitbrains (E) & Primary evaluation & 30 VMs (120 $\times$ 3) & 10 raw (25 feat.) & Retrospective evaluation \\
+Azure Public Dataset V2 & Cross-platform external & 30 subs (120 $\times$ 3) & 1 CPU (9 missing) & Retrospective evaluation \\
+UFCG OpenStack 2024--2025 & Prospective external & 12 proj (48 $\times$ 3) & 1 vCPU (9 missing) & Prospective, fixed method \\
 \midrule
 \multicolumn{5}{p{\dimexpr\linewidth-2\tabcolsep\relax}}{\textbf{Common settings}: Lookback $L=96$, horizons $H\in\{1,4\}$, support sizes $K\in\{10,20\}$, and update cap $T=50$. \textbf{Deployment budgets} (Ops / Params): Tight ($1.5\times 10^6$ / $3\times 10^4$, 10), Medium ($5\times 10^6$ / $10^5$, 17), Loose ($20\times 10^6$ / $5\times 10^5$, 19).} \\
 \bottomrule
@@ -826,21 +826,21 @@ UFCG OpenStack 2024--2025 & Prospective external & 12 proj (48 $\times$ 3) & 1 v
 \centering
 \footnotesize
 \setlength{\tabcolsep}{3.5pt}
-\caption{Baseline methods evaluated under identical target inputs, support and validation cutoffs, and metrics. The non-reuse linear anchor Standalone-CPU is reported as a reference in the tables and figures.}
+\caption{Comparison methods and their selection and adaptation rules.}
 \label{tab:baselines}
 \begin{tabularx}{\linewidth}{lllY}
 \toprule
 Method & Category & Native Limit Filter & Selection and Adaptation Rule \\
 \midrule
-PT-FT & Fixed-backbone transfer & No (fixed A39) & Fixed source backbone with 50-step SGD fine-tuning \\
+PT-FT & Fixed-backbone transfer & No (fixed A39) & Fixed source backbone with standard fine-tuning \\
 T-NAS & Differentiable Meta-NAS & No & Meta-initialized weights and architecture decoding on support \\
-H-Meta-NAS & Hardware-aware Meta-NAS & Yes (120/120) & Shared supernet with limit-filtered evolutionary search \\
-Reuse-Aware & Reusable model market & No (also filtered) & Residual specification matching with conditional MMD \\
-PAVE & Proxy model valuation & No (also filtered) & Analytical proxy ranking over reusable candidates \\
-LEAD (Full-NTK) & Transferability estimation & No (also filtered) & Full-backbone continuous-time linearized ranking \\
-Zero-step-Val & Pre-adaptation validation & Yes (120/120) & Rank feasible bank on validation before 50-step fine-tuning \\
-Full-Val & Post-adaptation validation & Yes (120/120) & Fine-tune all feasible candidates and pick lowest validation MSE \\
-\textbf{MSA-DTI (Ours)} & \textbf{Selection and adaptation} & \textbf{Yes (120/120)} & \textbf{Response-guided selection and structure-preserving adaptation} \\
+H-Meta-NAS & Hardware-aware Meta-NAS & Yes & Shared supernet with limit-filtered evolutionary search \\
+Reuse-Aware & Reusable model market & No (also filtered) & Rank by distances between encoded specifications \\
+PAVE & Proxy model valuation & No (also filtered) & Rank by cosine similarity of probe parameter differences \\
+LEAD (Full-NTK) & Transferability estimation & No (also filtered) & Rank estimated responses using the NTK of the backbone and added head \\
+Zero-step-Val & Pre-adaptation validation & Yes & Rank feasible candidates on validation before standard fine-tuning \\
+Full-Val & Post-adaptation validation & Yes & Fine-tune all feasible candidates and pick lowest validation MSE \\
+\textbf{MSA-DTI (Ours)} & \textbf{Selection and adaptation} & \textbf{Yes} & \textbf{Response-guided selection and structure-preserving adaptation} \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -896,7 +896,7 @@ Full-Val & Post-adaptation validation & Yes (120/120) & Fine-tune all feasible c
         r"\centering",
         r"\footnotesize",
         r"\setlength{\tabcolsep}{5pt}",
-        rf"\caption{{Prediction accuracy ($\times 10^{{-3}}$, where lower is better) and native deployment feasibility on Bitbrains E (30 VMs, 120 tasks) under the medium deployment budget ($\le 5.0\times 10^6$ Ops, $\le 10^5$ Params, 17 feasible candidates). The non-reuse linear anchor Standalone-CPU achieves MSE $={cpu_e_m:.3f}$ and CVaR-10\% $={cpu_e_c:.3f}$. For limit-unaware selection baselines ($^{{\dagger}}$), Feas.\ reports native compliance while errors reflect the budget-filtered 120/120 candidate bank.}}",
+        rf"\caption{{Prediction accuracy ($\times 10^{{-3}}$, where lower is better) and native deployment feasibility on Bitbrains E (30 VMs, 120 tasks) under the medium deployment budget ($\le 5.0\times 10^6$ Ops, $\le 10^5$ Params, 17 feasible candidates). The non-reuse linear anchor Standalone-CPU achieves MSE $={cpu_e_m:.3f}$ and CVaR-10\% $={cpu_e_c:.3f}$. Feas.\ counts tasks that satisfy both limits before any additional filtering. For rows marked $^{{\dagger}}$, errors cover all 120 tasks after restricting selection to feasible candidates.}}",
         r"\label{tab:main_bitbrains}",
         r"\begin{tabular}{l c rrrr}",
         r"\toprule",
@@ -940,7 +940,7 @@ Tight (10 cand.) & {sel_by_b['tight']['zero_step_sec']:.2f} & {sel_by_b['tight']
 Medium (17 cand.) & {sel_by_b['medium']['zero_step_sec']:.2f} & {sel_by_b['medium']['full_val_sec']:.2f} & \textbf{{{sel_by_b['medium']['r44_probe_sec']:.2f}}} & \textbf{{{sel_by_b['medium']['r44_vram_mb']:.1f}}} & \textbf{{120/120}} \\
 Loose (19 cand.) & {sel_by_b['loose']['zero_step_sec']:.2f} & {sel_by_b['loose']['full_val_sec']:.2f} & \textbf{{{sel_by_b['loose']['r44_probe_sec']:.2f}}} & \textbf{{{sel_by_b['loose']['r44_vram_mb']:.1f}}} & \textbf{{120/120}} \\
 \midrule
-\multicolumn{{6}}{{l}}{{\textbf{{Part B: One-time adaptation cost and deployed inference latency (zero added overhead)}}}} \\
+\multicolumn{{6}}{{l}}{{\textbf{{Part B: One-time adaptation cost and deployed inference latency}}}} \\
 \midrule
 Adaptation Rule & Onboard (s) & Peak VRAM (MB) & $\Delta$Params / $\Delta$Ops & GPU 1-win / b=256 (ms) & CPU 1-win (ms) \\
 \midrule
@@ -1079,7 +1079,7 @@ Standard FT & {inst['u50_sec']:.2f} & {inst['u50_vram_mb']:.1f} & 0 / 0 & {inf['
             r"\centering",
             r"\supptablefont",
             r"\setlength{\tabcolsep}{5pt}",
-            rf"\caption{{Full three-budget prediction accuracy ($\times 10^{{-3}}$) and native deployment feasibility on {caption_ds} across Tight, Medium, and Loose deployment budgets.}}",
+            rf"\caption{{Full three-budget prediction accuracy ($\times 10^{{-3}}$) and native deployment feasibility on {caption_ds} across Tight, Medium, and Loose deployment budgets. Feas.\ and $^{{\dagger}}$ follow Table 3 of the main article. N/F indicates incomplete feasibility across the 120 tasks.}}",
             rf"\label{{{tab_label}}}",
             r"\begin{tabular}{l c rrrr}",
             r"\toprule",
@@ -1133,7 +1133,7 @@ Standard FT & {inst['u50_sec']:.2f} & {inst['u50_vram_mb']:.1f} & 0 / 0 & {inf['
         r"\centering",
         r"\supptablefont",
         r"\setlength{\tabcolsep}{5pt}",
-        r"\caption{Zero-tuning prospective evaluation on the held-out Bitbrains Rnd6 queue (6 VMs, 24 medium tasks and 72 deployments).}",
+        r"\caption{Evaluation on Bitbrains Rnd6 after method freezing (6 VMs, 24 medium tasks and 72 deployments).}",
         r"\label{tab:supp_rnd6}",
         r"\begin{tabular}{l r rrrr}",
         r"\toprule",

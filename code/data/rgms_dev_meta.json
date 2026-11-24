@@ -1,0 +1,1768 @@
+{
+  "hk": [
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      20
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      4,
+      20
+    ]
+  ],
+  "budgets": [
+    "tight",
+    "medium",
+    "loose"
+  ],
+  "bank": [
+    0,
+    6,
+    8,
+    13,
+    27,
+    31,
+    32,
+    35,
+    40,
+    45,
+    46,
+    47,
+    50,
+    54,
+    55,
+    57,
+    58,
+    61,
+    63
+  ],
+  "shards": {
+    "0": {
+      "H": 1,
+      "K": 10,
+      "final_k": 1,
+      "final_alpha": 0.3249664311579271,
+      "C": [
+        {
+          "slug": "vm717_H1_K10",
+          "VM": "fastStorage:717",
+          "loo_k": 999,
+          "loo_alpha": 0.0009628889537504
+        },
+        {
+          "slug": "vm46_H1_K10",
+          "VM": "fastStorage:46",
+          "loo_k": 999,
+          "loo_alpha": 0.0009585817184923
+        },
+        {
+          "slug": "vm845_H1_K10",
+          "VM": "fastStorage:845",
+          "loo_k": 1,
+          "loo_alpha": 0.2772909772198507
+        },
+        {
+          "slug": "vm837_H1_K10",
+          "VM": "fastStorage:837",
+          "loo_k": 1,
+          "loo_alpha": 0.2691171101328022
+        },
+        {
+          "slug": "vm798_H1_K10",
+          "VM": "fastStorage:798",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm317_H1_K10",
+          "VM": "fastStorage:317",
+          "loo_k": 1,
+          "loo_alpha": 0.0
+        },
+        {
+          "slug": "vm540_H1_K10",
+          "VM": "fastStorage:540",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm49_H1_K10",
+          "VM": "fastStorage:49",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm256_H1_K10",
+          "VM": "fastStorage:256",
+          "loo_k": 1,
+          "loo_alpha": 0.3876575092303714
+        },
+        {
+          "slug": "vm378_H1_K10",
+          "VM": "fastStorage:378",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm1077_H1_K10",
+          "VM": "fastStorage:1077",
+          "loo_k": 999,
+          "loo_alpha": 0.000950456752546
+        },
+        {
+          "slug": "vm998_H1_K10",
+          "VM": "fastStorage:998",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm1007_H1_K10",
+          "VM": "fastStorage:1007",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm1124_H1_K10",
+          "VM": "fastStorage:1124",
+          "loo_k": 1,
+          "loo_alpha": 0.331060001510768
+        },
+        {
+          "slug": "vm720_H1_K10",
+          "VM": "fastStorage:720",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm567_H1_K10",
+          "VM": "fastStorage:567",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm257_H1_K10",
+          "VM": "fastStorage:257",
+          "loo_k": 1,
+          "loo_alpha": 0.3249664311579271
+        },
+        {
+          "slug": "vm1081_H1_K10",
+          "VM": "fastStorage:1081",
+          "loo_k": 1,
+          "loo_alpha": 0.331060001510768
+        },
+        {
+          "slug": "vm954_H1_K10",
+          "VM": "fastStorage:954",
+          "loo_k": 1,
+          "loo_alpha": 0.208900428632067
+        },
+        {
+          "slug": "vm666_H1_K10",
+          "VM": "fastStorage:666",
+          "loo_k": 1,
+          "loo_alpha": 0.2792791956844075
+        }
+      ],
+      "dev": [
+        {
+          "stage": "E",
+          "slug": "vm1066_H1_K10",
+          "VM": "fastStorage:1066"
+        },
+        {
+          "stage": "E",
+          "slug": "vm281_H1_K10",
+          "VM": "fastStorage:281"
+        },
+        {
+          "stage": "E",
+          "slug": "vm344_H1_K10",
+          "VM": "fastStorage:344"
+        },
+        {
+          "stage": "E",
+          "slug": "vm943_H1_K10",
+          "VM": "fastStorage:943"
+        },
+        {
+          "stage": "E",
+          "slug": "vm514_H1_K10",
+          "VM": "fastStorage:514"
+        },
+        {
+          "stage": "E",
+          "slug": "vm80_H1_K10",
+          "VM": "fastStorage:80"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1009_H1_K10",
+          "VM": "fastStorage:1009"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1222_H1_K10",
+          "VM": "fastStorage:1222"
+        },
+        {
+          "stage": "E",
+          "slug": "vm250_H1_K10",
+          "VM": "fastStorage:250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm559_H1_K10",
+          "VM": "fastStorage:559"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1250_H1_K10",
+          "VM": "fastStorage:1250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm848_H1_K10",
+          "VM": "fastStorage:848"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1146_H1_K10",
+          "VM": "fastStorage:1146"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1140_H1_K10",
+          "VM": "fastStorage:1140"
+        },
+        {
+          "stage": "E",
+          "slug": "vm164_H1_K10",
+          "VM": "fastStorage:164"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1153_H1_K10",
+          "VM": "fastStorage:1153"
+        },
+        {
+          "stage": "E",
+          "slug": "vm917_H1_K10",
+          "VM": "fastStorage:917"
+        },
+        {
+          "stage": "E",
+          "slug": "vm680_H1_K10",
+          "VM": "fastStorage:680"
+        },
+        {
+          "stage": "E",
+          "slug": "vm587_H1_K10",
+          "VM": "fastStorage:587"
+        },
+        {
+          "stage": "E",
+          "slug": "vm313_H1_K10",
+          "VM": "fastStorage:313"
+        },
+        {
+          "stage": "E",
+          "slug": "vm657_H1_K10",
+          "VM": "fastStorage:657"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1142_H1_K10",
+          "VM": "fastStorage:1142"
+        },
+        {
+          "stage": "E",
+          "slug": "vm171_H1_K10",
+          "VM": "fastStorage:171"
+        },
+        {
+          "stage": "E",
+          "slug": "vm741_H1_K10",
+          "VM": "fastStorage:741"
+        },
+        {
+          "stage": "E",
+          "slug": "vm660_H1_K10",
+          "VM": "fastStorage:660"
+        },
+        {
+          "stage": "E",
+          "slug": "vm466_H1_K10",
+          "VM": "fastStorage:466"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1036_H1_K10",
+          "VM": "fastStorage:1036"
+        },
+        {
+          "stage": "E",
+          "slug": "vm778_H1_K10",
+          "VM": "fastStorage:778"
+        },
+        {
+          "stage": "E",
+          "slug": "vm604_H1_K10",
+          "VM": "fastStorage:604"
+        },
+        {
+          "stage": "E",
+          "slug": "vm709_H1_K10",
+          "VM": "fastStorage:709"
+        },
+        {
+          "stage": "azure",
+          "slug": "535679516dcffe91_H1_K10",
+          "VM": "Ry/G/hEmbhzUiq6VkmZ2Y+9Jsax+yIh+QR84K7B7Yuh61DbGV+NQUKXA1TlHQJf9"
+        },
+        {
+          "stage": "azure",
+          "slug": "56e5b0cc6e6d4892_H1_K10",
+          "VM": "QKFQpxG+Xc650eZX3vl8lCnXhjC6rxQtNS0qck9i4QZ70dEH+KzVOvKbQUbcurqm"
+        },
+        {
+          "stage": "azure",
+          "slug": "7cc007517668f3ab_H1_K10",
+          "VM": "V56QcU/3MbBdoHFGGwDtdOD1KwLkbZ39XXpH7X1DGOr2W608tXkUjMveNVO6dcBW"
+        },
+        {
+          "stage": "azure",
+          "slug": "1d38033e6b8fc283_H1_K10",
+          "VM": "T14hIhPPd4FXqkxuw+l0oiPsQ3SuivAyTF8VVkDC3ZoZqGOlEXJE6MiWuu5JWlRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "7a26ab3da1d4b9d7_H1_K10",
+          "VM": "smrh7tIBIv10lWzvIDG7xlM2jDPMTa6sguPFOB67XuV7qgq8l1EZy0Gd+D+D3K4k"
+        },
+        {
+          "stage": "azure",
+          "slug": "7ce2318a576f7a61_H1_K10",
+          "VM": "iGZQm8VIUP43GRDSjbec6GkmRtjUX4pqnJd5BTuFZiAtfdNEjDJmyGrP+JEt/J2t"
+        },
+        {
+          "stage": "azure",
+          "slug": "8f490fc9ea13fc8f_H1_K10",
+          "VM": "DhBHZQIZAT48qpkb2s53eSwsu5v9po9k86mYm21MiyrGnfIMUpxeFeo0Jclk7X+H"
+        },
+        {
+          "stage": "azure",
+          "slug": "916ed1a22aed8c17_H1_K10",
+          "VM": "sFCYgmEgUKjjdyKF/JnGZlXGcE0mlZjQ6h9G2/R6qIiGmOhthvl+NXf/8+r3mkja"
+        },
+        {
+          "stage": "azure",
+          "slug": "dd90ee5fad9d19fc_H1_K10",
+          "VM": "NgUHkeZj8ymLFJC03wdyM47o4YHD5lTRdsdNF1iqUK+KGdA/AO8vidqkGkuqRYrL"
+        },
+        {
+          "stage": "azure",
+          "slug": "0a49b5c19f8a734e_H1_K10",
+          "VM": "0ZF4WygcQgzsFf+UbyjNpdYci1IQjzJlBimy7u0TMR9DJsjDecmmxo5VJRQvwHnl"
+        },
+        {
+          "stage": "azure",
+          "slug": "30082b03fc504de0_H1_K10",
+          "VM": "AD+rjEKCioWsTxQUCL4GH31SV32nCIDeH8e+CjcIVAMSiaMYhn8etVk0ohrQOFHl"
+        },
+        {
+          "stage": "azure",
+          "slug": "d1ac8cd76cad5309_H1_K10",
+          "VM": "PaTgWV07p8Fps0lowjLQDaE8Cg5PPOd3I8bqs1ILAGvTTzYgwiqvtgeaQitM7pVT"
+        },
+        {
+          "stage": "azure",
+          "slug": "aaae2dac5149e69b_H1_K10",
+          "VM": "9N9oKWacKo3N2WrArmp76pQXjF5rH/fKrk0mM1vlgjzac8UB/oAv0dsna3IgYyOX"
+        },
+        {
+          "stage": "azure",
+          "slug": "7dd7973ecc3f36fc_H1_K10",
+          "VM": "kF4zsBOQBqxgn/qX35cVdFF/QzMNxblq3Lcyr2mYsyMmc8UMlwigwYecNv7LW1N9"
+        },
+        {
+          "stage": "azure",
+          "slug": "53eb03527ad9173d_H1_K10",
+          "VM": "B55Igk682AW97kYroswLIJhMFFHdfENIeIRUxDdfOajQjskf1kNpAMmcoxbBspG9"
+        },
+        {
+          "stage": "azure",
+          "slug": "fdd01403048cbfc7_H1_K10",
+          "VM": "EVB1XdctbNNOi3hZA2HbQnCLmTHvpLMdQraA5p1Lb/vLudptpnSUjdsGYNE7Yoxo"
+        },
+        {
+          "stage": "azure",
+          "slug": "c90b8a42cec8b6e4_H1_K10",
+          "VM": "MOarevfE98tmijJk/6JRpprKoUBbcFKLJo8/LAfSZSLCrhvipVtfvAx7Efmw0Dsm"
+        },
+        {
+          "stage": "azure",
+          "slug": "f60c9406c2a4a770_H1_K10",
+          "VM": "j2JgOZBe6joYj4Zb0jJZfRE6LIzSQkn9qxq/aLAsTJrKpEZrAFtsZPMMS16zM2Yj"
+        },
+        {
+          "stage": "azure",
+          "slug": "cec6266823900cf5_H1_K10",
+          "VM": "8N6TK7W6YMj6Mh1ZecuoP9czThr0UU8WEBuGinahtzYdUUV6IgEBenlr4yStr00/"
+        },
+        {
+          "stage": "azure",
+          "slug": "30f5a6cc717c1313_H1_K10",
+          "VM": "Bjcwopo38L8ODAl5ZJKmMIrXGibSubrxNxNYNJ85AVpOYVdLBazaoVP2Jct1QcRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "3902516fdfa93544_H1_K10",
+          "VM": "YAhhkmYOOCqTxMAl8f0Vk6hp9hZHtDS5O7x419kBWjR6YFQr428MZzfcxe9UJBSW"
+        },
+        {
+          "stage": "azure",
+          "slug": "30411d3a8ed97123_H1_K10",
+          "VM": "PTbCVi2EtOhYOiWoyi+o5rPLvyQZlONZkocYqB5yHsvgfQeJAxpBJ64sk6y3mj+V"
+        },
+        {
+          "stage": "azure",
+          "slug": "32e1fb55169fbff0_H1_K10",
+          "VM": "+fWkA+VxMUL0kCkbjfkGcPm/IldATGJ1LoVJysqRM42SPlRaL2QqGOixbx+x7PmC"
+        },
+        {
+          "stage": "azure",
+          "slug": "679f41b1e6b4b9c5_H1_K10",
+          "VM": "4hranm/Zz7t0RO+jAMKswBfwjcT14RW5/HDP5Jx9LCLTD3GbpYZSz/vNfGkgel3b"
+        },
+        {
+          "stage": "azure",
+          "slug": "61dd828ba44c7b0d_H1_K10",
+          "VM": "9ygg9wpxJtndEbfWyXgSiXiNT/RkhBbsYJHR/6w2OBfYAVUEi6xVAgGth8Ek4RW4"
+        },
+        {
+          "stage": "azure",
+          "slug": "4fdf1fd3da311806_H1_K10",
+          "VM": "5id+aKm8TxBPaM/rM0hLhYcJwOvkWg1TVLDwX8Amwf/ZLzK8L7mWpS9fIUeUUSMj"
+        },
+        {
+          "stage": "azure",
+          "slug": "b895068e931e4032_H1_K10",
+          "VM": "gJpJxGVgZ0NgkdoCf+a21bDv45ZqkmK7m3Xytt09dcRiCUAqT0Inyr4Utzey3/Us"
+        },
+        {
+          "stage": "azure",
+          "slug": "464da2a2135e4b2e_H1_K10",
+          "VM": "SRpprOMaeeAZfPT7onqNMfLAmNSrAZ8PrfMfPVJGLYFScEyZWLR+2KsdW/us9Zf1"
+        },
+        {
+          "stage": "azure",
+          "slug": "690ea0acef0965c6_H1_K10",
+          "VM": "NUmUGszRXoQs0Rs/2Gbw6DeJ/1lmMv6cM2z4hGB86FgPYVfzFRouAWMd+0GthZlD"
+        },
+        {
+          "stage": "azure",
+          "slug": "55b6047fa1b76ac6_H1_K10",
+          "VM": "zAcJ/2gi/0+7kvIC7QtrNDOviSBggN5KG8qH0HjswGCr75q4lanpazoB/ZNhhwA5"
+        }
+      ]
+    },
+    "1": {
+      "H": 1,
+      "K": 20,
+      "final_k": 3,
+      "final_alpha": 0.2554698099271182,
+      "C": [
+        {
+          "slug": "vm717_H1_K20",
+          "VM": "fastStorage:717",
+          "loo_k": 999,
+          "loo_alpha": 0.0001419000022339
+        },
+        {
+          "slug": "vm46_H1_K20",
+          "VM": "fastStorage:46",
+          "loo_k": 5,
+          "loo_alpha": 0.5483309695280696
+        },
+        {
+          "slug": "vm845_H1_K20",
+          "VM": "fastStorage:845",
+          "loo_k": 1,
+          "loo_alpha": 0.1178278887839385
+        },
+        {
+          "slug": "vm837_H1_K20",
+          "VM": "fastStorage:837",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm798_H1_K20",
+          "VM": "fastStorage:798",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm317_H1_K20",
+          "VM": "fastStorage:317",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm540_H1_K20",
+          "VM": "fastStorage:540",
+          "loo_k": 999,
+          "loo_alpha": 7.752798587248923e-05
+        },
+        {
+          "slug": "vm49_H1_K20",
+          "VM": "fastStorage:49",
+          "loo_k": 999,
+          "loo_alpha": 0.0001668524430456
+        },
+        {
+          "slug": "vm256_H1_K20",
+          "VM": "fastStorage:256",
+          "loo_k": 5,
+          "loo_alpha": 0.3434780815001645
+        },
+        {
+          "slug": "vm378_H1_K20",
+          "VM": "fastStorage:378",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm1077_H1_K20",
+          "VM": "fastStorage:1077",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271181
+        },
+        {
+          "slug": "vm998_H1_K20",
+          "VM": "fastStorage:998",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm1007_H1_K20",
+          "VM": "fastStorage:1007",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm1124_H1_K20",
+          "VM": "fastStorage:1124",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm720_H1_K20",
+          "VM": "fastStorage:720",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm567_H1_K20",
+          "VM": "fastStorage:567",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm257_H1_K20",
+          "VM": "fastStorage:257",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        },
+        {
+          "slug": "vm1081_H1_K20",
+          "VM": "fastStorage:1081",
+          "loo_k": 999,
+          "loo_alpha": 0.0001648719272654
+        },
+        {
+          "slug": "vm954_H1_K20",
+          "VM": "fastStorage:954",
+          "loo_k": 1,
+          "loo_alpha": 0.1178278887839385
+        },
+        {
+          "slug": "vm666_H1_K20",
+          "VM": "fastStorage:666",
+          "loo_k": 3,
+          "loo_alpha": 0.2554698099271182
+        }
+      ],
+      "dev": [
+        {
+          "stage": "E",
+          "slug": "vm1066_H1_K20",
+          "VM": "fastStorage:1066"
+        },
+        {
+          "stage": "E",
+          "slug": "vm281_H1_K20",
+          "VM": "fastStorage:281"
+        },
+        {
+          "stage": "E",
+          "slug": "vm344_H1_K20",
+          "VM": "fastStorage:344"
+        },
+        {
+          "stage": "E",
+          "slug": "vm943_H1_K20",
+          "VM": "fastStorage:943"
+        },
+        {
+          "stage": "E",
+          "slug": "vm514_H1_K20",
+          "VM": "fastStorage:514"
+        },
+        {
+          "stage": "E",
+          "slug": "vm80_H1_K20",
+          "VM": "fastStorage:80"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1009_H1_K20",
+          "VM": "fastStorage:1009"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1222_H1_K20",
+          "VM": "fastStorage:1222"
+        },
+        {
+          "stage": "E",
+          "slug": "vm250_H1_K20",
+          "VM": "fastStorage:250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm559_H1_K20",
+          "VM": "fastStorage:559"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1250_H1_K20",
+          "VM": "fastStorage:1250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm848_H1_K20",
+          "VM": "fastStorage:848"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1146_H1_K20",
+          "VM": "fastStorage:1146"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1140_H1_K20",
+          "VM": "fastStorage:1140"
+        },
+        {
+          "stage": "E",
+          "slug": "vm164_H1_K20",
+          "VM": "fastStorage:164"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1153_H1_K20",
+          "VM": "fastStorage:1153"
+        },
+        {
+          "stage": "E",
+          "slug": "vm917_H1_K20",
+          "VM": "fastStorage:917"
+        },
+        {
+          "stage": "E",
+          "slug": "vm680_H1_K20",
+          "VM": "fastStorage:680"
+        },
+        {
+          "stage": "E",
+          "slug": "vm587_H1_K20",
+          "VM": "fastStorage:587"
+        },
+        {
+          "stage": "E",
+          "slug": "vm313_H1_K20",
+          "VM": "fastStorage:313"
+        },
+        {
+          "stage": "E",
+          "slug": "vm657_H1_K20",
+          "VM": "fastStorage:657"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1142_H1_K20",
+          "VM": "fastStorage:1142"
+        },
+        {
+          "stage": "E",
+          "slug": "vm171_H1_K20",
+          "VM": "fastStorage:171"
+        },
+        {
+          "stage": "E",
+          "slug": "vm741_H1_K20",
+          "VM": "fastStorage:741"
+        },
+        {
+          "stage": "E",
+          "slug": "vm660_H1_K20",
+          "VM": "fastStorage:660"
+        },
+        {
+          "stage": "E",
+          "slug": "vm466_H1_K20",
+          "VM": "fastStorage:466"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1036_H1_K20",
+          "VM": "fastStorage:1036"
+        },
+        {
+          "stage": "E",
+          "slug": "vm778_H1_K20",
+          "VM": "fastStorage:778"
+        },
+        {
+          "stage": "E",
+          "slug": "vm604_H1_K20",
+          "VM": "fastStorage:604"
+        },
+        {
+          "stage": "E",
+          "slug": "vm709_H1_K20",
+          "VM": "fastStorage:709"
+        },
+        {
+          "stage": "azure",
+          "slug": "535679516dcffe91_H1_K20",
+          "VM": "Ry/G/hEmbhzUiq6VkmZ2Y+9Jsax+yIh+QR84K7B7Yuh61DbGV+NQUKXA1TlHQJf9"
+        },
+        {
+          "stage": "azure",
+          "slug": "56e5b0cc6e6d4892_H1_K20",
+          "VM": "QKFQpxG+Xc650eZX3vl8lCnXhjC6rxQtNS0qck9i4QZ70dEH+KzVOvKbQUbcurqm"
+        },
+        {
+          "stage": "azure",
+          "slug": "7cc007517668f3ab_H1_K20",
+          "VM": "V56QcU/3MbBdoHFGGwDtdOD1KwLkbZ39XXpH7X1DGOr2W608tXkUjMveNVO6dcBW"
+        },
+        {
+          "stage": "azure",
+          "slug": "1d38033e6b8fc283_H1_K20",
+          "VM": "T14hIhPPd4FXqkxuw+l0oiPsQ3SuivAyTF8VVkDC3ZoZqGOlEXJE6MiWuu5JWlRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "7a26ab3da1d4b9d7_H1_K20",
+          "VM": "smrh7tIBIv10lWzvIDG7xlM2jDPMTa6sguPFOB67XuV7qgq8l1EZy0Gd+D+D3K4k"
+        },
+        {
+          "stage": "azure",
+          "slug": "7ce2318a576f7a61_H1_K20",
+          "VM": "iGZQm8VIUP43GRDSjbec6GkmRtjUX4pqnJd5BTuFZiAtfdNEjDJmyGrP+JEt/J2t"
+        },
+        {
+          "stage": "azure",
+          "slug": "8f490fc9ea13fc8f_H1_K20",
+          "VM": "DhBHZQIZAT48qpkb2s53eSwsu5v9po9k86mYm21MiyrGnfIMUpxeFeo0Jclk7X+H"
+        },
+        {
+          "stage": "azure",
+          "slug": "916ed1a22aed8c17_H1_K20",
+          "VM": "sFCYgmEgUKjjdyKF/JnGZlXGcE0mlZjQ6h9G2/R6qIiGmOhthvl+NXf/8+r3mkja"
+        },
+        {
+          "stage": "azure",
+          "slug": "dd90ee5fad9d19fc_H1_K20",
+          "VM": "NgUHkeZj8ymLFJC03wdyM47o4YHD5lTRdsdNF1iqUK+KGdA/AO8vidqkGkuqRYrL"
+        },
+        {
+          "stage": "azure",
+          "slug": "0a49b5c19f8a734e_H1_K20",
+          "VM": "0ZF4WygcQgzsFf+UbyjNpdYci1IQjzJlBimy7u0TMR9DJsjDecmmxo5VJRQvwHnl"
+        },
+        {
+          "stage": "azure",
+          "slug": "30082b03fc504de0_H1_K20",
+          "VM": "AD+rjEKCioWsTxQUCL4GH31SV32nCIDeH8e+CjcIVAMSiaMYhn8etVk0ohrQOFHl"
+        },
+        {
+          "stage": "azure",
+          "slug": "d1ac8cd76cad5309_H1_K20",
+          "VM": "PaTgWV07p8Fps0lowjLQDaE8Cg5PPOd3I8bqs1ILAGvTTzYgwiqvtgeaQitM7pVT"
+        },
+        {
+          "stage": "azure",
+          "slug": "aaae2dac5149e69b_H1_K20",
+          "VM": "9N9oKWacKo3N2WrArmp76pQXjF5rH/fKrk0mM1vlgjzac8UB/oAv0dsna3IgYyOX"
+        },
+        {
+          "stage": "azure",
+          "slug": "7dd7973ecc3f36fc_H1_K20",
+          "VM": "kF4zsBOQBqxgn/qX35cVdFF/QzMNxblq3Lcyr2mYsyMmc8UMlwigwYecNv7LW1N9"
+        },
+        {
+          "stage": "azure",
+          "slug": "53eb03527ad9173d_H1_K20",
+          "VM": "B55Igk682AW97kYroswLIJhMFFHdfENIeIRUxDdfOajQjskf1kNpAMmcoxbBspG9"
+        },
+        {
+          "stage": "azure",
+          "slug": "fdd01403048cbfc7_H1_K20",
+          "VM": "EVB1XdctbNNOi3hZA2HbQnCLmTHvpLMdQraA5p1Lb/vLudptpnSUjdsGYNE7Yoxo"
+        },
+        {
+          "stage": "azure",
+          "slug": "c90b8a42cec8b6e4_H1_K20",
+          "VM": "MOarevfE98tmijJk/6JRpprKoUBbcFKLJo8/LAfSZSLCrhvipVtfvAx7Efmw0Dsm"
+        },
+        {
+          "stage": "azure",
+          "slug": "f60c9406c2a4a770_H1_K20",
+          "VM": "j2JgOZBe6joYj4Zb0jJZfRE6LIzSQkn9qxq/aLAsTJrKpEZrAFtsZPMMS16zM2Yj"
+        },
+        {
+          "stage": "azure",
+          "slug": "cec6266823900cf5_H1_K20",
+          "VM": "8N6TK7W6YMj6Mh1ZecuoP9czThr0UU8WEBuGinahtzYdUUV6IgEBenlr4yStr00/"
+        },
+        {
+          "stage": "azure",
+          "slug": "30f5a6cc717c1313_H1_K20",
+          "VM": "Bjcwopo38L8ODAl5ZJKmMIrXGibSubrxNxNYNJ85AVpOYVdLBazaoVP2Jct1QcRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "3902516fdfa93544_H1_K20",
+          "VM": "YAhhkmYOOCqTxMAl8f0Vk6hp9hZHtDS5O7x419kBWjR6YFQr428MZzfcxe9UJBSW"
+        },
+        {
+          "stage": "azure",
+          "slug": "30411d3a8ed97123_H1_K20",
+          "VM": "PTbCVi2EtOhYOiWoyi+o5rPLvyQZlONZkocYqB5yHsvgfQeJAxpBJ64sk6y3mj+V"
+        },
+        {
+          "stage": "azure",
+          "slug": "32e1fb55169fbff0_H1_K20",
+          "VM": "+fWkA+VxMUL0kCkbjfkGcPm/IldATGJ1LoVJysqRM42SPlRaL2QqGOixbx+x7PmC"
+        },
+        {
+          "stage": "azure",
+          "slug": "679f41b1e6b4b9c5_H1_K20",
+          "VM": "4hranm/Zz7t0RO+jAMKswBfwjcT14RW5/HDP5Jx9LCLTD3GbpYZSz/vNfGkgel3b"
+        },
+        {
+          "stage": "azure",
+          "slug": "61dd828ba44c7b0d_H1_K20",
+          "VM": "9ygg9wpxJtndEbfWyXgSiXiNT/RkhBbsYJHR/6w2OBfYAVUEi6xVAgGth8Ek4RW4"
+        },
+        {
+          "stage": "azure",
+          "slug": "4fdf1fd3da311806_H1_K20",
+          "VM": "5id+aKm8TxBPaM/rM0hLhYcJwOvkWg1TVLDwX8Amwf/ZLzK8L7mWpS9fIUeUUSMj"
+        },
+        {
+          "stage": "azure",
+          "slug": "b895068e931e4032_H1_K20",
+          "VM": "gJpJxGVgZ0NgkdoCf+a21bDv45ZqkmK7m3Xytt09dcRiCUAqT0Inyr4Utzey3/Us"
+        },
+        {
+          "stage": "azure",
+          "slug": "464da2a2135e4b2e_H1_K20",
+          "VM": "SRpprOMaeeAZfPT7onqNMfLAmNSrAZ8PrfMfPVJGLYFScEyZWLR+2KsdW/us9Zf1"
+        },
+        {
+          "stage": "azure",
+          "slug": "690ea0acef0965c6_H1_K20",
+          "VM": "NUmUGszRXoQs0Rs/2Gbw6DeJ/1lmMv6cM2z4hGB86FgPYVfzFRouAWMd+0GthZlD"
+        },
+        {
+          "stage": "azure",
+          "slug": "55b6047fa1b76ac6_H1_K20",
+          "VM": "zAcJ/2gi/0+7kvIC7QtrNDOviSBggN5KG8qH0HjswGCr75q4lanpazoB/ZNhhwA5"
+        }
+      ]
+    },
+    "2": {
+      "H": 4,
+      "K": 10,
+      "final_k": 999,
+      "final_alpha": 0.018671443609254,
+      "C": [
+        {
+          "slug": "vm717_H4_K10",
+          "VM": "fastStorage:717",
+          "loo_k": 999,
+          "loo_alpha": 0.0171597906205849
+        },
+        {
+          "slug": "vm46_H4_K10",
+          "VM": "fastStorage:46",
+          "loo_k": 999,
+          "loo_alpha": 0.0097212058487515
+        },
+        {
+          "slug": "vm845_H4_K10",
+          "VM": "fastStorage:845",
+          "loo_k": 999,
+          "loo_alpha": 0.0140895610327548
+        },
+        {
+          "slug": "vm837_H4_K10",
+          "VM": "fastStorage:837",
+          "loo_k": 999,
+          "loo_alpha": 0.0176725425060104
+        },
+        {
+          "slug": "vm798_H4_K10",
+          "VM": "fastStorage:798",
+          "loo_k": 999,
+          "loo_alpha": 0.0176751607671017
+        },
+        {
+          "slug": "vm317_H4_K10",
+          "VM": "fastStorage:317",
+          "loo_k": 999,
+          "loo_alpha": 0.01359345193054
+        },
+        {
+          "slug": "vm540_H4_K10",
+          "VM": "fastStorage:540",
+          "loo_k": 999,
+          "loo_alpha": 0.0176590374827257
+        },
+        {
+          "slug": "vm49_H4_K10",
+          "VM": "fastStorage:49",
+          "loo_k": 999,
+          "loo_alpha": 0.0139368388365331
+        },
+        {
+          "slug": "vm256_H4_K10",
+          "VM": "fastStorage:256",
+          "loo_k": 999,
+          "loo_alpha": 0.1086696286704384
+        },
+        {
+          "slug": "vm378_H4_K10",
+          "VM": "fastStorage:378",
+          "loo_k": 999,
+          "loo_alpha": 0.0176723091084708
+        },
+        {
+          "slug": "vm1077_H4_K10",
+          "VM": "fastStorage:1077",
+          "loo_k": 999,
+          "loo_alpha": 0.0154063791085313
+        },
+        {
+          "slug": "vm998_H4_K10",
+          "VM": "fastStorage:998",
+          "loo_k": 999,
+          "loo_alpha": 0.0174463703398213
+        },
+        {
+          "slug": "vm1007_H4_K10",
+          "VM": "fastStorage:1007",
+          "loo_k": 999,
+          "loo_alpha": 0.0175310845404751
+        },
+        {
+          "slug": "vm1124_H4_K10",
+          "VM": "fastStorage:1124",
+          "loo_k": 999,
+          "loo_alpha": 0.0176923620593743
+        },
+        {
+          "slug": "vm720_H4_K10",
+          "VM": "fastStorage:720",
+          "loo_k": 999,
+          "loo_alpha": 0.0173099800598643
+        },
+        {
+          "slug": "vm567_H4_K10",
+          "VM": "fastStorage:567",
+          "loo_k": 999,
+          "loo_alpha": 0.017768575183361
+        },
+        {
+          "slug": "vm257_H4_K10",
+          "VM": "fastStorage:257",
+          "loo_k": 999,
+          "loo_alpha": 0.0344935309143106
+        },
+        {
+          "slug": "vm1081_H4_K10",
+          "VM": "fastStorage:1081",
+          "loo_k": 999,
+          "loo_alpha": 0.0176964799452321
+        },
+        {
+          "slug": "vm954_H4_K10",
+          "VM": "fastStorage:954",
+          "loo_k": 3,
+          "loo_alpha": 0.0384874870906305
+        },
+        {
+          "slug": "vm666_H4_K10",
+          "VM": "fastStorage:666",
+          "loo_k": 999,
+          "loo_alpha": 0.0176943548893001
+        }
+      ],
+      "dev": [
+        {
+          "stage": "E",
+          "slug": "vm1066_H4_K10",
+          "VM": "fastStorage:1066"
+        },
+        {
+          "stage": "E",
+          "slug": "vm281_H4_K10",
+          "VM": "fastStorage:281"
+        },
+        {
+          "stage": "E",
+          "slug": "vm344_H4_K10",
+          "VM": "fastStorage:344"
+        },
+        {
+          "stage": "E",
+          "slug": "vm943_H4_K10",
+          "VM": "fastStorage:943"
+        },
+        {
+          "stage": "E",
+          "slug": "vm514_H4_K10",
+          "VM": "fastStorage:514"
+        },
+        {
+          "stage": "E",
+          "slug": "vm80_H4_K10",
+          "VM": "fastStorage:80"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1009_H4_K10",
+          "VM": "fastStorage:1009"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1222_H4_K10",
+          "VM": "fastStorage:1222"
+        },
+        {
+          "stage": "E",
+          "slug": "vm250_H4_K10",
+          "VM": "fastStorage:250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm559_H4_K10",
+          "VM": "fastStorage:559"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1250_H4_K10",
+          "VM": "fastStorage:1250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm848_H4_K10",
+          "VM": "fastStorage:848"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1146_H4_K10",
+          "VM": "fastStorage:1146"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1140_H4_K10",
+          "VM": "fastStorage:1140"
+        },
+        {
+          "stage": "E",
+          "slug": "vm164_H4_K10",
+          "VM": "fastStorage:164"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1153_H4_K10",
+          "VM": "fastStorage:1153"
+        },
+        {
+          "stage": "E",
+          "slug": "vm917_H4_K10",
+          "VM": "fastStorage:917"
+        },
+        {
+          "stage": "E",
+          "slug": "vm680_H4_K10",
+          "VM": "fastStorage:680"
+        },
+        {
+          "stage": "E",
+          "slug": "vm587_H4_K10",
+          "VM": "fastStorage:587"
+        },
+        {
+          "stage": "E",
+          "slug": "vm313_H4_K10",
+          "VM": "fastStorage:313"
+        },
+        {
+          "stage": "E",
+          "slug": "vm657_H4_K10",
+          "VM": "fastStorage:657"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1142_H4_K10",
+          "VM": "fastStorage:1142"
+        },
+        {
+          "stage": "E",
+          "slug": "vm171_H4_K10",
+          "VM": "fastStorage:171"
+        },
+        {
+          "stage": "E",
+          "slug": "vm741_H4_K10",
+          "VM": "fastStorage:741"
+        },
+        {
+          "stage": "E",
+          "slug": "vm660_H4_K10",
+          "VM": "fastStorage:660"
+        },
+        {
+          "stage": "E",
+          "slug": "vm466_H4_K10",
+          "VM": "fastStorage:466"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1036_H4_K10",
+          "VM": "fastStorage:1036"
+        },
+        {
+          "stage": "E",
+          "slug": "vm778_H4_K10",
+          "VM": "fastStorage:778"
+        },
+        {
+          "stage": "E",
+          "slug": "vm604_H4_K10",
+          "VM": "fastStorage:604"
+        },
+        {
+          "stage": "E",
+          "slug": "vm709_H4_K10",
+          "VM": "fastStorage:709"
+        },
+        {
+          "stage": "azure",
+          "slug": "535679516dcffe91_H4_K10",
+          "VM": "Ry/G/hEmbhzUiq6VkmZ2Y+9Jsax+yIh+QR84K7B7Yuh61DbGV+NQUKXA1TlHQJf9"
+        },
+        {
+          "stage": "azure",
+          "slug": "56e5b0cc6e6d4892_H4_K10",
+          "VM": "QKFQpxG+Xc650eZX3vl8lCnXhjC6rxQtNS0qck9i4QZ70dEH+KzVOvKbQUbcurqm"
+        },
+        {
+          "stage": "azure",
+          "slug": "7cc007517668f3ab_H4_K10",
+          "VM": "V56QcU/3MbBdoHFGGwDtdOD1KwLkbZ39XXpH7X1DGOr2W608tXkUjMveNVO6dcBW"
+        },
+        {
+          "stage": "azure",
+          "slug": "1d38033e6b8fc283_H4_K10",
+          "VM": "T14hIhPPd4FXqkxuw+l0oiPsQ3SuivAyTF8VVkDC3ZoZqGOlEXJE6MiWuu5JWlRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "7a26ab3da1d4b9d7_H4_K10",
+          "VM": "smrh7tIBIv10lWzvIDG7xlM2jDPMTa6sguPFOB67XuV7qgq8l1EZy0Gd+D+D3K4k"
+        },
+        {
+          "stage": "azure",
+          "slug": "7ce2318a576f7a61_H4_K10",
+          "VM": "iGZQm8VIUP43GRDSjbec6GkmRtjUX4pqnJd5BTuFZiAtfdNEjDJmyGrP+JEt/J2t"
+        },
+        {
+          "stage": "azure",
+          "slug": "8f490fc9ea13fc8f_H4_K10",
+          "VM": "DhBHZQIZAT48qpkb2s53eSwsu5v9po9k86mYm21MiyrGnfIMUpxeFeo0Jclk7X+H"
+        },
+        {
+          "stage": "azure",
+          "slug": "916ed1a22aed8c17_H4_K10",
+          "VM": "sFCYgmEgUKjjdyKF/JnGZlXGcE0mlZjQ6h9G2/R6qIiGmOhthvl+NXf/8+r3mkja"
+        },
+        {
+          "stage": "azure",
+          "slug": "dd90ee5fad9d19fc_H4_K10",
+          "VM": "NgUHkeZj8ymLFJC03wdyM47o4YHD5lTRdsdNF1iqUK+KGdA/AO8vidqkGkuqRYrL"
+        },
+        {
+          "stage": "azure",
+          "slug": "0a49b5c19f8a734e_H4_K10",
+          "VM": "0ZF4WygcQgzsFf+UbyjNpdYci1IQjzJlBimy7u0TMR9DJsjDecmmxo5VJRQvwHnl"
+        },
+        {
+          "stage": "azure",
+          "slug": "30082b03fc504de0_H4_K10",
+          "VM": "AD+rjEKCioWsTxQUCL4GH31SV32nCIDeH8e+CjcIVAMSiaMYhn8etVk0ohrQOFHl"
+        },
+        {
+          "stage": "azure",
+          "slug": "d1ac8cd76cad5309_H4_K10",
+          "VM": "PaTgWV07p8Fps0lowjLQDaE8Cg5PPOd3I8bqs1ILAGvTTzYgwiqvtgeaQitM7pVT"
+        },
+        {
+          "stage": "azure",
+          "slug": "aaae2dac5149e69b_H4_K10",
+          "VM": "9N9oKWacKo3N2WrArmp76pQXjF5rH/fKrk0mM1vlgjzac8UB/oAv0dsna3IgYyOX"
+        },
+        {
+          "stage": "azure",
+          "slug": "7dd7973ecc3f36fc_H4_K10",
+          "VM": "kF4zsBOQBqxgn/qX35cVdFF/QzMNxblq3Lcyr2mYsyMmc8UMlwigwYecNv7LW1N9"
+        },
+        {
+          "stage": "azure",
+          "slug": "53eb03527ad9173d_H4_K10",
+          "VM": "B55Igk682AW97kYroswLIJhMFFHdfENIeIRUxDdfOajQjskf1kNpAMmcoxbBspG9"
+        },
+        {
+          "stage": "azure",
+          "slug": "fdd01403048cbfc7_H4_K10",
+          "VM": "EVB1XdctbNNOi3hZA2HbQnCLmTHvpLMdQraA5p1Lb/vLudptpnSUjdsGYNE7Yoxo"
+        },
+        {
+          "stage": "azure",
+          "slug": "c90b8a42cec8b6e4_H4_K10",
+          "VM": "MOarevfE98tmijJk/6JRpprKoUBbcFKLJo8/LAfSZSLCrhvipVtfvAx7Efmw0Dsm"
+        },
+        {
+          "stage": "azure",
+          "slug": "f60c9406c2a4a770_H4_K10",
+          "VM": "j2JgOZBe6joYj4Zb0jJZfRE6LIzSQkn9qxq/aLAsTJrKpEZrAFtsZPMMS16zM2Yj"
+        },
+        {
+          "stage": "azure",
+          "slug": "cec6266823900cf5_H4_K10",
+          "VM": "8N6TK7W6YMj6Mh1ZecuoP9czThr0UU8WEBuGinahtzYdUUV6IgEBenlr4yStr00/"
+        },
+        {
+          "stage": "azure",
+          "slug": "30f5a6cc717c1313_H4_K10",
+          "VM": "Bjcwopo38L8ODAl5ZJKmMIrXGibSubrxNxNYNJ85AVpOYVdLBazaoVP2Jct1QcRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "3902516fdfa93544_H4_K10",
+          "VM": "YAhhkmYOOCqTxMAl8f0Vk6hp9hZHtDS5O7x419kBWjR6YFQr428MZzfcxe9UJBSW"
+        },
+        {
+          "stage": "azure",
+          "slug": "30411d3a8ed97123_H4_K10",
+          "VM": "PTbCVi2EtOhYOiWoyi+o5rPLvyQZlONZkocYqB5yHsvgfQeJAxpBJ64sk6y3mj+V"
+        },
+        {
+          "stage": "azure",
+          "slug": "32e1fb55169fbff0_H4_K10",
+          "VM": "+fWkA+VxMUL0kCkbjfkGcPm/IldATGJ1LoVJysqRM42SPlRaL2QqGOixbx+x7PmC"
+        },
+        {
+          "stage": "azure",
+          "slug": "679f41b1e6b4b9c5_H4_K10",
+          "VM": "4hranm/Zz7t0RO+jAMKswBfwjcT14RW5/HDP5Jx9LCLTD3GbpYZSz/vNfGkgel3b"
+        },
+        {
+          "stage": "azure",
+          "slug": "61dd828ba44c7b0d_H4_K10",
+          "VM": "9ygg9wpxJtndEbfWyXgSiXiNT/RkhBbsYJHR/6w2OBfYAVUEi6xVAgGth8Ek4RW4"
+        },
+        {
+          "stage": "azure",
+          "slug": "4fdf1fd3da311806_H4_K10",
+          "VM": "5id+aKm8TxBPaM/rM0hLhYcJwOvkWg1TVLDwX8Amwf/ZLzK8L7mWpS9fIUeUUSMj"
+        },
+        {
+          "stage": "azure",
+          "slug": "b895068e931e4032_H4_K10",
+          "VM": "gJpJxGVgZ0NgkdoCf+a21bDv45ZqkmK7m3Xytt09dcRiCUAqT0Inyr4Utzey3/Us"
+        },
+        {
+          "stage": "azure",
+          "slug": "464da2a2135e4b2e_H4_K10",
+          "VM": "SRpprOMaeeAZfPT7onqNMfLAmNSrAZ8PrfMfPVJGLYFScEyZWLR+2KsdW/us9Zf1"
+        },
+        {
+          "stage": "azure",
+          "slug": "690ea0acef0965c6_H4_K10",
+          "VM": "NUmUGszRXoQs0Rs/2Gbw6DeJ/1lmMv6cM2z4hGB86FgPYVfzFRouAWMd+0GthZlD"
+        },
+        {
+          "stage": "azure",
+          "slug": "55b6047fa1b76ac6_H4_K10",
+          "VM": "zAcJ/2gi/0+7kvIC7QtrNDOviSBggN5KG8qH0HjswGCr75q4lanpazoB/ZNhhwA5"
+        }
+      ]
+    },
+    "3": {
+      "H": 4,
+      "K": 20,
+      "final_k": 1,
+      "final_alpha": 0.4102420404688326,
+      "C": [
+        {
+          "slug": "vm717_H4_K20",
+          "VM": "fastStorage:717",
+          "loo_k": 1,
+          "loo_alpha": 0.4102420404688326
+        },
+        {
+          "slug": "vm46_H4_K20",
+          "VM": "fastStorage:46",
+          "loo_k": 1,
+          "loo_alpha": 0.3652243890902419
+        },
+        {
+          "slug": "vm845_H4_K20",
+          "VM": "fastStorage:845",
+          "loo_k": 1,
+          "loo_alpha": 0.4102420404688326
+        },
+        {
+          "slug": "vm837_H4_K20",
+          "VM": "fastStorage:837",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544408
+        },
+        {
+          "slug": "vm798_H4_K20",
+          "VM": "fastStorage:798",
+          "loo_k": 1,
+          "loo_alpha": 0.4102420404688326
+        },
+        {
+          "slug": "vm317_H4_K20",
+          "VM": "fastStorage:317",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544408
+        },
+        {
+          "slug": "vm540_H4_K20",
+          "VM": "fastStorage:540",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544407
+        },
+        {
+          "slug": "vm49_H4_K20",
+          "VM": "fastStorage:49",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544408
+        },
+        {
+          "slug": "vm256_H4_K20",
+          "VM": "fastStorage:256",
+          "loo_k": 1,
+          "loo_alpha": 0.4102420404688326
+        },
+        {
+          "slug": "vm378_H4_K20",
+          "VM": "fastStorage:378",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544408
+        },
+        {
+          "slug": "vm1077_H4_K20",
+          "VM": "fastStorage:1077",
+          "loo_k": 1,
+          "loo_alpha": 0.2024619097076715
+        },
+        {
+          "slug": "vm998_H4_K20",
+          "VM": "fastStorage:998",
+          "loo_k": 3,
+          "loo_alpha": 0.6030833304673401
+        },
+        {
+          "slug": "vm1007_H4_K20",
+          "VM": "fastStorage:1007",
+          "loo_k": 1,
+          "loo_alpha": 0.4102420404688326
+        },
+        {
+          "slug": "vm1124_H4_K20",
+          "VM": "fastStorage:1124",
+          "loo_k": 1,
+          "loo_alpha": 0.2106629943160902
+        },
+        {
+          "slug": "vm720_H4_K20",
+          "VM": "fastStorage:720",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544408
+        },
+        {
+          "slug": "vm567_H4_K20",
+          "VM": "fastStorage:567",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544407
+        },
+        {
+          "slug": "vm257_H4_K20",
+          "VM": "fastStorage:257",
+          "loo_k": 999,
+          "loo_alpha": 0.035411728751432
+        },
+        {
+          "slug": "vm1081_H4_K20",
+          "VM": "fastStorage:1081",
+          "loo_k": 999,
+          "loo_alpha": 0.0129823410938066
+        },
+        {
+          "slug": "vm954_H4_K20",
+          "VM": "fastStorage:954",
+          "loo_k": 1,
+          "loo_alpha": 0.2470562670529087
+        },
+        {
+          "slug": "vm666_H4_K20",
+          "VM": "fastStorage:666",
+          "loo_k": 1,
+          "loo_alpha": 0.1959927006544407
+        }
+      ],
+      "dev": [
+        {
+          "stage": "E",
+          "slug": "vm1066_H4_K20",
+          "VM": "fastStorage:1066"
+        },
+        {
+          "stage": "E",
+          "slug": "vm281_H4_K20",
+          "VM": "fastStorage:281"
+        },
+        {
+          "stage": "E",
+          "slug": "vm344_H4_K20",
+          "VM": "fastStorage:344"
+        },
+        {
+          "stage": "E",
+          "slug": "vm943_H4_K20",
+          "VM": "fastStorage:943"
+        },
+        {
+          "stage": "E",
+          "slug": "vm514_H4_K20",
+          "VM": "fastStorage:514"
+        },
+        {
+          "stage": "E",
+          "slug": "vm80_H4_K20",
+          "VM": "fastStorage:80"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1009_H4_K20",
+          "VM": "fastStorage:1009"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1222_H4_K20",
+          "VM": "fastStorage:1222"
+        },
+        {
+          "stage": "E",
+          "slug": "vm250_H4_K20",
+          "VM": "fastStorage:250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm559_H4_K20",
+          "VM": "fastStorage:559"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1250_H4_K20",
+          "VM": "fastStorage:1250"
+        },
+        {
+          "stage": "E",
+          "slug": "vm848_H4_K20",
+          "VM": "fastStorage:848"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1146_H4_K20",
+          "VM": "fastStorage:1146"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1140_H4_K20",
+          "VM": "fastStorage:1140"
+        },
+        {
+          "stage": "E",
+          "slug": "vm164_H4_K20",
+          "VM": "fastStorage:164"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1153_H4_K20",
+          "VM": "fastStorage:1153"
+        },
+        {
+          "stage": "E",
+          "slug": "vm917_H4_K20",
+          "VM": "fastStorage:917"
+        },
+        {
+          "stage": "E",
+          "slug": "vm680_H4_K20",
+          "VM": "fastStorage:680"
+        },
+        {
+          "stage": "E",
+          "slug": "vm587_H4_K20",
+          "VM": "fastStorage:587"
+        },
+        {
+          "stage": "E",
+          "slug": "vm313_H4_K20",
+          "VM": "fastStorage:313"
+        },
+        {
+          "stage": "E",
+          "slug": "vm657_H4_K20",
+          "VM": "fastStorage:657"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1142_H4_K20",
+          "VM": "fastStorage:1142"
+        },
+        {
+          "stage": "E",
+          "slug": "vm171_H4_K20",
+          "VM": "fastStorage:171"
+        },
+        {
+          "stage": "E",
+          "slug": "vm741_H4_K20",
+          "VM": "fastStorage:741"
+        },
+        {
+          "stage": "E",
+          "slug": "vm660_H4_K20",
+          "VM": "fastStorage:660"
+        },
+        {
+          "stage": "E",
+          "slug": "vm466_H4_K20",
+          "VM": "fastStorage:466"
+        },
+        {
+          "stage": "E",
+          "slug": "vm1036_H4_K20",
+          "VM": "fastStorage:1036"
+        },
+        {
+          "stage": "E",
+          "slug": "vm778_H4_K20",
+          "VM": "fastStorage:778"
+        },
+        {
+          "stage": "E",
+          "slug": "vm604_H4_K20",
+          "VM": "fastStorage:604"
+        },
+        {
+          "stage": "E",
+          "slug": "vm709_H4_K20",
+          "VM": "fastStorage:709"
+        },
+        {
+          "stage": "azure",
+          "slug": "535679516dcffe91_H4_K20",
+          "VM": "Ry/G/hEmbhzUiq6VkmZ2Y+9Jsax+yIh+QR84K7B7Yuh61DbGV+NQUKXA1TlHQJf9"
+        },
+        {
+          "stage": "azure",
+          "slug": "56e5b0cc6e6d4892_H4_K20",
+          "VM": "QKFQpxG+Xc650eZX3vl8lCnXhjC6rxQtNS0qck9i4QZ70dEH+KzVOvKbQUbcurqm"
+        },
+        {
+          "stage": "azure",
+          "slug": "7cc007517668f3ab_H4_K20",
+          "VM": "V56QcU/3MbBdoHFGGwDtdOD1KwLkbZ39XXpH7X1DGOr2W608tXkUjMveNVO6dcBW"
+        },
+        {
+          "stage": "azure",
+          "slug": "1d38033e6b8fc283_H4_K20",
+          "VM": "T14hIhPPd4FXqkxuw+l0oiPsQ3SuivAyTF8VVkDC3ZoZqGOlEXJE6MiWuu5JWlRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "7a26ab3da1d4b9d7_H4_K20",
+          "VM": "smrh7tIBIv10lWzvIDG7xlM2jDPMTa6sguPFOB67XuV7qgq8l1EZy0Gd+D+D3K4k"
+        },
+        {
+          "stage": "azure",
+          "slug": "7ce2318a576f7a61_H4_K20",
+          "VM": "iGZQm8VIUP43GRDSjbec6GkmRtjUX4pqnJd5BTuFZiAtfdNEjDJmyGrP+JEt/J2t"
+        },
+        {
+          "stage": "azure",
+          "slug": "8f490fc9ea13fc8f_H4_K20",
+          "VM": "DhBHZQIZAT48qpkb2s53eSwsu5v9po9k86mYm21MiyrGnfIMUpxeFeo0Jclk7X+H"
+        },
+        {
+          "stage": "azure",
+          "slug": "916ed1a22aed8c17_H4_K20",
+          "VM": "sFCYgmEgUKjjdyKF/JnGZlXGcE0mlZjQ6h9G2/R6qIiGmOhthvl+NXf/8+r3mkja"
+        },
+        {
+          "stage": "azure",
+          "slug": "dd90ee5fad9d19fc_H4_K20",
+          "VM": "NgUHkeZj8ymLFJC03wdyM47o4YHD5lTRdsdNF1iqUK+KGdA/AO8vidqkGkuqRYrL"
+        },
+        {
+          "stage": "azure",
+          "slug": "0a49b5c19f8a734e_H4_K20",
+          "VM": "0ZF4WygcQgzsFf+UbyjNpdYci1IQjzJlBimy7u0TMR9DJsjDecmmxo5VJRQvwHnl"
+        },
+        {
+          "stage": "azure",
+          "slug": "30082b03fc504de0_H4_K20",
+          "VM": "AD+rjEKCioWsTxQUCL4GH31SV32nCIDeH8e+CjcIVAMSiaMYhn8etVk0ohrQOFHl"
+        },
+        {
+          "stage": "azure",
+          "slug": "d1ac8cd76cad5309_H4_K20",
+          "VM": "PaTgWV07p8Fps0lowjLQDaE8Cg5PPOd3I8bqs1ILAGvTTzYgwiqvtgeaQitM7pVT"
+        },
+        {
+          "stage": "azure",
+          "slug": "aaae2dac5149e69b_H4_K20",
+          "VM": "9N9oKWacKo3N2WrArmp76pQXjF5rH/fKrk0mM1vlgjzac8UB/oAv0dsna3IgYyOX"
+        },
+        {
+          "stage": "azure",
+          "slug": "7dd7973ecc3f36fc_H4_K20",
+          "VM": "kF4zsBOQBqxgn/qX35cVdFF/QzMNxblq3Lcyr2mYsyMmc8UMlwigwYecNv7LW1N9"
+        },
+        {
+          "stage": "azure",
+          "slug": "53eb03527ad9173d_H4_K20",
+          "VM": "B55Igk682AW97kYroswLIJhMFFHdfENIeIRUxDdfOajQjskf1kNpAMmcoxbBspG9"
+        },
+        {
+          "stage": "azure",
+          "slug": "fdd01403048cbfc7_H4_K20",
+          "VM": "EVB1XdctbNNOi3hZA2HbQnCLmTHvpLMdQraA5p1Lb/vLudptpnSUjdsGYNE7Yoxo"
+        },
+        {
+          "stage": "azure",
+          "slug": "c90b8a42cec8b6e4_H4_K20",
+          "VM": "MOarevfE98tmijJk/6JRpprKoUBbcFKLJo8/LAfSZSLCrhvipVtfvAx7Efmw0Dsm"
+        },
+        {
+          "stage": "azure",
+          "slug": "f60c9406c2a4a770_H4_K20",
+          "VM": "j2JgOZBe6joYj4Zb0jJZfRE6LIzSQkn9qxq/aLAsTJrKpEZrAFtsZPMMS16zM2Yj"
+        },
+        {
+          "stage": "azure",
+          "slug": "cec6266823900cf5_H4_K20",
+          "VM": "8N6TK7W6YMj6Mh1ZecuoP9czThr0UU8WEBuGinahtzYdUUV6IgEBenlr4yStr00/"
+        },
+        {
+          "stage": "azure",
+          "slug": "30f5a6cc717c1313_H4_K20",
+          "VM": "Bjcwopo38L8ODAl5ZJKmMIrXGibSubrxNxNYNJ85AVpOYVdLBazaoVP2Jct1QcRS"
+        },
+        {
+          "stage": "azure",
+          "slug": "3902516fdfa93544_H4_K20",
+          "VM": "YAhhkmYOOCqTxMAl8f0Vk6hp9hZHtDS5O7x419kBWjR6YFQr428MZzfcxe9UJBSW"
+        },
+        {
+          "stage": "azure",
+          "slug": "30411d3a8ed97123_H4_K20",
+          "VM": "PTbCVi2EtOhYOiWoyi+o5rPLvyQZlONZkocYqB5yHsvgfQeJAxpBJ64sk6y3mj+V"
+        },
+        {
+          "stage": "azure",
+          "slug": "32e1fb55169fbff0_H4_K20",
+          "VM": "+fWkA+VxMUL0kCkbjfkGcPm/IldATGJ1LoVJysqRM42SPlRaL2QqGOixbx+x7PmC"
+        },
+        {
+          "stage": "azure",
+          "slug": "679f41b1e6b4b9c5_H4_K20",
+          "VM": "4hranm/Zz7t0RO+jAMKswBfwjcT14RW5/HDP5Jx9LCLTD3GbpYZSz/vNfGkgel3b"
+        },
+        {
+          "stage": "azure",
+          "slug": "61dd828ba44c7b0d_H4_K20",
+          "VM": "9ygg9wpxJtndEbfWyXgSiXiNT/RkhBbsYJHR/6w2OBfYAVUEi6xVAgGth8Ek4RW4"
+        },
+        {
+          "stage": "azure",
+          "slug": "4fdf1fd3da311806_H4_K20",
+          "VM": "5id+aKm8TxBPaM/rM0hLhYcJwOvkWg1TVLDwX8Amwf/ZLzK8L7mWpS9fIUeUUSMj"
+        },
+        {
+          "stage": "azure",
+          "slug": "b895068e931e4032_H4_K20",
+          "VM": "gJpJxGVgZ0NgkdoCf+a21bDv45ZqkmK7m3Xytt09dcRiCUAqT0Inyr4Utzey3/Us"
+        },
+        {
+          "stage": "azure",
+          "slug": "464da2a2135e4b2e_H4_K20",
+          "VM": "SRpprOMaeeAZfPT7onqNMfLAmNSrAZ8PrfMfPVJGLYFScEyZWLR+2KsdW/us9Zf1"
+        },
+        {
+          "stage": "azure",
+          "slug": "690ea0acef0965c6_H4_K20",
+          "VM": "NUmUGszRXoQs0Rs/2Gbw6DeJ/1lmMv6cM2z4hGB86FgPYVfzFRouAWMd+0GthZlD"
+        },
+        {
+          "stage": "azure",
+          "slug": "55b6047fa1b76ac6_H4_K20",
+          "VM": "zAcJ/2gi/0+7kvIC7QtrNDOviSBggN5KG8qH0HjswGCr75q4lanpazoB/ZNhhwA5"
+        }
+      ]
+    }
+  }
+}

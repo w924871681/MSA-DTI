@@ -101,10 +101,11 @@
     "sgd_lr": 0.02,
     "grad_clip_norm": 1.0,
     "early_checkpoints": [
-      0,
-      10,
-      25,
-      50
+      "b50",
+      "b25",
+      "b10",
+      "bW",
+      "a0"
     ],
     "channel_importance_ridge": 0.01,
     "causal_load_scales": [
