@@ -1,0 +1,51 @@
+{
+  "gpu": "Tesla V100S-PCIE-32GB",
+  "torch": "2.5.1+cu121",
+  "n_cases": 12,
+  "selection_by_budget": [
+    {
+      "budget": "loose",
+      "n_feasible": 19.0,
+      "zero_step_sec": 9.975892105450233,
+      "full_val_sec": 51.81096865733465,
+      "ntk_p_sec": 18.657789985028405,
+      "r44_probe_sec": 51.26630832379063,
+      "r44_vram_mb": 214.65604654947916
+    },
+    {
+      "budget": "medium",
+      "n_feasible": 17.0,
+      "zero_step_sec": 9.954410633072257,
+      "full_val_sec": 51.463482689733304,
+      "ntk_p_sec": 18.550989827451605,
+      "r44_probe_sec": 51.00594777210305,
+      "r44_vram_mb": 156.51517740885416
+    },
+    {
+      "budget": "tight",
+      "n_feasible": 10.0,
+      "zero_step_sec": 7.716146498608093,
+      "full_val_sec": 35.72951025453707,
+      "ntk_p_sec": 14.46510860385994,
+      "r44_probe_sec": 40.311052480091654,
+      "r44_vram_mb": 124.38240559895833
+    }
+  ],
+  "instantiation_mean": {
+    "u50_sec": 2.212963378056884,
+    "r64_adapt_sec": 6.460079518767695,
+    "r64_head_route_sec": 1.5624158071974914,
+    "r64_total_sec": 8.022495325965187,
+    "u50_vram_mb": 102.4210205078125,
+    "r64_vram_mb": 106.56038411458333
+  },
+  "inference_mean": {
+    "u50_gpu_1win_ms": 9.832010456671318,
+    "r64_gpu_1win_ms": 9.918074244633317,
+    "u50_gpu_batch_ms_per_win": 0.5064063914566456,
+    "r64_gpu_batch_ms_per_win": 0.5113751921817311,
+    "u50_cpu_1win_ms": 1.6207685337091486,
+    "r64_cpu_1win_ms": 1.6052179240311186
+  },
+  "all_topologies_identical": true
+}

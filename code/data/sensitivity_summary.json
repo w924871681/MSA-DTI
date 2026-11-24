@@ -1,0 +1,275 @@
+{
+  "repro": {
+    "pair": 720,
+    "r44": 720,
+    "total": 720
+  },
+  "hist_sensitivity": [
+    {
+      "n_hist": 0,
+      "runs": 1,
+      "E_risk": [
+        0.9610953091055034,
+        0.0
+      ],
+      "A_risk": [
+        0.9496787606684687,
+        0.0
+      ],
+      "dev_risk": [
+        0.9553870348869861,
+        0.0
+      ],
+      "E_med_mse": [
+        4.5400765092065285,
+        0.0
+      ]
+    },
+    {
+      "n_hist": 5,
+      "runs": 5,
+      "E_risk": [
+        0.9545825048268233,
+        0.005718920389837974
+      ],
+      "A_risk": [
+        0.9631535829991098,
+        0.011559443410705864
+      ],
+      "dev_risk": [
+        0.9588680439129666,
+        0.004698304591507694
+      ],
+      "E_med_mse": [
+        4.515701040337771,
+        0.025229640260247974
+      ]
+    },
+    {
+      "n_hist": 10,
+      "runs": 5,
+      "E_risk": [
+        0.9510031256528231,
+        0.00993157711369828
+      ],
+      "A_risk": [
+        0.9528789230387014,
+        0.0068717851353055056
+      ],
+      "dev_risk": [
+        0.9519410243457622,
+        0.00523382398510191
+      ],
+      "E_med_mse": [
+        4.504370182533906,
+        0.03366645780013894
+      ]
+    },
+    {
+      "n_hist": 15,
+      "runs": 5,
+      "E_risk": [
+        0.933324914719393,
+        0.0013653041352158842
+      ],
+      "A_risk": [
+        0.9497519253535,
+        0.004830410666304583
+      ],
+      "dev_risk": [
+        0.9415384200364464,
+        0.0025162456484988023
+      ],
+      "E_med_mse": [
+        4.441997885173599,
+        0.00902782288855246
+      ]
+    },
+    {
+      "n_hist": 20,
+      "runs": 1,
+      "E_risk": [
+        0.9346694822152343,
+        0.0
+      ],
+      "A_risk": [
+        0.9435108958860716,
+        0.0
+      ],
+      "dev_risk": [
+        0.9390901890506529,
+        0.0
+      ],
+      "E_med_mse": [
+        4.4574116568946485,
+        0.0
+      ]
+    }
+  ],
+  "single_cap": [
+    {
+      "budget": "Tight",
+      "mode": "Both limits",
+      "feas": 10,
+      "compliant": 120,
+      "viol_p": 0,
+      "viol_f": 0,
+      "changed": 0,
+      "mse": 4.4521101507958445
+    },
+    {
+      "budget": "Tight",
+      "mode": "Operations limit only",
+      "feas": 14,
+      "compliant": 98,
+      "viol_p": 22,
+      "viol_f": 0,
+      "changed": 26,
+      "mse": 4.448991771368518
+    },
+    {
+      "budget": "Tight",
+      "mode": "Parameters limit only",
+      "feas": 14,
+      "compliant": 107,
+      "viol_p": 0,
+      "viol_f": 13,
+      "changed": 16,
+      "mse": 4.460730857991011
+    },
+    {
+      "budget": "Medium",
+      "mode": "Both limits",
+      "feas": 17,
+      "compliant": 120,
+      "viol_p": 0,
+      "viol_f": 0,
+      "changed": 0,
+      "mse": 4.4574116568946485
+    },
+    {
+      "budget": "Medium",
+      "mode": "Operations limit only",
+      "feas": 18,
+      "compliant": 115,
+      "viol_p": 5,
+      "viol_f": 0,
+      "changed": 6,
+      "mse": 4.457713166801529
+    },
+    {
+      "budget": "Medium",
+      "mode": "Parameters limit only",
+      "feas": 18,
+      "compliant": 104,
+      "viol_p": 0,
+      "viol_f": 16,
+      "changed": 21,
+      "mse": 4.470917588144042
+    },
+    {
+      "budget": "Loose",
+      "mode": "Both limits",
+      "feas": 19,
+      "compliant": 120,
+      "viol_p": 0,
+      "viol_f": 0,
+      "changed": 0,
+      "mse": 4.470835623573599
+    },
+    {
+      "budget": "Loose",
+      "mode": "Operations limit only",
+      "feas": 19,
+      "compliant": 120,
+      "viol_p": 0,
+      "viol_f": 0,
+      "changed": 0,
+      "mse": 4.470835623573599
+    },
+    {
+      "budget": "Loose",
+      "mode": "Parameters limit only",
+      "feas": 19,
+      "compliant": 120,
+      "viol_p": 0,
+      "viol_f": 0,
+      "changed": 0,
+      "mse": 4.470835623573599
+    }
+  ],
+  "family_fidelity": [
+    {
+      "family": "MLP",
+      "n_geom": 210,
+      "med_route_mse": 0.0,
+      "max_route_mse": 0.0,
+      "med_rep_err": 2.701718658519342e-12,
+      "n_phys": 81,
+      "max_delta": 0.0,
+      "bitwise": 81
+    },
+    {
+      "family": "TCN",
+      "n_geom": 636,
+      "med_route_mse": 0.0,
+      "max_route_mse": 0.0,
+      "med_rep_err": 2.4612343023279633e-09,
+      "n_phys": 241,
+      "max_delta": 0.0,
+      "bitwise": 241
+    },
+    {
+      "family": "GRU",
+      "n_geom": 236,
+      "med_route_mse": 1.0014186284828097e-14,
+      "max_route_mse": 2.925952068559462e-07,
+      "med_rep_err": 2.580112997335695e-10,
+      "n_phys": 86,
+      "max_delta": 0.0,
+      "bitwise": 86
+    }
+  ],
+  "channel_criteria": [
+    {
+      "label": "Output Calib. only (w/o channel)",
+      "ctrl_risk": 0.7556348045351087,
+      "ours_risk": 0.7489375919946961,
+      "gain_pct": 0.8863028145630336,
+      "lo": 0.3175189851766877,
+      "hi": 1.4025305547821552
+    },
+    {
+      "label": "No response reconstruction",
+      "ctrl_risk": 0.7418111223910955,
+      "ours_risk": 0.7489375919946961,
+      "gain_pct": -0.9606851917547176,
+      "lo": -2.38873857623352,
+      "hi": 0.2275809085332624
+    },
+    {
+      "label": "Fixed channel index 0",
+      "ctrl_risk": 0.7431582093509943,
+      "ours_risk": 0.7489375919946961,
+      "gain_pct": -0.7776786384084966,
+      "lo": -2.115196807192213,
+      "hi": 0.3276746716950603
+    },
+    {
+      "label": "Marginal-variance channel",
+      "ctrl_risk": 0.7499526168150968,
+      "ours_risk": 0.7489375919946961,
+      "gain_pct": 0.1353451935018679,
+      "lo": 0.0044752281646193,
+      "hi": 0.3535989169046094
+    },
+    {
+      "label": "External bypass (+params/ops)",
+      "ctrl_risk": 0.7537757698864763,
+      "ours_risk": 0.7489375919946961,
+      "gain_pct": 0.6418590362103127,
+      "lo": -0.004187949654566,
+      "hi": 1.0386891818435229
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "framework": "MSA-DTI",
+  "title": "Response-Guided Model Selection and Structure-Preserving Adaptation for Few-Shot Digital Twin Instantiation",
+  "candidate_bank": [
+    0,
+    6,
+    8,
+    13,
+    27,
+    31,
+    32,
+    35,
+    40,
+    45,
+    46,
+    47,
+    50,
+    54,
+    55,
+    57,
+    58,
+    61,
+    63
+  ],
+  "screening_reference": "A55",
+  "deployment_budgets": {
+    "tight": {
+      "max_operations": 1500000,
+      "max_parameters": 30000
+    },
+    "medium": {
+      "max_operations": 5000000,
+      "max_parameters": 100000
+    },
+    "loose": {
+      "max_operations": 20000000,
+      "max_parameters": 500000
+    }
+  },
+  "tasks_per_center": [
+    {
+      "H": 1,
+      "K": 10
+    },
+    {
+      "H": 1,
+      "K": 20
+    },
+    {
+      "H": 4,
+      "K": 10
+    },
+    {
+      "H": 4,
+      "K": 20
+    }
+  ],
+  "cohorts": {
+    "bitbrains_source": {
+      "centers": 20,
+      "role": "source_training"
+    },
+    "bitbrains_A": {
+      "centers": 20,
+      "role": "screening_reference"
+    },
+    "bitbrains_B": {
+      "centers": 20,
+      "role": "architecture_screening"
+    },
+    "bitbrains_C": {
+      "centers": 20,
+      "role": "historical_records_V_hist"
+    },
+    "bitbrains_D": {
+      "centers": 20,
+      "role": "offline_development"
+    },
+    "bitbrains_E": {
+      "centers": 30,
+      "role": "primary_evaluation"
+    },
+    "azure_v2": {
+      "centers": 30,
+      "role": "external_cross_platform"
+    },
+    "ufcg_openstack_2024_2025": {
+      "centers": 12,
+      "role": "prospective_zero_tuning"
+    },
+    "bitbrains_rnd6": {
+      "centers": 6,
+      "role": "prospective_heldout_queue"
+    }
+  },
+  "hyperparameters": {
+    "sequence_length": 96,
+    "input_channels": 25,
+    "chronological_blocks": 4,
+    "sgd_steps": 50,
+    "sgd_lr": 0.02,
+    "grad_clip_norm": 1.0,
+    "early_checkpoints": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "channel_importance_ridge": 0.01,
+    "causal_load_scales": [
+      1,
+      5,
+      20,
+      96
+    ],
+    "scale_blend_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "calibration_mix_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "residual_gamma_grid": [
+      0.5,
+      1.0
+    ]
+  },
+  "bitbrains_fastStorage_sha256": "11313f528a0cbcbe57e63162f8ae5a41a9c7e7c1a79872e294ff3c5bbaa2e671"
+}
