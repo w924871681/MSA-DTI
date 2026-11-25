@@ -8,8 +8,7 @@ MSA-DTI instantiates deployable predictive digital twins (DTs) for new computing
 
 ## Release & Version Notes
 
-- **`v1.2`** (latest): Synchronizes the finalized manuscript figure sources (`paper_figures/`), switches default `code/reproduce.py figures` output to the six finalized main experimental figures (**Figs. 5–10**), adds automated figure-input and render QA (`verify_inputs.py`, `verify_figures.py`), and includes `Supplementary_Data_S1.csv` and reference manuscript PDFs while preserving all `v1.1` core algorithms and frozen numerical verification checks unchanged.
-- **`v1.1`** (commit `1438a1d4ca245f05eda1ef04f67b69b714deebbe`, preserved unmodified): Frozen numerical verification release with exact `720/720` live RGMS selection and live 3-instance SPA verification.
+- **`v1.1`** (latest synchronized release): Includes the exact frozen RGMS (`720/720` live selection match) and SPA (`3/3` live Bitbrains E adaptation fixtures) implementations, three-tier automated verification (`code/reproduce.py verify`), the finalized manuscript figure sources (`paper_figures/`, reproducing main-article **Figs. 5–10** via `code/reproduce.py figures`), automated figure-input and render QA (`verify_inputs.py`, `verify_figures.py`), `Supplementary_Data_S1.csv`, and reference manuscript PDFs.
 
 ## Repository Structure
 
