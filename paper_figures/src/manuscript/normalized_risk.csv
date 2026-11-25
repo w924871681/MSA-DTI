@@ -1,0 +1,61 @@
+cohort,selector,setting,normalized_risk,deployments,source_csv
+Bitbrains E,Reuse-Aware,StandardFT,2.0189007329669155,360,coupling_matrix_risk.csv
+Bitbrains E,Reuse-Aware,EarlyAdapt,1.9158552665795503,360,coupling_matrix_risk.csv
+Bitbrains E,Reuse-Aware,OutputCalib,1.5707642355164064,360,coupling_matrix_risk.csv
+Bitbrains E,Reuse-Aware,SPA,0.9018048105548976,360,coupling_matrix_risk.csv
+Bitbrains E,Zero-step-Val,StandardFT,0.9523656700185776,360,coupling_matrix_risk.csv
+Bitbrains E,Zero-step-Val,EarlyAdapt,0.9414207347758592,360,coupling_matrix_risk.csv
+Bitbrains E,Zero-step-Val,OutputCalib,0.8427311156044619,360,coupling_matrix_risk.csv
+Bitbrains E,Zero-step-Val,SPA,0.841256724868293,360,coupling_matrix_risk.csv
+Bitbrains E,Ref-Margin,StandardFT,0.983923693947381,360,coupling_matrix_risk.csv
+Bitbrains E,Ref-Margin,EarlyAdapt,0.9789991094062848,360,coupling_matrix_risk.csv
+Bitbrains E,Ref-Margin,OutputCalib,0.845163700568927,360,coupling_matrix_risk.csv
+Bitbrains E,Ref-Margin,SPA,0.8447062198408379,360,coupling_matrix_risk.csv
+Bitbrains E,Full-Val,StandardFT,0.9562846307978812,360,coupling_matrix_risk.csv
+Bitbrains E,Full-Val,EarlyAdapt,0.951228230016883,360,coupling_matrix_risk.csv
+Bitbrains E,Full-Val,OutputCalib,0.8372520323329773,360,coupling_matrix_risk.csv
+Bitbrains E,Full-Val,SPA,0.8330885931375888,360,coupling_matrix_risk.csv
+Bitbrains E,MSA-DTI selector,StandardFT,0.9346694822152344,360,coupling_matrix_risk.csv
+Bitbrains E,MSA-DTI selector,EarlyAdapt,0.9281554349338276,360,coupling_matrix_risk.csv
+Bitbrains E,MSA-DTI selector,OutputCalib,0.831130528512446,360,coupling_matrix_risk.csv
+Bitbrains E,MSA-DTI selector,SPA,0.8261794924982766,360,coupling_matrix_risk.csv
+Azure,Reuse-Aware,StandardFT,1.6427781877641985,360,coupling_matrix_risk.csv
+Azure,Reuse-Aware,EarlyAdapt,1.258737240295687,360,coupling_matrix_risk.csv
+Azure,Reuse-Aware,OutputCalib,0.8035757463975949,360,coupling_matrix_risk.csv
+Azure,Reuse-Aware,SPA,0.7057348890647461,360,coupling_matrix_risk.csv
+Azure,Zero-step-Val,StandardFT,1.7204163914930433,360,coupling_matrix_risk.csv
+Azure,Zero-step-Val,EarlyAdapt,1.0176625133243682,360,coupling_matrix_risk.csv
+Azure,Zero-step-Val,OutputCalib,0.742176446631402,360,coupling_matrix_risk.csv
+Azure,Zero-step-Val,SPA,0.6926874411822368,360,coupling_matrix_risk.csv
+Azure,Ref-Margin,StandardFT,1.000975776836799,360,coupling_matrix_risk.csv
+Azure,Ref-Margin,EarlyAdapt,0.957779782713744,360,coupling_matrix_risk.csv
+Azure,Ref-Margin,OutputCalib,0.6994337422348945,360,coupling_matrix_risk.csv
+Azure,Ref-Margin,SPA,0.6965632531353052,360,coupling_matrix_risk.csv
+Azure,Full-Val,StandardFT,0.9474313957780268,360,coupling_matrix_risk.csv
+Azure,Full-Val,EarlyAdapt,0.90365829093426,360,coupling_matrix_risk.csv
+Azure,Full-Val,OutputCalib,0.681930094685328,360,coupling_matrix_risk.csv
+Azure,Full-Val,SPA,0.6720824905138664,360,coupling_matrix_risk.csv
+Azure,MSA-DTI selector,StandardFT,0.9435108958860716,360,coupling_matrix_risk.csv
+Azure,MSA-DTI selector,EarlyAdapt,0.8953478517981904,360,coupling_matrix_risk.csv
+Azure,MSA-DTI selector,OutputCalib,0.6801390805577712,360,coupling_matrix_risk.csv
+Azure,MSA-DTI selector,SPA,0.6716956914911157,360,coupling_matrix_risk.csv
+UFCG,Zero-step-Val,StandardFT,1.046656449826885,144,external_deployments.csv.gz
+UFCG,Zero-step-Val,EarlyAdapt,1.0386575015287236,144,external_deployments.csv.gz
+UFCG,Zero-step-Val,OutputCalib,0.8225759019136178,144,external_deployments.csv.gz
+UFCG,Zero-step-Val,SPA,0.7912759769799941,144,external_deployments.csv.gz
+UFCG,Ref-Margin,StandardFT,1.0007512764468998,144,external_deployments.csv.gz
+UFCG,Ref-Margin,EarlyAdapt,0.9912135081035878,144,external_deployments.csv.gz
+UFCG,Ref-Margin,OutputCalib,0.823267407557809,144,external_deployments.csv.gz
+UFCG,Ref-Margin,SPA,0.7999106503345095,144,external_deployments.csv.gz
+UFCG,NTK-Q,StandardFT,1.0,144,external_deployments.csv.gz
+UFCG,NTK-Q,EarlyAdapt,0.9969431109753137,144,external_deployments.csv.gz
+UFCG,NTK-Q,OutputCalib,0.8277050383579796,144,external_deployments.csv.gz
+UFCG,NTK-Q,SPA,0.8173229927132418,144,external_deployments.csv.gz
+UFCG,Full-Val,StandardFT,0.9806068881143015,144,external_deployments.csv.gz
+UFCG,Full-Val,EarlyAdapt,0.9801993769354839,144,external_deployments.csv.gz
+UFCG,Full-Val,OutputCalib,0.8283052675624516,144,external_deployments.csv.gz
+UFCG,Full-Val,SPA,0.8153781438917985,144,external_deployments.csv.gz
+UFCG,MSA-DTI selector,StandardFT,1.0164760068706538,144,external_deployments.csv.gz
+UFCG,MSA-DTI selector,EarlyAdapt,1.016155510243986,144,external_deployments.csv.gz
+UFCG,MSA-DTI selector,OutputCalib,0.844281429877922,144,external_deployments.csv.gz
+UFCG,MSA-DTI selector,SPA,0.8299475094450435,144,external_deployments.csv.gz

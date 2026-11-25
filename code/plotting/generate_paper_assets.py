@@ -1156,14 +1156,31 @@ Standard FT & {inst['u50_sec']:.2f} & {inst['u50_vram_mb']:.1f} & 0 / 0 & {inf['
 
 
 def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Regenerate MSA-DTI LaTeX tables (Tables 1-5 in final manuscript + archived legacy "
+            "table3_main_bitbrains.tex + Supplementary tables). Pass --tables-only when pairing "
+            "with paper_figures/render_figures.py for the finalized Figs. 5-10."
+        )
+    )
+    parser.add_argument(
+        "--tables-only",
+        action="store_true",
+        help="Generate LaTeX tables only (skip archived legacy v1.0/v1.1 figure builds).",
+    )
+    args = parser.parse_args()
+
     OUT_DATA.mkdir(parents=True, exist_ok=True)
-    build_fig5()
-    build_fig6()
-    build_fig7_forest()
-    build_fig8_budget_feasibility()
-    build_fig9_coupling()
-    build_fig10_external()
-    build_fig11_external_coupling()
+    if not args.tables_only:
+        build_fig5()
+        build_fig6()
+        build_fig7_forest()
+        build_fig8_budget_feasibility()
+        build_fig9_coupling()
+        build_fig10_external()
+        build_fig11_external_coupling()
     build_tables()
     (OUT_DATA / "asset_audit.json").write_text(json.dumps(AUDIT_RECORDS, indent=2), encoding="utf-8")
     print("ALL PAPER ASSETS GENERATED & AUDITED!")
